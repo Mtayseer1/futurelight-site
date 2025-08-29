@@ -15,22 +15,6 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">		
 	<link rel="stylesheet" href="css/templatemo-style.css">
-
-	<!-- Custom Logo Fix -->
-	<style>
-	.navbar-brand img {
-	    height: 100px !important;   /* adjust size as needed */
-	    max-height: 100px !important;
-	    width: auto;
-	}
-	.navbar {
-	    min-height: 110px; /* makes navbar taller to fit logo */
-	}
-	.navbar-header {
-	    display: flex;
-	    align-items: center;
-	}
-	</style>
 </head>
 <body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
 	<div class="preloader">
@@ -46,8 +30,9 @@
 					<span class="icon icon-bar"></span>
 					<span class="icon icon-bar"></span>
 				</button>
-				<a href="#home" class="navbar-brand">
-				  <img src="images/Logo.png" alt="Future Lights Logo">
+				<a href="#home" class="navbar-brand" style="display:flex; align-items:center; padding:10px 0;">
+					<img src="images/Logo.png" alt="Future Lights Logo" style="height:60px; margin-right:10px;">
+					<span style="font-size:20px; font-weight:600; color:#fff;">Future Lights</span>
 				</a>
 			</div>
 			<div class="collapse navbar-collapse">

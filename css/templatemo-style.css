@@ -17,7 +17,7 @@ body
 /* start hr */
 hr
     {
-        border: 1px solid #55acee;
+        border: 1px solid #184849;
         width: 100px;
         margin-top: 20px;
     }
@@ -47,7 +47,7 @@ h4
     transition: all 0.4s ease-in-out;  
 }
 .btn:hover {
-    background: #55acee;
+    background: #184849;
     border-color: transparent;
 }
 
@@ -87,7 +87,7 @@ h4
     {
          width: 30px;
         height: 30px;
-        background-color: #55acee;         
+        background-color: #184849;         
         -webkit-animation: sk-rotatePlane 1.2s infinite ease-in-out;
                 animation: sk-rotatePlane 1.2s infinite ease-in-out;
      }
@@ -128,7 +128,7 @@ h4
     }
 .custom-navbar .navbar-brand 
     {
-        color: #55acee;
+        color: #184849;
         font-weight: bold;
         font-size: 28px;
     }
@@ -142,12 +142,12 @@ h4
 .custom-navbar .nav li a:hover
     {
         background: transparent;
-        color: #55acee;
+        color: #184849;
     }
 .custom-navbar .nav li.active > a
     {
          background-color: transparent;
-         color: #55acee;
+         color: #184849;
     }
 .custom-navbar .navbar-toggle
     {
@@ -156,7 +156,7 @@ h4
     }
 .custom-navbar .navbar-toggle .icon-bar
     {
-        background: #55acee;
+        background: #184849;
         border-color: transparent;
     }
 @media(min-width:768px){
@@ -187,7 +187,7 @@ h4
     }
 #home span
     {
-        color: #55acee;
+        color: #184849;
         font-weight: bold;
     }
 #home .btn {
@@ -267,7 +267,7 @@ h4
     }
 #service .media .fa
     {
-        color: #55acee;
+        color: #184849;
         font-size: 60px;
         margin-right: 20px;
         width: 65px;
@@ -314,7 +314,7 @@ h3.about-title {
     }
 #about .progress .progress-bar-danger
     {
-        background: #55acee;
+        background: #184849;
     }
 #about span
     {
@@ -333,7 +333,7 @@ h3.about-title {
     }
 #about .about-wrapper h3
     {
-        color: #55acee;
+        color: #184849;
         font-size: 20px;
         font-weight: bold;        
     }
@@ -397,8 +397,8 @@ h3.about-title {
         transition: all 0.3s ease;
     }
 #portfolio .portfolio-thumb .portfolio-overlay .fa:hover {
-    background: #55acee;
-    border-color: #55acee;
+    background: #184849;
+    border-color: #184849;
 }
 #portfolio .portfolio-thumb .portfolio-overlay h4
     {
@@ -422,7 +422,7 @@ h3.about-title {
     transition: all 0.3s ease;
 }
 .filter-wrapper li:hover {
-    background: #55acee;
+    background: #184849;
 }
 .filter-wrapper li:hover a {
     color: #fff;
@@ -481,13 +481,13 @@ h3.about-title {
     }
 #contact input[type="submit"]
     {
-        border: 2px solid #55acee;
+        border: 2px solid #184849;
         font-weight: bold;
-		color: #55acee;
+		color: #184849;
     }
 #contact input[type="submit"]:hover
     {
-        background: #55acee;
+        background: #184849;
 		color: #fff;
     }
 /* end contact */
@@ -508,7 +508,7 @@ footer p
     }
 footer span
     {
-        color: #55acee;
+        color: #184849;
         font-weight: bold;
     }
 /* end footer */
@@ -540,7 +540,7 @@ footer span
     }
 .social-icon li:hover
     {
-        background: #55acee;
+        background: #184849;
     }
 /* end social icon */
 
@@ -609,3 +609,4 @@ footer span
         }
 }
 /* end media 360 */
+

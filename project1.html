@@ -12,10 +12,48 @@
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/templatemo-style.css">
+
+  <style>
+    /* Dashboard Cards */
+    .dashboard-card {
+      position: relative;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 30px;
+      margin-bottom: 20px;
+      text-align: center;
+      transition: all 0.3s ease;
+      background: #fff;
+      min-height: 160px;
+    }
+    .dashboard-card h4 {
+      margin-top: 15px;
+    }
+    .dashboard-card .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.85);
+      color: #fff;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      border-radius: 8px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .dashboard-card:hover .overlay {
+      opacity: 1;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Navbar (EXACT same as index.html) -->
+  <!-- Navbar (same as index.html) -->
   <nav class="navbar navbar-fixed-top custom-navbar" role="navigation">
     <div class="container">
       <div class="navbar-header">
@@ -40,134 +78,91 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section id="hero" style="background:#111; color:#fff; padding:120px 0; text-align:center;">
+  <!-- Hero -->
+  <section style="background:#111; color:#fff; padding:120px 0; text-align:center;">
     <div class="container">
-      <h1 class="wow fadeInDown">Oracle EBS Reporting on Oracle APEX</h1>
-      <p class="wow fadeInUp" data-wow-delay="0.3s">Turning raw ERP data into powerful dashboards and insights.</p>
+      <h1>Oracle EBS Reporting on Oracle APEX</h1>
+      <p>Turning ERP data into actionable dashboards and insights.</p>
     </div>
   </section>
 
-  <!-- Project Overview -->
-  <section id="overview" style="padding:60px 0;">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <h2>Project Overview</h2>
-          <hr>
-          <p>
-            We built a comprehensive reporting solution on <strong>Oracle APEX</strong> to help enterprises unlock 
-            the full value of their <strong>Oracle E-Business Suite (EBS)</strong> data. 
-            The system features dashboards for Purchase Orders, Sales, Trial Balance, Payment Registers, and more.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Dashboard Screenshots -->
-  <section id="dashboards" style="padding:60px 0; background:#f9f9f9;">
+  <!-- PO Header Showcase -->
+  <section style="padding:60px 0;">
     <div class="container">
       <div class="row text-center">
-        <h2>Dashboard Previews</h2>
+        <h2>Sample: PO Header Dashboard</h2>
         <hr>
-        <p>Here are some examples of the dashboards we’ve created for clients:</p>
+        <p>
+          The <strong>PO Header dashboard</strong> provides insights into purchase order approvals, trends,
+          suppliers, payment details, and overall procurement performance. Below are sample visuals.
+        </p>
       </div>
-
       <div class="row" style="margin-top:40px;">
-
-        <!-- Dashboard 1 -->
-        <div class="col-md-6 col-sm-6 wow fadeIn">
-          <div class="card" style="border:1px solid #ddd; border-radius:8px; margin-bottom:20px;">
-            <img src="images/reporting1.jpeg" alt="PO Header Dashboard" style="width:100%; height:250px; object-fit:cover;">
-            <div style="padding:15px;">
-              <h3>PO Header</h3>
-              <p>Analyze purchase orders with approval status, PO type, and operating unit trends.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Dashboard 2 -->
-        <div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.3s">
-          <div class="card" style="border:1px solid #ddd; border-radius:8px; margin-bottom:20px;">
-            <img src="images/reportiing2.jpeg" alt="Sales Order Analysis" style="width:100%; height:250px; object-fit:cover;">
-            <div style="padding:15px;">
-              <h3>Sales Order Analysis</h3>
-              <p>Monitor order lines, fulfillment times, discrepancies, and supplier/customer breakdowns.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Dashboard 3 -->
-        <div class="col-md-6 col-sm-6 wow fadeIn">
-          <div class="card" style="border:1px solid #ddd; border-radius:8px; margin-bottom:20px;">
-            <img src="images/reporting3.jpeg" alt="Trial Balance" style="width:100%; height:250px; object-fit:cover;">
-            <div style="padding:15px;">
-              <h3>Trial Balance</h3>
-              <p>Summarize balances for all ledgers and accounts for accurate reconciliation.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Dashboard 4 -->
-        <div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.3s">
-          <div class="card" style="border:1px solid #ddd; border-radius:8px; margin-bottom:20px;">
-            <img src="images/reporting4.jpeg" alt="Payment Register" style="width:100%; height:250px; object-fit:cover;">
-            <div style="padding:15px;">
-              <h3>Payment Register</h3>
-              <p>Track supplier payments and analyze distributions across currencies and methods.</p>
-            </div>
-          </div>
-        </div>
-
+        <div class="col-md-6 col-sm-6"><img src="images/reporting1.jpeg" class="img-responsive" alt=""></div>
+        <div class="col-md-6 col-sm-6"><img src="images/reportiing2.jpeg" class="img-responsive" alt=""></div>
+        <div class="col-md-6 col-sm-6"><img src="images/reporting3.jpeg" class="img-responsive" alt=""></div>
+        <div class="col-md-6 col-sm-6"><img src="images/reporting4.jpeg" class="img-responsive" alt=""></div>
       </div>
     </div>
   </section>
 
-  <!-- Features of Oracle APEX Reporting -->
-  <section id="features" style="padding:60px 0;">
+  <!-- Other Dashboards -->
+  <section style="padding:60px 0; background:#f9f9f9;">
     <div class="container">
       <div class="row text-center">
-        <h2>What We Can Build on Oracle APEX</h2>
+        <h2>Other Dashboards We Built</h2>
         <hr>
+        <p>Hover over each card to see what insights the dashboard provides.</p>
       </div>
+
       <div class="row" style="margin-top:30px;">
 
-        <div class="col-md-4 col-sm-6 text-center wow fadeIn">
-          <i class="fa fa-line-chart fa-4x" style="color:#007BFF; margin-bottom:15px;"></i>
-          <h4>Interactive Dashboards</h4>
-          <p>Visualize key metrics with charts, graphs, and drill-down reports.</p>
-        </div>
-
-        <div class="col-md-4 col-sm-6 text-center wow fadeIn" data-wow-delay="0.3s">
-          <i class="fa fa-database fa-4x" style="color:#28A745; margin-bottom:15px;"></i>
-          <h4>Real-time Data Access</h4>
-          <p>Connect directly to Oracle EBS/Fusion for live insights without delays.</p>
-        </div>
-
-        <div class="col-md-4 col-sm-6 text-center wow fadeIn" data-wow-delay="0.6s">
-          <i class="fa fa-cogs fa-4x" style="color:#FF5733; margin-bottom:15px;"></i>
-          <h4>Custom Workflows</h4>
-          <p>Build approval flows, exception handling, and alerts directly into reports.</p>
-        </div>
-
-        <div class="col-md-4 col-sm-6 text-center wow fadeIn">
-          <i class="fa fa-mobile fa-4x" style="color:#FFC107; margin-bottom:15px;"></i>
-          <h4>Mobile Ready</h4>
-          <p>Dashboards adapt seamlessly to desktops, tablets, and mobile devices.</p>
-        </div>
-
-        <div class="col-md-4 col-sm-6 text-center wow fadeIn" data-wow-delay="0.3s">
-          <i class="fa fa-shield fa-4x" style="color:#6C63FF; margin-bottom:15px;"></i>
-          <h4>Secure Access</h4>
-          <p>Role-based access ensures the right users see the right data.</p>
-        </div>
-
-        <div class="col-md-4 col-sm-6 text-center wow fadeIn" data-wow-delay="0.6s">
-          <i class="fa fa-lightbulb-o fa-4x" style="color:#FF9800; margin-bottom:15px;"></i>
-          <h4>AI & Predictive Insights</h4>
-          <p>Enhance reporting with AI-driven forecasts and anomaly detection.</p>
-        </div>
+        <!-- 1 -->
+        <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>Sales Order Analysis</h4><div class="overlay">Monitor fulfillment rates, discrepancies, and demand patterns.</div></div></div>
+        <!-- 2 -->
+        <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>Order Line Summary</h4><div class="overlay">Detailed breakdown of sales orders at the line-item level.</div></div></div>
+        <!-- 3 -->
+        <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>PO Lines</h4><div class="overlay">Track purchase order lines, quantities, and delivery status.</div></div></div>
+        <!-- 4 -->
+        <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>Sales Order Lines Analysis</h4><div class="overlay">Analyze sales orders line by line with performance metrics.</div></div></div>
+        <!-- 5 -->
+        <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>po_transactions</h4><div class="overlay">Transactions view showing purchase order activities.</div></div></div>
+        <!-- 6 -->
+        <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>po_dist</h4><div class="overlay">Distribution details of purchase orders across accounts.</div></div></div>
+        <!-- 7 -->
+        <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>Sales Invoice Analysis</h4><div class="overlay">Review invoices, payment delays, and revenue recognition.</div></div></div>
+        <!-- 8 -->
+        <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>PO Ship Lines</h4><div class="overlay">Monitor shipping details and order fulfillment timelines.</div></div></div>
+        <!-- 9 -->
+        <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>po ship header</h4><div class="overlay">High-level overview of shipment headers for POs.</div></div></div>
+        <!-- 10 -->
+        <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>Sales Invoice Lines Analysis</h4><div class="overlay">Drill down into invoice lines and customer billing details.</div></div></div>
+        <!-- 11 -->
+        <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>KPI – Sales Invoice Analysis</h4><div class="overlay">Key metrics for invoice performance and efficiency.</div></div></div>
+        <!-- 12 -->
+        <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>Sales Item Analysis</h4><div class="overlay">Track sales performance by product and item category.</div></div></div>
+        <!-- 13 -->
+        <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>SHIP_DIST_TRANS</h4><div class="overlay">Distribution of shipments and transfer transactions.</div></div></div>
+        <!-- 14 -->
+        <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>AR Amount by Class Code</h4><div class="overlay">Accounts Receivable categorized by class codes.</div></div></div>
+        <!-- 15 -->
+        <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>Journal_Lines</h4><div class="overlay">General ledger journal entries with full details.</div></div></div>
+        <!-- 16 -->
+        <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>JournalLines</h4><div class="overlay">Alternative journal line dashboard for validation.</div></div></div>
+        <!-- 17 -->
+        <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>Trial Balance</h4><div class="overlay">Summarize balances across ledgers for reconciliation.</div></div></div>
+        <!-- 18 -->
+        <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>Payment Register</h4><div class="overlay">Track supplier payments by method, date, and currency.</div></div></div>
+        <!-- 19 -->
+        <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>Assets Register</h4><div class="overlay">Track fixed assets, acquisitions, and depreciation.</div></div></div>
+        <!-- 20 -->
+        <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>Customers Analysis</h4><div class="overlay">Insights into customer segments and revenue trends.</div></div></div>
+        <!-- 21 -->
+        <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>Payment Method Distribution</h4><div class="overlay">Breakdown of transactions across payment methods.</div></div></div>
+        <!-- 22 -->
+        <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>Invoice Listing</h4><div class="overlay">Full listing of invoices for audit and reporting.</div></div></div>
+        <!-- 23 -->
+        <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>Line Details</h4><div class="overlay">Detailed line-level drilldowns for transactions.</div></div></div>
 
       </div>
     </div>

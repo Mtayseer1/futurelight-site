@@ -49,6 +49,26 @@
     .dashboard-card:hover .overlay {
       opacity: 1;
     }
+    /* Default (desktop) */
+.logo-img {
+  height: 350px;
+  max-width: 100%;
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .logo-img {
+    height: 200px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 576px) {
+  .logo-img {
+    height: 120px;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -62,9 +82,10 @@
           <span class="icon icon-bar"></span>
           <span class="icon icon-bar"></span>
         </button>
-        <a href="index.html#home" class="navbar-brand" style="display:flex; align-items:center; padding:10px 0;">
-          <img src="images/Logo.png" alt="Future Lights Logo" style="height:350px; margin-right:10px;">
-        </a>
+       <a href="index.html#home" class="navbar-brand" style="display:flex; align-items:center; padding:10px 0;">
+  <img src="images/Logo.png" alt="Future Lights Logo" class="logo-img" style="margin-right:10px;">
+</a>
+
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
@@ -250,5 +271,6 @@
   <script src="js/wow.min.js"></script>
 </body>
 </html>
+
 
 

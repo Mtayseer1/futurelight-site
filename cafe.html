@@ -5,53 +5,139 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Café Management System - Future Lights Technologies</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-  <header class="sub-hero">
-    <h1>Powerful Café Management System</h1>
-    <p>Streamlined operations for cafés and restaurants</p>
-  </header>
-  <main>
-    <section>
-      <h2>Overview</h2>
-      <p>
-        Our Café Management System empowers cafés with digital efficiency. From table reservations and
-        QR code ordering to kitchen tracking and financial reporting, it’s a complete solution
-        tailored for modern cafés and restaurants.
-      </p>
-    </section>
-
-    <section>
-      <h2>Key Features</h2>
-      <ul>
-        <li>Table management with real-time status updates</li>
-        <li>QR code ordering for customers</li>
-        <li>Waiter mobile app with live notifications</li>
-        <li>Kitchen display for tracking and completing orders</li>
-        <li>Payments, receipts, and reporting dashboards</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Tech Stack</h2>
-      <p>Oracle APEX, PL/SQL, Oracle Database, Responsive Web Design</p>
-    </section>
-
-    <section>
-      <h2>Screenshots</h2>
-      <div class="screenshots">
-        <img src="images/cafe1.jpg" alt="Café App Screenshot 1">
-        <img src="images/cafe2.jpg" alt="Café App Screenshot 2">
-        <img src="images/cafe3.jpg" alt="Café App Screenshot 3">
-        <img src="images/cafe4.jpg" alt="Café App Screenshot 4">
-        <img src="images/cafe5.jpg" alt="Café App Screenshot 5">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" alt="Future Lights Logo" class="logo-img">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link active" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
       </div>
-    </section>
+    </div>
+  </nav>
 
-    <a href="index.html" class="btn">← Back to Home</a>
-  </main>
-  <footer>
-    <p>© 2025 Future Lights Technologies</p>
+  <!-- Hero -->
+  <header class="sub-hero text-center text-white bg-dark py-5">
+    <div class="container">
+      <h1 class="display-4">Café Management System</h1>
+      <p class="lead">A complete digital solution for cafés and restaurants</p>
+    </div>
+  </header>
+
+  <!-- Overview -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Overview</h2>
+      <p class="text-center">
+        Our Café Management System streamlines daily operations with digital efficiency. From 
+        QR code ordering and table reservations to waiter apps and kitchen dashboards, it’s designed 
+        to simplify café and restaurant management while delivering exceptional customer experiences.
+      </p>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Key Features</h2>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <i class="fas fa-chair fa-3x mb-3 text-primary"></i>
+          <h5>Table Management</h5>
+          <p>Track table status in real time with reservation and availability updates.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-qrcode fa-3x mb-3 text-success"></i>
+          <h5>QR Code Ordering</h5>
+          <p>Customers can scan and order directly from their tables with zero wait time.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-bell fa-3x mb-3 text-warning"></i>
+          <h5>Waiter Notifications</h5>
+          <p>Waiters receive live alerts when customers need service, place orders, or request bills.</p>
+        </div>
+      </div>
+      <div class="row text-center mt-4">
+        <div class="col-md-4">
+          <i class="fas fa-utensils fa-3x mb-3 text-danger"></i>
+          <h5>Kitchen Dashboard</h5>
+          <p>Kitchen staff can view new orders instantly and mark them as completed.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-receipt fa-3x mb-3 text-info"></i>
+          <h5>Billing & Receipts</h5>
+          <p>Integrated billing with multiple payment methods and receipt printing.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-chart-line fa-3x mb-3 text-secondary"></i>
+          <h5>Reports & Analytics</h5>
+          <p>Powerful dashboards for sales, items, staff performance, and financial insights.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Screenshots</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="images/cafe1.jpg" class="card-img-top" alt="Screenshot 1">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="images/cafe2.jpg" class="card-img-top" alt="Screenshot 2">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="images/cafe3.jpg" class="card-img-top" alt="Screenshot 3">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="images/cafe4.jpg" class="card-img-top" alt="Screenshot 4">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="images/cafe5.jpg" class="card-img-top" alt="Screenshot 5">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-4">Tech Stack</h2>
+      <p>Oracle APEX, PL/SQL, Oracle Database, Responsive Web Design</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>© 2025 Future Lights Technologies. All Rights Reserved.</p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

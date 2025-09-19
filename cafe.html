@@ -92,38 +92,44 @@
   </section>
 
   <!-- Screenshots -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Screenshots</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card shadow-sm">
-            <img src="images/cafe1.jpeg" class="card-img-top" alt="Screenshot 1">
-          </div>
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Screenshots</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="images/cafe1.jpeg" class="card-img-top clickable-img" 
+               alt="Screenshot 1" data-bs-toggle="modal" data-bs-target="#imgModal1">
         </div>
-        <div class="col-md-4">
-          <div class="card shadow-sm">
-            <img src="images/cafe2.jpeg" class="card-img-top" alt="Screenshot 2">
-          </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="images/cafe2.jpeg" class="card-img-top clickable-img" 
+               alt="Screenshot 2" data-bs-toggle="modal" data-bs-target="#imgModal2">
         </div>
-        <div class="col-md-4">
-          <div class="card shadow-sm">
-            <img src="images/cafe3.jpeg" class="card-img-top" alt="Screenshot 3">
-          </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="images/cafe3.jpeg" class="card-img-top clickable-img" 
+               alt="Screenshot 3" data-bs-toggle="modal" data-bs-target="#imgModal3">
         </div>
-        <div class="col-md-4">
-          <div class="card shadow-sm">
-            <img src="images/cafe4.jpeg" class="card-img-top" alt="Screenshot 4">
-          </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="images/cafe4.jpeg" class="card-img-top clickable-img" 
+               alt="Screenshot 4" data-bs-toggle="modal" data-bs-target="#imgModal4">
         </div>
-        <div class="col-md-4">
-          <div class="card shadow-sm">
-            <img src="images/cafe5.jpeg" class="card-img-top" alt="Screenshot 5">
-          </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="images/cafe5.jpeg" class="card-img-top clickable-img" 
+               alt="Screenshot 5" data-bs-toggle="modal" data-bs-target="#imgModal5">
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
  <!-- Features of Oracle APEX Reporting -->
   <section id="features" style="padding:60px 0;">
@@ -174,6 +180,49 @@
     </div>
   </section>
 
+  <!-- Image Modals -->
+<div class="modal fade" id="imgModal1" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <img src="images/cafe1.jpeg" class="img-fluid rounded shadow">
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imgModal2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <img src="images/cafe2.jpeg" class="img-fluid rounded shadow">
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imgModal3" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <img src="images/cafe3.jpeg" class="img-fluid rounded shadow">
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imgModal4" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <img src="images/cafe4.jpeg" class="img-fluid rounded shadow">
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imgModal5" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <img src="images/cafe5.jpeg" class="img-fluid rounded shadow">
+    </div>
+  </div>
+</div>
+
+  
+
   <!-- Footer -->
   <footer class="bg-dark text-white text-center py-3">
     <p>© 2025 Future Lights Technologies. All Rights Reserved.</p>
@@ -182,5 +231,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
 
 

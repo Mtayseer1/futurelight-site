@@ -7,6 +7,28 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    /* Hover zoom effect */
+    .clickable-img {
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .clickable-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Modal image styling */
+    .modal-content img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .modal-dialog {
+      max-width: 90%; /* Bigger modal width */
+    }
+  </style>
 </head>
 <body>
   <!-- Navbar -->
@@ -92,46 +114,40 @@
   </section>
 
   <!-- Screenshots -->
-<section class="py-5">
-  <div class="container">
-    <h2 class="text-center mb-4">Screenshots</h2>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card shadow-sm">
-          <img src="images/cafe1.jpeg" class="card-img-top clickable-img" 
-               alt="Screenshot 1" data-bs-toggle="modal" data-bs-target="#imgModal1">
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Screenshots</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="images/cafe1.jpeg" class="card-img-top clickable-img" alt="Screenshot 1" data-bs-toggle="modal" data-bs-target="#imgModal1">
+          </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card shadow-sm">
-          <img src="images/cafe2.jpeg" class="card-img-top clickable-img" 
-               alt="Screenshot 2" data-bs-toggle="modal" data-bs-target="#imgModal2">
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="images/cafe2.jpeg" class="card-img-top clickable-img" alt="Screenshot 2" data-bs-toggle="modal" data-bs-target="#imgModal2">
+          </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card shadow-sm">
-          <img src="images/cafe3.jpeg" class="card-img-top clickable-img" 
-               alt="Screenshot 3" data-bs-toggle="modal" data-bs-target="#imgModal3">
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="images/cafe3.jpeg" class="card-img-top clickable-img" alt="Screenshot 3" data-bs-toggle="modal" data-bs-target="#imgModal3">
+          </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card shadow-sm">
-          <img src="images/cafe4.jpeg" class="card-img-top clickable-img" 
-               alt="Screenshot 4" data-bs-toggle="modal" data-bs-target="#imgModal4">
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="images/cafe4.jpeg" class="card-img-top clickable-img" alt="Screenshot 4" data-bs-toggle="modal" data-bs-target="#imgModal4">
+          </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card shadow-sm">
-          <img src="images/cafe5.jpeg" class="card-img-top clickable-img" 
-               alt="Screenshot 5" data-bs-toggle="modal" data-bs-target="#imgModal5">
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="images/cafe5.jpeg" class="card-img-top clickable-img" alt="Screenshot 5" data-bs-toggle="modal" data-bs-target="#imgModal5">
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
- <!-- Features of Oracle APEX Reporting -->
+  <!-- Features of Oracle APEX Reporting -->
   <section id="features" style="padding:60px 0;">
     <div class="container">
       <div class="row text-center">
@@ -139,89 +155,76 @@
         <hr>
       </div>
       <div class="row" style="margin-top:30px;">
-
         <div class="col-md-4 col-sm-6 text-center wow fadeIn">
           <i class="fa fa-line-chart fa-4x" style="color:#007BFF; margin-bottom:15px;"></i>
           <h4>Interactive Dashboards</h4>
           <p>Visualize key metrics with charts, graphs, and drill-down reports.</p>
         </div>
-
         <div class="col-md-4 col-sm-6 text-center wow fadeIn" data-wow-delay="0.3s">
           <i class="fa fa-database fa-4x" style="color:#28A745; margin-bottom:15px;"></i>
           <h4>Real-time Data Access</h4>
           <p>Connect directly to Oracle EBS/Fusion for live insights without delays.</p>
         </div>
-
         <div class="col-md-4 col-sm-6 text-center wow fadeIn" data-wow-delay="0.6s">
           <i class="fa fa-cogs fa-4x" style="color:#FF5733; margin-bottom:15px;"></i>
           <h4>Custom Workflows</h4>
           <p>Build approval flows, exception handling, and alerts directly into reports.</p>
         </div>
-
         <div class="col-md-4 col-sm-6 text-center wow fadeIn">
           <i class="fa fa-mobile fa-4x" style="color:#FFC107; margin-bottom:15px;"></i>
           <h4>Mobile Ready</h4>
           <p>Dashboards adapt seamlessly to desktops, tablets, and mobile devices.</p>
         </div>
-
         <div class="col-md-4 col-sm-6 text-center wow fadeIn" data-wow-delay="0.3s">
           <i class="fa fa-shield fa-4x" style="color:#6C63FF; margin-bottom:15px;"></i>
           <h4>Secure Access</h4>
           <p>Role-based access ensures the right users see the right data.</p>
         </div>
-
         <div class="col-md-4 col-sm-6 text-center wow fadeIn" data-wow-delay="0.6s">
           <i class="fa fa-lightbulb-o fa-4x" style="color:#FF9800; margin-bottom:15px;"></i>
           <h4>AI & Predictive Insights</h4>
           <p>Enhance reporting with AI-driven forecasts and anomaly detection.</p>
         </div>
-
       </div>
     </div>
   </section>
 
   <!-- Image Modals -->
-<div class="modal fade" id="imgModal1" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content bg-transparent border-0">
-      <img src="images/cafe1.jpeg" class="img-fluid rounded shadow">
+  <div class="modal fade" id="imgModal1" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content bg-transparent border-0">
+        <img src="images/cafe1.jpeg" class="img-fluid rounded shadow">
+      </div>
     </div>
   </div>
-</div>
-
-<div class="modal fade" id="imgModal2" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content bg-transparent border-0">
-      <img src="images/cafe2.jpeg" class="img-fluid rounded shadow">
+  <div class="modal fade" id="imgModal2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content bg-transparent border-0">
+        <img src="images/cafe2.jpeg" class="img-fluid rounded shadow">
+      </div>
     </div>
   </div>
-</div>
-
-<div class="modal fade" id="imgModal3" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content bg-transparent border-0">
-      <img src="images/cafe3.jpeg" class="img-fluid rounded shadow">
+  <div class="modal fade" id="imgModal3" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content bg-transparent border-0">
+        <img src="images/cafe3.jpeg" class="img-fluid rounded shadow">
+      </div>
     </div>
   </div>
-</div>
-
-<div class="modal fade" id="imgModal4" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content bg-transparent border-0">
-      <img src="images/cafe4.jpeg" class="img-fluid rounded shadow">
+  <div class="modal fade" id="imgModal4" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content bg-transparent border-0">
+        <img src="images/cafe4.jpeg" class="img-fluid rounded shadow">
+      </div>
     </div>
   </div>
-</div>
-
-<div class="modal fade" id="imgModal5" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content bg-transparent border-0">
-      <img src="images/cafe5.jpeg" class="img-fluid rounded shadow">
+  <div class="modal fade" id="imgModal5" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content bg-transparent border-0">
+        <img src="images/cafe5.jpeg" class="img-fluid rounded shadow">
+      </div>
     </div>
   </div>
-</div>
-
-  
 
   <!-- Footer -->
   <footer class="bg-dark text-white text-center py-3">
@@ -231,6 +234,3 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-
-

@@ -9,38 +9,61 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
   <style>
-    /* Hover zoom effect */
-    .clickable-img {
-      cursor: pointer;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Dashboard Cards */
+    .dashboard-card {
+      position: relative;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 30px;
+      margin-bottom: 20px;
+      text-align: center;
+      transition: all 0.3s ease;
+      background: #fff;
+      min-height: 160px;
     }
-    .clickable-img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    .dashboard-card h4 {
+      margin-top: 15px;
     }
-
-    /* Modal zoom-in animation */
-    .modal.fade .modal-dialog {
-      transform: scale(0.7);
+    .dashboard-card .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.85);
+      color: #fff;
       opacity: 0;
-      transition: all 0.3s ease-in-out;
+      transition: opacity 0.3s ease;
+      border-radius: 8px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 14px;
+      line-height: 1.5;
     }
-    .modal.fade.show .modal-dialog {
-      transform: scale(1);
+    .dashboard-card:hover .overlay {
       opacity: 1;
     }
+    /* Default (desktop) */
+.logo-img {
+  height: 350px;
+  max-width: 100%;
+}
 
-    /* Dark background for better viewing */
-    .modal-content {
-      background: transparent;
-      border: none;
-    }
+/* Tablets */
+@media (max-width: 992px) {
+  .logo-img {
+    height: 200px;
+  }
+}
 
-    /* Next/Prev controls */
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      filter: invert(1);
-    }
+/* Mobile phones */
+@media (max-width: 576px) {
+  .logo-img {
+    height: 120px;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -264,5 +287,6 @@
   </script>
 </body>
 </html>
+
 
 

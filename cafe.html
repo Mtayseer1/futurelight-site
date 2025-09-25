@@ -1,276 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Café Management System - Future Lights Technologies</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+	<meta charset="utf-8">
+	<title>Future Lights</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="Future Lights, data migration, oracle apex, AI, cloud solutions, digital transformation">
+	<meta name="description" content="Future Lights empowers businesses with data migration, Oracle APEX development, AI solutions, and digital transformation services.">
+    <!-- 
+	Workforce CSS Template (Customized for Future Lights)
+	-->
+	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">		
+	<link rel="stylesheet" href="css/templatemo-style.css">
 
-  <style>
-    /* Navbar tweaks */
-    .navbar {
-      padding: 0.5rem 1rem;
-    }
-    .navbar-brand img {
-      height: 50px; /* Adjust logo size */
-      width: auto;
-    }
-    .navbar-nav .nav-link {
-      margin-left: 15px;
-      font-weight: 500;
-    }
-
-    /* Hover zoom effect for images */
-    .clickable-img {
-      cursor: pointer;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .clickable-img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    }
-
-    /* Modal zoom-in animation */
-    .modal.fade .modal-dialog {
-      transform: scale(0.7);
-      opacity: 0;
-      transition: all 0.3s ease-in-out;
-    }
-    .modal.fade.show .modal-dialog {
-      transform: scale(1);
-      opacity: 1;
-    }
-
-    /* Dark background for better viewing */
-    .modal-content {
-      background: transparent;
-      border: none;
-    }
-
-    /* Next/Prev controls */
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      filter: invert(1);
-    }
-  </style>
+	<style>
+		/* Fix navbar logo size across all pages */
+		.navbar-brand img {
+			height: 50px;
+			width: auto;
+		}
+	</style>
 </head>
-<body>
+<body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
+	<div class="preloader">
+		<div class="sk-spinner sk-spinner-rotating-plane"></div>
+	</div>
 
-  <!-- Navbar -->
-<nav class="navbar navbar-fixed-top custom-navbar" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="icon icon-bar"></span>
-        <span class="icon icon-bar"></span>
-        <span class="icon icon-bar"></span>
-      </button>
-      <a href="#home" class="navbar-brand">
-        <img src="images/Logo.png" alt="Future Lights Logo">
-      </a>
-    </div>
-    <div class="collapse navbar-collapse">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#home" class="smoothScroll">Home</a></li>
-        <li><a href="#service" class="smoothScroll">Services</a></li>
-        <li><a href="#portfolio" class="smoothScroll">Projects</a></li>
-        <li><a href="#products" class="smoothScroll">Products</a></li>
-        <li><a href="#contact" class="smoothScroll">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+	<!-- Navbar -->
+	<nav class="navbar navbar-fixed-top custom-navbar" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+				</button>
+				<a href="#home" class="navbar-brand" style="display:flex; align-items:center; padding:10px 0;">
+					<img src="/images/Logo.png" alt="Future Lights Logo">
+				</a>
+			</div>
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#home" class="smoothScroll">Home</a></li>
+					<li><a href="#service" class="smoothScroll">Services</a></li>
+					<li><a href="#portfolio" class="smoothScroll">Projects</a></li>
+					<li><a href="#products" class="smoothScroll">Products</a></li>
+					<li><a href="#contact" class="smoothScroll">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 
+	<!-- Hero Section -->
+	<section id="home">
+		<div class="overlay">
+			<div class="flexslider">
+				<ul class="slides">
+					<li>
+						<img src="images/1.png" alt="Data Migration Solutions">
+						<div class="slider-caption">
+							<div class="templatemo_homewrapper">
+								<h3 class="wow bounceIn">Empowering Businesses with</h3>
+								<h1 class="wow bounce">Data Migration & Oracle APEX</h1>
+								
+								<a href="#service" class="smoothScroll templatemo-slider-btn btn btn-default">Explore Our Services</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!-- End Hero -->
 
-  <!-- Hero -->
-  <header class="sub-hero text-center text-white bg-dark py-5" style="margin-top: 70px;">
-    <div class="container">
-      <h1 class="display-4">Café Management System</h1>
-      <p class="lead">A complete digital solution for cafés and restaurants</p>
-    </div>
-  </header>
+	<!-- Services -->
+	<section id="service">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center wow bounceIn">
+					<h2>Our Services</h2>
+					<hr>
+					<h4>Delivering solutions that power the future</h4>
+				</div>
 
-  <!-- Overview -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Overview</h2>
-      <p class="text-center">
-        Our Café Management System streamlines daily operations with digital efficiency. From 
-        QR code ordering and table reservations to waiter apps and kitchen dashboards, it’s designed 
-        to simplify café and restaurant management while delivering exceptional customer experiences.
-      </p>
-    </div>
-  </section>
+				<div class="col-md-6 col-sm-6">
+					<div class="media">
+						<div class="media-object media-left wow fadeIn" data-wow-delay="0.6s">
+							<i class="fa fa-database"></i>
+						</div>
+						<div class="media-body">
+							<h3 class="media-heading">Data Migration</h3>
+							<p>Seamless migration from legacy systems to modern platforms like Oracle Fusion and Creatio, ensuring data integrity and zero downtime.</p>
+						</div>
+					</div>
+				</div>
 
-  <!-- Features -->
-  <section class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center mb-4">Key Features</h2>
-      <div class="row text-center">
-        <div class="col-md-4">
-          <i class="fas fa-chair fa-3x mb-3 text-primary"></i>
-          <h5>Table Management</h5>
-          <p>Track table status in real time with reservation and availability updates.</p>
-        </div>
-        <div class="col-md-4">
-          <i class="fas fa-qrcode fa-3x mb-3 text-success"></i>
-          <h5>QR Code Ordering</h5>
-          <p>Customers can scan and order directly from their tables with zero wait time.</p>
-        </div>
-        <div class="col-md-4">
-          <i class="fas fa-bell fa-3x mb-3 text-warning"></i>
-          <h5>Waiter Notifications</h5>
-          <p>Waiters receive live alerts when customers need service, place orders, or request bills.</p>
-        </div>
-      </div>
-      <div class="row text-center mt-4">
-        <div class="col-md-4">
-          <i class="fas fa-utensils fa-3x mb-3 text-danger"></i>
-          <h5>Kitchen Dashboard</h5>
-          <p>Kitchen staff can view new orders instantly and mark them as completed.</p>
-        </div>
-        <div class="col-md-4">
-          <i class="fas fa-receipt fa-3x mb-3 text-info"></i>
-          <h5>Billing & Receipts</h5>
-          <p>Integrated billing with multiple payment methods and receipt printing.</p>
-        </div>
-        <div class="col-md-4">
-          <i class="fas fa-chart-line fa-3x mb-3 text-secondary"></i>
-          <h5>Reports & Analytics</h5>
-          <p>Powerful dashboards for sales, items, staff performance, and financial insights.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+				<div class="col-md-6 col-sm-6">
+					<div class="media">
+						<div class="media-object media-left wow fadeIn" data-wow-delay="0.6s">
+							<i class="fa fa-code"></i>
+						</div>
+						<div class="media-body">
+							<h3 class="media-heading">Oracle APEX Development</h3>
+							<p>Custom APEX applications designed to deliver powerful dashboards, reports, and workflows tailored for your business needs.</p>
+						</div>
+					</div>
+				</div>
 
-  <!-- Screenshots -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Screenshots</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card shadow-sm">
-            <img src="images/cafe1.jpeg" class="card-img-top clickable-img" alt="Screenshot 1" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="0">
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card shadow-sm">
-            <img src="images/cafe2.jpeg" class="card-img-top clickable-img" alt="Screenshot 2" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="1">
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card shadow-sm">
-            <img src="images/cafe3.jpeg" class="card-img-top clickable-img" alt="Screenshot 3" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="2">
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card shadow-sm">
-            <img src="images/cafe4.jpeg" class="card-img-top clickable-img" alt="Screenshot 4" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="3">
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card shadow-sm">
-            <img src="images/cafe5.jpeg" class="card-img-top clickable-img" alt="Screenshot 5" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-slide-to="4">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+			</div>
+		</div>
+	</section>
+	<!-- End Services -->
 
-  <!-- Gallery Modal with Carousel -->
-  <div class="modal fade" id="galleryModal" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered modal-xl">
-      <div class="modal-content">
-        <div id="carouselExample" class="carousel slide" data-bs-ride="false">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="images/cafe1.jpeg" class="d-block w-100 rounded shadow">
-            </div>
-            <div class="carousel-item">
-              <img src="images/cafe2.jpeg" class="d-block w-100 rounded shadow">
-            </div>
-            <div class="carousel-item">
-              <img src="images/cafe3.jpeg" class="d-block w-100 rounded shadow">
-            </div>
-            <div class="carousel-item">
-              <img src="images/cafe4.jpeg" class="d-block w-100 rounded shadow">
-            </div>
-            <div class="carousel-item">
-              <img src="images/cafe5.jpeg" class="d-block w-100 rounded shadow">
-            </div>
-          </div>
-          <!-- Controls -->
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
+	<!-- Portfolio (Projects) -->
+	<section id="portfolio">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="wow bounceIn">
+						<h2 class="wow bounceIn">Projects</h2>
+						<hr>
+						<h4>Some of our recent work</h4>
+					</div>
+					<div class="row">
 
-  <!-- Features of Oracle APEX Reporting -->
-  <section id="features" style="padding:60px 0;">
-    <div class="container">
-      <div class="row text-center">
-        <h2>What We Can Build on Oracle APEX</h2>
-        <hr>
-      </div>
-      <div class="row" style="margin-top:30px;">
-        <div class="col-md-4 col-sm-6 text-center">
-          <i class="fa fa-line-chart fa-4x" style="color:#007BFF; margin-bottom:15px;"></i>
-          <h4>Interactive Dashboards</h4>
-          <p>Visualize key metrics with charts, graphs, and drill-down reports.</p>
-        </div>
-        <div class="col-md-4 col-sm-6 text-center">
-          <i class="fa fa-database fa-4x" style="color:#28A745; margin-bottom:15px;"></i>
-          <h4>Real-time Data Access</h4>
-          <p>Connect directly to Oracle EBS/Fusion for live insights without delays.</p>
-        </div>
-        <div class="col-md-4 col-sm-6 text-center">
-          <i class="fa fa-cogs fa-4x" style="color:#FF5733; margin-bottom:15px;"></i>
-          <h4>Custom Workflows</h4>
-          <p>Build approval flows, exception handling, and alerts directly into reports.</p>
-        </div>
-        <div class="col-md-4 col-sm-6 text-center">
-          <i class="fa fa-mobile fa-4x" style="color:#FFC107; margin-bottom:15px;"></i>
-          <h4>Mobile Ready</h4>
-          <p>Dashboards adapt seamlessly to desktops, tablets, and mobile devices.</p>
-        </div>
-        <div class="col-md-4 col-sm-6 text-center">
-          <i class="fa fa-shield fa-4x" style="color:#6C63FF; margin-bottom:15px;"></i>
-          <h4>Secure Access</h4>
-          <p>Role-based access ensures the right users see the right data.</p>
-        </div>
-        <div class="col-md-4 col-sm-6 text-center">
-          <i class="fa fa-lightbulb-o fa-4x" style="color:#FF9800; margin-bottom:15px;"></i>
-          <h4>AI & Predictive Insights</h4>
-          <p>Enhance reporting with AI-driven forecasts and anomaly detection.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+						<!-- Project 1 -->
+						<div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+						  <div class="card text-center" style="border:1px solid #ddd; border-radius:8px; padding:30px; margin-bottom:20px;">
+						    <i class="fa fa-bar-chart fa-4x" style="color:#007BFF; margin-bottom:20px;"></i>
+						    <h3>Oracle EBS Reporting on Oracle APEX</h3>
+						    <p>Advanced reporting tools that transform Oracle EBS data into actionable insights.</p>
+						    <a href="project1.html" class="btn btn-primary" 
+						   style="color:#fff; background-color:#007BFF; border:none; padding:10px 20px; border-radius:4px;">
+						   View Project
+						</a>
+						  </div>
+						</div>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
-    <p>© 2025 Future Lights Technologies. All Rights Reserved.</p>
-  </footer>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Projects -->
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    // Sync clicked image with carousel
-    const galleryModal = document.getElementById('galleryModal');
-    galleryModal.addEventListener('show.bs.modal', function (event) {
-      const img = event.relatedTarget;
-      const slideTo = img.getAttribute('data-bs-slide-to');
-      const carousel = bootstrap.Carousel.getOrCreateInstance(document.querySelector('#carouselExample'));
-      carousel.to(slideTo);
-    });
-  </script>
+	<!-- Products -->
+	<section id="products">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="wow bounceIn">
+						<h2 class="wow bounceIn">Products</h2>
+						<hr>
+						<h4>Solutions we’ve built for businesses</h4>
+					</div>
+					<div class="row">
+
+						<!-- Product 1 -->
+						<div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+						  <div class="card text-center" style="border:1px solid #ddd; border-radius:8px; padding:30px; margin-bottom:20px;">
+						    <i class="fa fa-coffee fa-4x" style="color:#FF5733; margin-bottom:20px;"></i>
+						    <h3>Powerful Café Management System</h3>
+						    <p>An all-in-one café system with table management, ordering, payments, and reporting.</p>
+						    <a href="cafe.html" class="btn btn-primary">View Product</a>
+						  </div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Products -->
+
+	<!-- Contact -->
+	<section id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="wow bounceIn">
+						<h2 class="wow bounceIn">Contact</h2>
+						<hr>
+						<h4>Let’s build the future together</h4>
+					</div>					
+					<form action="#" method="post" role="form">
+						<div class="col-md-4 col-sm-4 wow fadeIn" data-wow-delay="0.3s">
+							<input type="text" placeholder="Name" class="form-control">
+						</div>
+						<div class="col-md-4 col-sm-4 wow fadeIn" data-wow-delay="0.3s">
+							<input type="email" placeholder="Email" class="form-control">
+						</div>
+						<div class="col-md-4 col-sm-4 wow fadeIn" data-wow-delay="0.3s">
+							<input type="text" placeholder="Subject" class="form-control">
+						</div>
+						<div class="col-md-12 col-sm-12 wow fadeIn" data-wow-delay="0.9s">
+							<textarea class="form-control" rows="5" placeholder="Message"></textarea>
+						</div>
+						<div class="col-md-offset-3 col-sm-offset-3 col-sm-6 col-md-6 wow fadeIn" data-wow-delay="0.3s">
+							<input type="submit" value="Send Message" class="form-control">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Contact -->
+
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<ul class="social-icon wow fadeIn" data-wow-delay="0.3s">
+						<li><a href="#" class="fa fa-facebook"></a></li>
+						<li><a href="#" class="fa fa-twitter"></a></li>
+						<li><a href="#" class="fa fa-linkedin"></a></li>
+					</ul>
+					<p class="wow bounceIn">Copyright &copy; 2025 <span>Future Lights</span>. All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.flexslider.js"></script>
+	<script src="js/isotope.js"></script>
+	<script src="js/imagesloaded.min.js"></script>
+	<script src="js/smoothscroll.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/custom.js"></script>
 </body>
 </html>
-

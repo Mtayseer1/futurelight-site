@@ -13,6 +13,53 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">		
 	<link rel="stylesheet" href="css/templatemo-style.css">
+	<style>
+		/* Hero Section Styling */
+		.hero {
+			position: relative;
+			background: url('images/cafe_hero.png') no-repeat center center;
+			background-size: cover;
+			height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			color: white;
+		}
+		.hero-overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0,0,0,0.5);
+		}
+		.hero-content {
+			position: relative;
+			z-index: 2;
+		}
+		.hero h1 {
+			font-size: 48px;
+			font-weight: 700;
+			margin-bottom: 20px;
+		}
+		.hero p {
+			font-size: 20px;
+			margin-bottom: 30px;
+		}
+		.hero .btn {
+			background: #007bff;
+			color: white;
+			padding: 12px 30px;
+			border-radius: 30px;
+			font-size: 16px;
+			text-transform: uppercase;
+			transition: 0.3s;
+		}
+		.hero .btn:hover {
+			background: #0056b3;
+		}
+	</style>
 </head>
 <body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
 	<div class="preloader">
@@ -45,6 +92,15 @@
 		</div>
 	</nav>
 
+	<!-- Hero Section -->
+	<section class="hero" id="home">
+		<div class="hero-overlay"></div>
+		<div class="hero-content">
+			<h1 class="wow fadeInUp" data-wow-delay="0.3s">Smart Café Management System</h1>
+			<p class="wow fadeInUp" data-wow-delay="0.5s">Simplify operations, delight customers, and grow your business.</p>
+			<a href="#features" class="btn wow fadeInUp" data-wow-delay="0.7s">Explore Features</a>
+		</div>
+	</section>
 
 	<!-- Features Section -->
 	<section id="features" class="section-padding" style="padding-top:120px; background-color:#f8f9fa;">
@@ -54,7 +110,7 @@
 				<p class="wow fadeInUp" data-wow-delay="0.5s">A complete end-to-end solution for cafés, combining customer experience with operational efficiency.</p>
 			</div>
 			<div class="row mt-5">
-				
+				<!-- Feature cards (unchanged) -->
 				<div class="col-md-6 col-lg-4 mb-4 wow fadeInUp" data-wow-delay="0.2s">
 					<div class="card h-100 shadow-sm">
 						<div class="card-body text-center">
@@ -158,7 +214,6 @@
 			</div>
 		</div>
 	</section>
-
 
 	<!-- Footer -->
 	<footer>

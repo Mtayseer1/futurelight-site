@@ -7,6 +7,7 @@
   <meta name="keywords" content="Oracle EBS, Oracle APEX, reporting, dashboards, Future Lights">
   <meta name="description" content="Oracle EBS Reporting on Oracle APEX by Future Lights. Explore dashboards for Purchase Orders, Trial Balance, Payment Registers, and more.">
 
+  <!-- Fonts & Styles -->
   <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -49,31 +50,37 @@
     .dashboard-card:hover .overlay {
       opacity: 1;
     }
-    /* Default (desktop) */
-.logo-img {
-  height: 350px;
-  max-width: 100%;
-}
 
-/* Tablets */
-@media (max-width: 992px) {
-  .logo-img {
-    height: 200px;
-  }
-}
+    /* Hero */
+    .hero-section {
+      position: relative;
+      background: url('images/reporting_hero.png') no-repeat center center/cover;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+    }
+    .hero-overlay {
+      background: rgba(0, 0, 0, 0.65);
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
 
-/* Mobile phones */
-@media (max-width: 576px) {
-  .logo-img {
-    height: 120px;
-  }
-}
-
+    /* Logo scaling */
+    .logo-img { height: 350px; max-width: 100%; }
+    @media (max-width: 992px) { .logo-img { height: 200px; } }
+    @media (max-width: 576px) { .logo-img { height: 120px; } }
   </style>
 </head>
-<body>
+<body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
 
-  <!-- Navbar (same as index.html) -->
+  <!-- Navbar -->
   <nav class="navbar navbar-fixed-top custom-navbar" role="navigation">
     <div class="container">
       <div class="navbar-header">
@@ -82,10 +89,9 @@
           <span class="icon icon-bar"></span>
           <span class="icon icon-bar"></span>
         </button>
-       <a href="index.html#home" class="navbar-brand" style="display:flex; align-items:center; padding:10px 0;">
-  <img src="images/Logo.png" alt="Future Lights Logo" class="logo-img" style="margin-right:10px;">
-</a>
-
+        <a href="index.html#home" class="navbar-brand" style="display:flex; align-items:center; padding:10px 0;">
+          <img src="images/Logo.png" alt="Future Lights Logo" class="logo-img" style="margin-right:10px;">
+        </a>
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
@@ -93,60 +99,57 @@
           <li><a href="index.html#service">Services</a></li>
           <li><a href="index.html#portfolio">Projects</a></li>
           <li><a href="index.html#products">Products</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- Hero -->
-  <section style="background:#111; color:#fff; padding:120px 0; text-align:center;">
-    <div class="container">
-      <h1>Oracle EBS Reporting on Oracle APEX</h1>
-      <p>Turning ERP data into actionable dashboards and insights.</p>
+  <section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1 class="wow fadeInUp" data-wow-delay="0.3s">Oracle EBS Reporting on Oracle APEX</h1>
+      <p class="wow fadeInUp" data-wow-delay="0.5s">Turning ERP data into actionable dashboards and insights.</p>
     </div>
   </section>
 
   <!-- PO Header Showcase -->
-  <!-- PO Header Showcase -->
-<section style="padding:60px 0;">
-  <div class="container">
-    <div class="row text-center">
-      <h2>PO Header Dashboard</h2>
-      <hr>
-      <p>
-        The <strong>PO Header dashboard</strong> is a cornerstone of our Oracle APEX reporting solution.  
-        It empowers businesses to gain **full visibility into their procurement cycle**, from purchase order approvals,  
-        supplier performance, and spending trends to payment details and operating unit breakdowns.
-      </p>
-      <p>
-        Our solution transformed raw Oracle EBS data into **interactive, dynamic dashboards** that provide decision-makers  
-        with **real-time insights**, helping organizations reduce costs, negotiate better with vendors,  
-        and achieve complete transparency in their financial and supply chain operations.
-      </p>
-    </div>
+  <section style="padding:60px 0;">
+    <div class="container">
+      <div class="row text-center">
+        <h2>PO Header Dashboard</h2>
+        <hr>
+        <p>
+          The <strong>PO Header dashboard</strong> is a cornerstone of our Oracle APEX reporting solution.  
+          It empowers businesses to gain full visibility into their procurement cycle, from purchase order approvals,  
+          supplier performance, and spending trends to payment details and operating unit breakdowns.
+        </p>
+        <p>
+          Our solution transformed raw Oracle EBS data into interactive, dynamic dashboards that provide decision-makers  
+          with real-time insights, helping organizations reduce costs, negotiate better with vendors,  
+          and achieve complete transparency in their financial and supply chain operations.
+        </p>
+      </div>
 
-    <!-- Images stacked vertically -->
-    <div class="row" style="margin-top:40px; text-align:center;">
-      <div class="col-md-12">
-        <img src="images/reporting1.jpeg" class="img-responsive" alt="PO Header Sample 1" style="margin-bottom:40px;">
-        <img src="images/reportiing2.jpeg" class="img-responsive" alt="PO Header Sample 2" style="margin-bottom:40px;">
-        <img src="images/reporting3.jpeg" class="img-responsive" alt="PO Header Sample 3" style="margin-bottom:40px;">
-        <img src="images/reporting4.jpeg" class="img-responsive" alt="PO Header Sample 4" style="margin-bottom:40px;">
+      <div class="row" style="margin-top:40px; text-align:center;">
+        <div class="col-md-12">
+          <img src="images/reporting1.jpeg" class="img-responsive" alt="PO Header Sample 1" style="margin-bottom:40px;">
+          <img src="images/reportiing2.jpeg" class="img-responsive" alt="PO Header Sample 2" style="margin-bottom:40px;">
+          <img src="images/reporting3.jpeg" class="img-responsive" alt="PO Header Sample 3" style="margin-bottom:40px;">
+          <img src="images/reporting4.jpeg" class="img-responsive" alt="PO Header Sample 4" style="margin-bottom:40px;">
+        </div>
+      </div>
+
+      <div class="row text-center" style="margin-top:30px;">
+        <p>
+          With these dashboards, our clients gained the ability to track procurement efficiency,  
+          monitor approval bottlenecks, and measure spending by supplier and currency.  
+          By leveraging Oracle APEX, we delivered a low-cost, high-impact reporting system  
+          that scales easily across departments and operating units.
+        </p>
       </div>
     </div>
-
-    <div class="row text-center" style="margin-top:30px;">
-      <p>
-        With these dashboards, our clients gained the ability to track **procurement efficiency**,  
-        monitor **approval bottlenecks**, and measure **spending by supplier and currency**.  
-        By leveraging Oracle APEX, we delivered a **low-cost, high-impact reporting system**  
-        that scales easily across departments and operating units.
-      </p>
-    </div>
-  </div>
-</section>
-
+  </section>
 
   <!-- Other Dashboards -->
   <section style="padding:60px 0; background:#f9f9f9;">
@@ -156,61 +159,35 @@
         <hr>
         <p>Hover over each card to see what insights the dashboard provides.</p>
       </div>
-
       <div class="row" style="margin-top:30px;">
-
-        <!-- 1 -->
         <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>Sales Order Analysis</h4><div class="overlay">Monitor fulfillment rates, discrepancies, and demand patterns.</div></div></div>
-        <!-- 2 -->
         <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>Order Line Summary</h4><div class="overlay">Detailed breakdown of sales orders at the line-item level.</div></div></div>
-        <!-- 3 -->
         <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>PO Lines</h4><div class="overlay">Track purchase order lines, quantities, and delivery status.</div></div></div>
-        <!-- 4 -->
         <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>Sales Order Lines Analysis</h4><div class="overlay">Analyze sales orders line by line with performance metrics.</div></div></div>
-        <!-- 5 -->
         <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>po_transactions</h4><div class="overlay">Transactions view showing purchase order activities.</div></div></div>
-        <!-- 6 -->
         <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>po_dist</h4><div class="overlay">Distribution details of purchase orders across accounts.</div></div></div>
-        <!-- 7 -->
         <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>Sales Invoice Analysis</h4><div class="overlay">Review invoices, payment delays, and revenue recognition.</div></div></div>
-        <!-- 8 -->
         <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>PO Ship Lines</h4><div class="overlay">Monitor shipping details and order fulfillment timelines.</div></div></div>
-        <!-- 9 -->
         <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>po ship header</h4><div class="overlay">High-level overview of shipment headers for POs.</div></div></div>
-        <!-- 10 -->
         <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>Sales Invoice Lines Analysis</h4><div class="overlay">Drill down into invoice lines and customer billing details.</div></div></div>
-        <!-- 11 -->
         <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>KPI – Sales Invoice Analysis</h4><div class="overlay">Key metrics for invoice performance and efficiency.</div></div></div>
-        <!-- 12 -->
         <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>Sales Item Analysis</h4><div class="overlay">Track sales performance by product and item category.</div></div></div>
-        <!-- 13 -->
         <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>SHIP_DIST_TRANS</h4><div class="overlay">Distribution of shipments and transfer transactions.</div></div></div>
-        <!-- 14 -->
         <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>AR Amount by Class Code</h4><div class="overlay">Accounts Receivable categorized by class codes.</div></div></div>
-        <!-- 15 -->
         <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>Journal_Lines</h4><div class="overlay">General ledger journal entries with full details.</div></div></div>
-        <!-- 16 -->
         <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>JournalLines</h4><div class="overlay">Alternative journal line dashboard for validation.</div></div></div>
-        <!-- 17 -->
         <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>Trial Balance</h4><div class="overlay">Summarize balances across ledgers for reconciliation.</div></div></div>
-        <!-- 18 -->
         <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>Payment Register</h4><div class="overlay">Track supplier payments by method, date, and currency.</div></div></div>
-        <!-- 19 -->
         <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>Assets Register</h4><div class="overlay">Track fixed assets, acquisitions, and depreciation.</div></div></div>
-        <!-- 20 -->
         <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>Customers Analysis</h4><div class="overlay">Insights into customer segments and revenue trends.</div></div></div>
-        <!-- 21 -->
         <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>Payment Method Distribution</h4><div class="overlay">Breakdown of transactions across payment methods.</div></div></div>
-        <!-- 22 -->
         <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>Invoice Listing</h4><div class="overlay">Full listing of invoices for audit and reporting.</div></div></div>
-        <!-- 23 -->
         <div class="col-md-4 col-sm-6"><div class="dashboard-card"><h4>Line Details</h4><div class="overlay">Detailed line-level drilldowns for transactions.</div></div></div>
-
       </div>
     </div>
   </section>
 
-  <!-- Features of Oracle APEX Reporting -->
+  <!-- Features -->
   <section id="features" style="padding:60px 0;">
     <div class="container">
       <div class="row text-center">
@@ -218,75 +195,65 @@
         <hr>
       </div>
       <div class="row" style="margin-top:30px;">
-
         <div class="col-md-4 col-sm-6 text-center wow fadeIn">
           <i class="fa fa-line-chart fa-4x" style="color:#007BFF; margin-bottom:15px;"></i>
           <h4>Interactive Dashboards</h4>
           <p>Visualize key metrics with charts, graphs, and drill-down reports.</p>
         </div>
-
         <div class="col-md-4 col-sm-6 text-center wow fadeIn" data-wow-delay="0.3s">
           <i class="fa fa-database fa-4x" style="color:#28A745; margin-bottom:15px;"></i>
           <h4>Real-time Data Access</h4>
           <p>Connect directly to Oracle EBS/Fusion for live insights without delays.</p>
         </div>
-
         <div class="col-md-4 col-sm-6 text-center wow fadeIn" data-wow-delay="0.6s">
           <i class="fa fa-cogs fa-4x" style="color:#FF5733; margin-bottom:15px;"></i>
           <h4>Custom Workflows</h4>
           <p>Build approval flows, exception handling, and alerts directly into reports.</p>
         </div>
-
         <div class="col-md-4 col-sm-6 text-center wow fadeIn">
           <i class="fa fa-mobile fa-4x" style="color:#FFC107; margin-bottom:15px;"></i>
           <h4>Mobile Ready</h4>
           <p>Dashboards adapt seamlessly to desktops, tablets, and mobile devices.</p>
         </div>
-
         <div class="col-md-4 col-sm-6 text-center wow fadeIn" data-wow-delay="0.3s">
           <i class="fa fa-shield fa-4x" style="color:#6C63FF; margin-bottom:15px;"></i>
           <h4>Secure Access</h4>
           <p>Role-based access ensures the right users see the right data.</p>
         </div>
-
         <div class="col-md-4 col-sm-6 text-center wow fadeIn" data-wow-delay="0.6s">
           <i class="fa fa-lightbulb-o fa-4x" style="color:#FF9800; margin-bottom:15px;"></i>
           <h4>AI & Predictive Insights</h4>
           <p>Enhance reporting with AI-driven forecasts and anomaly detection.</p>
         </div>
-
       </div>
     </div>
   </section>
 
-<!-- Footer -->
-<footer style="background:#111; color:#ddd; padding:30px 0;">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 text-center">
-				<ul class="social-icon wow fadeIn" data-wow-delay="0.3s" style="list-style:none; padding:0; margin:0 0 15px 0;">
-					<li style="display:inline-block; margin:0 10px;">
-						<a href="https://www.linkedin.com/company/future-lights-technologies" target="_blank" class="fa fa-linkedin" style="color:#0e76a8; font-size:24px;"></a>
-					</li>
-					<li style="display:inline-block; margin:0 10px;">
-						<a href="mailto:info@futurelights.tech" class="fa fa-envelope" style="color:#ddd; font-size:24px;"></a>
-					</li>
-				</ul>
-				<p class="wow bounceIn" style="margin:0; font-size:14px;">
-					Contact us: <a href="mailto:info@futurelights.tech" style="color:#fff; text-decoration:none;">info@futurelights.tech</a>
-				</p>
-				<p style="margin-top:10px; font-size:14px;">Copyright &copy; 2025 <span>Future Lights</span>. All Rights Reserved.</p>
-			</div>
-		</div>
-	</div>
-</footer>
+  <!-- Footer -->
+  <footer style="background:#111; color:#ddd; padding:30px 0;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <ul class="social-icon wow fadeIn" data-wow-delay="0.3s" style="list-style:none; padding:0; margin:0 0 15px 0;">
+            <li style="display:inline-block; margin:0 10px;">
+              <a href="https://www.linkedin.com/company/future-lights-technologies" target="_blank" class="fa fa-linkedin" style="color:#0e76a8; font-size:24px;"></a>
+            </li>
+            <li style="display:inline-block; margin:0 10px;">
+              <a href="mailto:info@futurelights.tech" class="fa fa-envelope" style="color:#ddd; font-size:24px;"></a>
+            </li>
+          </ul>
+          <p class="wow bounceIn" style="margin:0; font-size:14px;">
+            Contact us: <a href="mailto:info@futurelights.tech" style="color:#fff; text-decoration:none;">info@futurelights.tech</a>
+          </p>
+          <p style="margin-top:10px; font-size:14px;">Copyright &copy; 2025 <span>Future Lights</span>. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
+  <!-- Scripts -->
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/wow.min.js"></script>
 </body>
 </html>
-
-
-
-

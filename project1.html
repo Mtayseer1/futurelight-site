@@ -15,6 +15,24 @@
   <link rel="stylesheet" href="css/templatemo-style.css">
 
   <style>
+    /* Navbar default (transparent) */
+    .custom-navbar {
+      background: transparent;
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+    }
+    .custom-navbar .nav > li > a {
+      color: #fff;
+      transition: color 0.3s ease;
+    }
+    /* Navbar when scrolled */
+    .custom-navbar.scrolled {
+      background: #fff !important;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .custom-navbar.scrolled .nav > li > a {
+      color: #333 !important;
+    }
+
     /* Dashboard Cards */
     .dashboard-card {
       position: relative;
@@ -90,7 +108,7 @@
 				<span class="icon icon-bar"></span>
 			</button>
 			<a href="https://futurelights.tech/" class="navbar-brand" style="display:flex; align-items:center; padding:10px 0;">
-				<img src="images/Logo.png" alt="Future Lights Logo" style="height:350px; margin-right:10px;">
+				<img src="images/Logo.png" alt="Future Lights Logo" class="logo-img" style="margin-right:10px;">
 			</a>
 		</div>
 		<div class="collapse navbar-collapse">
@@ -255,6 +273,16 @@
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/wow.min.js"></script>
+
+  <!-- Navbar scroll effect -->
+  <script>
+    $(window).on("scroll", function () {
+      if ($(this).scrollTop() > 50) {
+        $(".custom-navbar").addClass("scrolled");
+      } else {
+        $(".custom-navbar").removeClass("scrolled");
+      }
+    });
+  </script>
 </body>
 </html>
-

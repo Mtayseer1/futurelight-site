@@ -21,6 +21,25 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
 
   <style>
+    /* Transparent navbar at top */
+.custom-navbar {
+  background: transparent;
+  border: none;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.custom-navbar.scrolled {
+  background: rgba(255,255,255,0.95);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.custom-navbar .navbar-nav > li > a {
+  color: #fff; /* white when transparent */
+  transition: color 0.3s;
+}
+.custom-navbar.scrolled .navbar-nav > li > a {
+  color: #333; /* dark when scrolled */
+}
+
     /* Navbar */
     .navbar-brand img {
       height: 60px;
@@ -310,6 +329,13 @@
   <script src="js/jquery.flexslider.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script>
+      $(window).scroll(function() {
+    if ($(this).scrollTop() > 50) {
+      $('.custom-navbar').addClass('scrolled');
+    } else {
+      $('.custom-navbar').removeClass('scrolled');
+    }
+  });
     // Smooth scrolling for anchor links
   $(document).on('click', 'a.smoothScroll', function(event) {
     event.preventDefault();
@@ -355,6 +381,7 @@
   </script>
 </body>
 </html>
+
 
 
 

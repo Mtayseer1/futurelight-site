@@ -17,24 +17,22 @@
 
   <style>
       /* Force equal height cards */
-  #experience .card.service-box {
+    #experience .card.service-box {
     background:#fff;
     border-radius:12px;
-    padding:30px;
-    margin-bottom:30px;
+    padding:40px;
     box-shadow:0 4px 12px rgba(0,0,0,0.08);
     transition:transform 0.3s;
-    display:flex;
-    flex-direction:column;
-    justify-content:flex-start;
-    height:100%;
   }
   #experience .card.service-box:hover {
     transform: translateY(-5px);
     box-shadow:0 6px 18px rgba(0,0,0,0.12);
   }
-  .row.d-flex.flex-wrap.align-items-stretch > [class*='col-'] {
-    display:flex;
+  #experienceCarousel .carousel-control {
+    background:none;
+    color:#000;
+    font-size:30px;
+    top:40%;
   }
     /* Service Box Styling */
     .service-box {
@@ -221,63 +219,70 @@
   <!-- End About Us -->
 
 <!-- Our Experience -->
+<!-- Our Experience Slider -->
 <section id="experience" style="padding:80px 0; background:#ffffff;">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 text-center wow bounceIn">
-        <h2>Our Experience</h2>
-        <hr>
-        <h4>Our team has participated in the following projects</h4>
-      </div>
-    </div>
+  <div class="container text-center">
+    <h2 class="wow bounceIn">Our Experience</h2>
+    <hr>
+    <h4>Our team has participated in the following projects</h4>
 
-    <div class="row d-flex flex-wrap align-items-stretch">
+    <div id="experienceCarousel" class="carousel slide" data-ride="carousel" data-interval="10000">
+      <div class="carousel-inner">
 
-      <!-- StateStreet -->
-      <div class="col-md-6 col-sm-6 d-flex">
-        <div class="card service-box text-center wow fadeInUp" data-wow-delay="0.2s" style="flex:1;">
-          <img src="images/ss.png" alt="StateStreet Logo" style="height:60px; margin-bottom:15px;">
-          <h3>StateStreet Australia Migration</h3>
-          <p>Participated in migration from Phoenix System to Hitrust System, covering large-scale financial data including profiles, agents, portfolios, transactions, and distributions.</p>
+        <!-- Slide 1 -->
+        <div class="item active">
+          <div class="card service-box" style="max-width:800px; margin:0 auto;">
+            <img src="images/ss.png" alt="StateStreet Logo" style="height:80px; margin-bottom:20px;">
+            <h3>StateStreet Australia Migration</h3>
+            <p>Participated in migration from Phoenix System to Hitrust System, covering large-scale financial data including profiles, agents, portfolios, transactions, and distributions.</p>
+          </div>
         </div>
-      </div>
 
-      <!-- Nova Systems -->
-      <div class="col-md-6 col-sm-6 d-flex">
-        <div class="card service-box text-center wow fadeInUp" data-wow-delay="0.3s" style="flex:1;">
-          <img src="images/nova.png" alt="Nova Systems Logo" style="height:60px; margin-bottom:15px;">
-          <h3>Nova Systems Australia</h3>
-          <p>Contributed to data migration from OpenAir System to Oracle Fusion Projects and Contracts.</p>
+        <!-- Slide 2 -->
+        <div class="item">
+          <div class="card service-box" style="max-width:800px; margin:0 auto;">
+            <img src="images/nova.png" alt="Nova Systems Logo" style="height:80px; margin-bottom:20px;">
+            <h3>Nova Systems Australia</h3>
+            <p>Contributed to data migration from OpenAir System to Oracle Fusion Projects and Contracts.</p>
+          </div>
         </div>
-      </div>
 
-      <!-- API Group -->
-      <div class="col-md-6 col-sm-6 d-flex">
-        <div class="card service-box text-center wow fadeInUp" data-wow-delay="0.4s" style="flex:1;">
-          <img src="images/api.png" alt="API Group Logo" style="height:60px; margin-bottom:15px;">
-          <h3>API Group USA (S&amp;P MidCap 400)</h3>
-          <p>Supported migration from Dynamics AX to Oracle Fusion, including financials, procurement, projects, HCM, and SCM modules.</p>
+        <!-- Slide 3 -->
+        <div class="item">
+          <div class="card service-box" style="max-width:800px; margin:0 auto;">
+            <img src="images/api.png" alt="API Group Logo" style="height:80px; margin-bottom:20px;">
+            <h3>API Group USA (S&amp;P MidCap 400)</h3>
+            <p>Supported migration from Dynamics AX to Oracle Fusion, including financials, procurement, projects, HCM, and SCM modules.</p>
+          </div>
         </div>
-      </div>
 
-      <!-- Oracle EBS Archiving -->
-      <div class="col-md-6 col-sm-6 d-flex">
-        <div class="card service-box text-center wow fadeInUp" data-wow-delay="0.5s" style="flex:1;">
-          <i class="fa fa-archive fa-3x" style="color:#dc3545; margin-bottom:15px;"></i>
-          <h3>Oracle EBS Legacy Archiving</h3>
-          <p>Worked on migrating Oracle EBS into a modern Oracle APEX Archiving & Reporting App with dashboards, KPIs, and audit trails.</p>
+        <!-- Slide 4 -->
+        <div class="item">
+          <div class="card service-box" style="max-width:800px; margin:0 auto;">
+            <i class="fa fa-archive fa-3x" style="color:#dc3545; margin-bottom:20px;"></i>
+            <h3>Oracle EBS Legacy Archiving</h3>
+            <p>Worked on migrating Oracle EBS into a modern Oracle APEX Archiving & Reporting App with dashboards, KPIs, and audit trails.</p>
+          </div>
         </div>
-      </div>
 
-      <!-- NHC Migration -->
-      <div class="col-md-6 col-sm-6 d-flex">
-        <div class="card service-box text-center wow fadeInUp" data-wow-delay="0.6s" style="flex:1;">
-          <img src="images/NHC.png" alt="NHC Logo" style="height:60px; margin-bottom:15px;">
-          <h3>NHC Migration</h3>
-          <p>Participated in migrations from multiple systems including Dynamics 365 and custom applications into Creatio, covering accounts, contacts, contracts, cases, and more.</p>
+        <!-- Slide 5 -->
+        <div class="item">
+          <div class="card service-box" style="max-width:800px; margin:0 auto;">
+            <img src="images/NHC.png" alt="NHC Logo" style="height:80px; margin-bottom:20px;">
+            <h3>NHC Migration</h3>
+            <p>Participated in migrations from multiple systems including Dynamics 365 and custom applications into Creatio, covering accounts, contacts, contracts, cases, and more.</p>
+          </div>
         </div>
+
       </div>
 
+      <!-- Controls -->
+      <a class="left carousel-control" href="#experienceCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      </a>
+      <a class="right carousel-control" href="#experienceCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      </a>
     </div>
   </div>
 </section>
@@ -318,6 +323,7 @@
   <script src="js/custom.js"></script>
 </body>
 </html>
+
 
 
 

@@ -14,6 +14,24 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/templatemo-style.css">
+  <style>
+  .service-box {
+    background:#fff;
+    border-radius:12px;
+    padding:30px;
+    margin-bottom:30px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    transition:transform 0.3s;
+    flex:1; /* Makes all boxes equal height */
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+  }
+  .service-box:hover {
+    transform: translateY(-5px);
+    box-shadow:0 6px 18px rgba(0,0,0,0.12);
+  }
+</style>
 </head>
 <body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
   <div class="preloader">
@@ -71,66 +89,65 @@
       <div class="col-md-12 text-center wow bounceIn">
         <h2>Our Services</h2>
         <hr>
-        <h4>Comprehensive Data Migration Solutions</h4>
+        <h4>End-to-end Data Migration Solutions for Any System</h4>
       </div>
     </div>
 
-    <div class="row">
+    <div class="row d-flex flex-wrap">
 
-      <!-- Service Box -->
-      <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
-        <div class="card text-center" style="background:#fff; border-radius:12px; padding:30px; margin-bottom:30px; box-shadow:0 4px 12px rgba(0,0,0,0.08); transition:transform 0.3s;">
+      <!-- Legacy to Cloud Migration -->
+      <div class="col-md-4 col-sm-6 d-flex">
+        <div class="card text-center service-box wow fadeInUp" data-wow-delay="0.2s">
           <i class="fa fa-cloud-upload fa-3x" style="color:#007BFF; margin-bottom:15px;"></i>
           <h3>Legacy to Cloud Migration</h3>
-          <p>Migrating from Oracle EBS, Dynamics AX/365, or other legacy systems into Oracle Fusion Cloud and Creatio with speed, accuracy, and minimal downtime.</p>
+          <p>Migrate from <strong>any system to any system</strong> — from Oracle EBS, Dynamics AX/365, SAP, PeopleSoft, and custom applications to modern cloud platforms such as Oracle Fusion, Creatio, and beyond.</p>
         </div>
       </div>
 
-      <!-- Service Box -->
-      <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-        <div class="card text-center" style="background:#fff; border-radius:12px; padding:30px; margin-bottom:30px; box-shadow:0 4px 12px rgba(0,0,0,0.08); transition:transform 0.3s;">
+      <!-- Data Validation & Cleansing -->
+      <div class="col-md-4 col-sm-6 d-flex">
+        <div class="card text-center service-box wow fadeInUp" data-wow-delay="0.3s">
           <i class="fa fa-check-circle fa-3x" style="color:#28a745; margin-bottom:15px;"></i>
           <h3>Data Validation & Cleansing</h3>
-          <p>Profiling, transformation, and validation to ensure only clean, accurate, and compliant data reaches your target system.</p>
+          <p>Comprehensive data profiling, transformation, and validation to ensure only clean, accurate, and compliant data is migrated to your target environment.</p>
         </div>
       </div>
 
-      <!-- Service Box -->
-      <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
-        <div class="card text-center" style="background:#fff; border-radius:12px; padding:30px; margin-bottom:30px; box-shadow:0 4px 12px rgba(0,0,0,0.08); transition:transform 0.3s;">
+      <!-- Data Mapping & Transformation -->
+      <div class="col-md-4 col-sm-6 d-flex">
+        <div class="card text-center service-box wow fadeInUp" data-wow-delay="0.4s">
           <i class="fa fa-random fa-3x" style="color:#17a2b8; margin-bottom:15px;"></i>
           <h3>Data Mapping & Transformation</h3>
-          <p>Expert mapping of legacy fields to Fusion/Creatio structures, including business rules, derived fields, and system conversions.</p>
+          <p>Expert mapping of legacy fields to target structures with business rules, derived fields, and complex system conversions tailored to your business requirements.</p>
         </div>
       </div>
 
-      <!-- Service Box -->
-      <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-        <div class="card text-center" style="background:#fff; border-radius:12px; padding:30px; margin-bottom:30px; box-shadow:0 4px 12px rgba(0,0,0,0.08); transition:transform 0.3s;">
+      <!-- Risk-Free Cutover -->
+      <div class="col-md-4 col-sm-6 d-flex">
+        <div class="card text-center service-box wow fadeInUp" data-wow-delay="0.5s">
           <i class="fa fa-shield fa-3x" style="color:#ffc107; margin-bottom:15px;"></i>
           <h3>Risk-Free Cutover</h3>
-          <p>Proven go-live strategies that guarantee minimal disruption, zero data loss, and fully reconciled results at launch.</p>
+          <p>Proven go-live strategies that minimize downtime, prevent data loss, and ensure full business continuity when switching to your new system.</p>
         </div>
       </div>
 
-      <!-- Service Box -->
-      <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-        <div class="card text-center" style="background:#fff; border-radius:12px; padding:30px; margin-bottom:30px; box-shadow:0 4px 12px rgba(0,0,0,0.08); transition:transform 0.3s;">
+      <!-- Post-Migration Reconciliation -->
+      <div class="col-md-4 col-sm-6 d-flex">
+        <div class="card text-center service-box wow fadeInUp" data-wow-delay="0.6s">
           <i class="fa fa-balance-scale fa-3x" style="color:#6f42c1; margin-bottom:15px;"></i>
           <h3>Post-Migration Reconciliation</h3>
-          <p>Complete reconciliation between source and target systems across financials, HR, and operations to ensure nothing is missed.</p>
+          <p>Detailed reconciliation across financials, HR, supply chain, and operations ensures the migrated data matches your source system exactly.</p>
         </div>
       </div>
 
-      <!-- Service Box -->
-      <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-        <div class="card text-center" style="background:#fff; border-radius:12px; padding:30px; margin-bottom:30px; box-shadow:0 4px 12px rgba(0,0,0,0.08); transition:transform 0.3s;">
+      <!-- Compliance & Audit Support -->
+      <div class="col-md-4 col-sm-6 d-flex">
+        <div class="card text-center service-box wow fadeInUp" data-wow-delay="0.7s">
           <i class="fa fa-legal fa-3x" style="color:#dc3545; margin-bottom:15px;"></i>
           <h3>Compliance & Audit Support</h3>
-          <p>Full traceability, audit logs, and documentation to satisfy regulatory, financial, and data governance requirements.</p>
+          <p>Full traceability, audit logs, and migration documentation to meet strict regulatory, security, and governance requirements worldwide.</p>
         </div>
       </div>
-
 
     </div>
   </div>
@@ -229,6 +246,7 @@
   <script src="js/custom.js"></script>
 </body>
 </html>
+
 
 
 

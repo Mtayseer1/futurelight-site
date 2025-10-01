@@ -1,143 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Future Lights - Data Migration Specialists</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- SEO -->
-  <meta name="keywords" content="Future Lights, data migration, Oracle Fusion, Oracle EBS, Dynamics AX, Dynamics 365, Creatio migration, cloud migration, legacy modernization">
-  <meta name="description" content="Future Lights specializes in enterprise data migration — from Oracle EBS, Dynamics AX/365, and other legacy systems to Oracle Fusion Cloud and Creatio.">
-
-  <!-- Styles -->
-  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="css/animate.min.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/templatemo-style.css">
+  <meta charset="UTF-8">
+  <title>Future Lights - Data Migration Experts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Future Lights specializes in enterprise data migration — transforming legacy systems like Oracle EBS, Dynamics AX/365 into Oracle Fusion Cloud and Creatio.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 
   <style>
-    /* General Fixes */
     body {
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      margin: 0;
       color: #333;
     }
-
-    /* Navbar */
-    .navbar {
+    nav.navbar {
       background: rgba(0,0,0,0.8);
-      border: none;
     }
-    .navbar a {
+    nav.navbar a {
       color: #fff !important;
       font-weight: 600;
     }
-    .navbar a:hover {
+    nav.navbar a:hover {
       color: #00c3ff !important;
     }
-
-    /* Hero Section */
-    #home {
+    /* Hero */
+    #hero {
       background: url("images/hero-data-migration.jpg") no-repeat center center/cover;
-      position: relative;
-      height: 100vh;
       color: #fff;
+      text-align: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
     }
-    #home .overlay {
-      background: rgba(0,0,0,0.5);
+    #hero::before {
+      content: "";
+      background: rgba(0,0,0,0.6);
       position: absolute;
       top: 0; left: 0; right: 0; bottom: 0;
     }
-    .slider-caption {
-      text-align: center;
+    #hero .content {
       position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 2;
+      z-index: 1;
     }
-    .slider-caption h1 {
-      font-size: 52px;
+    #hero h1 {
+      font-size: 3.5rem;
       font-weight: 700;
+    }
+    #hero p {
+      font-size: 1.2rem;
+      margin: 20px 0;
+    }
+    .btn-main {
+      background: #00c3ff;
       color: #fff;
+      padding: 12px 28px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .btn-main:hover {
+      background: #009acb;
+    }
+    /* Sections */
+    section {
+      padding: 80px 0;
+    }
+    section h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
       margin-bottom: 20px;
     }
-    .slider-caption h3 {
-      font-size: 22px;
-      color: #ddd;
-      margin-bottom: 30px;
+    section h4 {
+      color: #00c3ff;
+      font-weight: 600;
     }
-    .templatemo-slider-btn {
-      padding: 12px 28px;
-      font-size: 16px;
-      border-radius: 4px;
-      background: #00c3ff;
-      color: #fff !important;
-      border: none;
-    }
-    .templatemo-slider-btn:hover {
-      background: #009acb;
-    }
-
     /* Services */
-    #services {
-      background: #fff;
-      color: #333;
-      padding: 80px 0;
+    .service-box {
+      text-align: center;
+      padding: 30px;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      transition: all 0.3s;
     }
-    #services h2 {
-      font-size: 36px;
-      margin-bottom: 15px;
-    }
-    #services h3 {
-      color: #222;
-      margin-top: 15px;
-    }
-    #services p {
-      font-size: 15px;
-      line-height: 1.6;
-    }
-
-    /* Experience */
-    #experience {
+    .service-box:hover {
       background: #f9f9f9;
-      padding: 80px 0;
+      transform: translateY(-5px);
     }
-    #experience h2 {
-      font-size: 36px;
-      margin-bottom: 15px;
+    .service-box i {
+      font-size: 40px;
+      color: #00c3ff;
+      margin-bottom: 20px;
     }
-    .experience-list {
-      text-align: left;
-      display: inline-block;
-      margin-top: 15px;
+    /* Experience */
+    .logo-grid img {
+      max-height: 80px;
+      margin: 20px;
+      filter: grayscale(100%);
+      transition: filter 0.3s;
     }
-    .experience-list li {
-      margin-bottom: 8px;
-      font-size: 15px;
+    .logo-grid img:hover {
+      filter: grayscale(0%);
     }
-
     /* Contact */
     #contact {
-      padding: 80px 0;
+      background: #f9f9f9;
+      text-align: center;
     }
-    #contact h2 {
-      font-size: 36px;
-      margin-bottom: 15px;
+    #contact a {
+      font-size: 18px;
+      display: inline-block;
+      margin: 10px;
+      color: #00c3ff;
+      text-decoration: none;
     }
-    #contact a.btn {
-      padding: 12px 28px;
-      background: #00c3ff;
-      border: none;
-      color: #fff;
-      font-weight: bold;
-      border-radius: 4px;
+    #contact a:hover {
+      text-decoration: underline;
     }
-    #contact a.btn:hover {
-      background: #009acb;
-    }
-
-    /* Footer */
     footer {
       background: #111;
       color: #ddd;
@@ -146,177 +127,109 @@
     }
   </style>
 </head>
-<body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
-
-  <!-- Preloader -->
-  <div class="preloader">
-    <div class="sk-spinner sk-spinner-rotating-plane"></div>
-  </div>
+<body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-fixed-top custom-navbar" role="navigation">
+  <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <div class="navbar-header">
-        <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon icon-bar"></span>
-          <span class="icon icon-bar"></span>
-          <span class="icon icon-bar"></span>
-        </button>
-        <a href="#home" class="navbar-brand" style="display:flex; align-items:center; padding:10px 0;">
-          <img src="images/Logo.png" alt="Future Lights Logo" style="height:60px; margin-right:10px;">
-        </a>
-      </div>
-      <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#home" class="smoothScroll">Home</a></li>
-          <li><a href="#services" class="smoothScroll">Services</a></li>
-          <li><a href="#experience" class="smoothScroll">Experience</a></li>
-          <li><a href="#contact" class="smoothScroll">Contact</a></li>
+      <a class="navbar-brand text-white fw-bold" href="#hero">Future Lights</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section id="home">
-    <div class="overlay"></div>
-    <div class="slider-caption">
-      <h3 class="wow bounceIn">From Legacy Systems to Modern Cloud Platforms</h3>
-      <h1 class="wow bounce">Enterprise Data Migration Experts</h1>
-      <a href="#services" class="smoothScroll templatemo-slider-btn btn btn-default">Explore Our Services</a>
+  <!-- Hero -->
+  <section id="hero">
+    <div class="content">
+      <h1>Enterprise Data Migration Experts</h1>
+      <p>Seamlessly moving your business from legacy systems to modern cloud platforms.</p>
+      <a href="#services" class="btn-main">Explore Our Services</a>
     </div>
   </section>
-  <!-- End Hero -->
+
+  <!-- About -->
+  <section id="about" class="container text-center">
+    <h2>About Us</h2>
+    <p>Future Lights specializes in enterprise data migration. Our mission is to simplify complexity by delivering 
+    seamless migrations from Oracle EBS, Dynamics AX/365, and other legacy systems into Oracle Fusion Cloud and Creatio. 
+    We focus on accuracy, speed, and zero downtime cutovers.</p>
+  </section>
 
   <!-- Services -->
-  <section id="services">
-    <div class="container text-center">
+  <section id="services" class="container">
+    <div class="text-center">
       <h2>Our Services</h2>
-      <hr>
-      <h4>End-to-end Data Migration Solutions</h4>
-      <div class="row" style="margin-top:40px;">
-        <div class="col-md-6 col-sm-6">
-          <div class="media">
-            <div class="media-object media-left wow fadeIn" data-wow-delay="0.4s">
-              <i class="fa fa-database fa-2x"></i>
-            </div>
-            <div class="media-body">
-              <h3 class="media-heading">Legacy to Cloud Migration</h3>
-              <p>Migrating from Oracle EBS, Dynamics AX/365, or other legacy systems into Oracle Fusion Cloud and Creatio. Our methodology ensures accuracy, speed, and minimal downtime.</p>
-            </div>
-          </div>
+      <p>End-to-end migration solutions designed to minimize risks and maximize efficiency.</p>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-3 col-sm-6">
+        <div class="service-box">
+          <i class="fa fa-database"></i>
+          <h4>Legacy to Cloud Migration</h4>
+          <p>Migrate from Oracle EBS, Dynamics AX/365, and other platforms to Oracle Fusion Cloud and Creatio.</p>
         </div>
-
-        <div class="col-md-6 col-sm-6">
-          <div class="media">
-            <div class="media-object media-left wow fadeIn" data-wow-delay="0.6s">
-              <i class="fa fa-check-circle fa-2x"></i>
-            </div>
-            <div class="media-body">
-              <h3 class="media-heading">Data Validation & Cleansing</h3>
-              <p>Comprehensive profiling, transformation, and validation to ensure clean, accurate, and compliant data is migrated to the target system.</p>
-            </div>
-          </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="service-box">
+          <i class="fa fa-check-circle"></i>
+          <h4>Data Validation</h4>
+          <p>Comprehensive data cleansing, validation, and reconciliation for high-quality migration results.</p>
         </div>
-
-        <div class="col-md-6 col-sm-6" style="margin-top:30px;">
-          <div class="media">
-            <div class="media-object media-left wow fadeIn" data-wow-delay="0.8s">
-              <i class="fa fa-cogs fa-2x"></i>
-            </div>
-            <div class="media-body">
-              <h3 class="media-heading">Migration Automation</h3>
-              <p>Reusable scripts, staging databases, and automated pipelines designed to reduce manual effort and accelerate delivery timelines.</p>
-            </div>
-          </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="service-box">
+          <i class="fa fa-cogs"></i>
+          <h4>Automation</h4>
+          <p>Reusable pipelines and automation scripts that reduce manual effort and accelerate timelines.</p>
         </div>
-
-        <div class="col-md-6 col-sm-6" style="margin-top:30px;">
-          <div class="media">
-            <div class="media-object media-left wow fadeIn" data-wow-delay="1s">
-              <i class="fa fa-shield fa-2x"></i>
-            </div>
-            <div class="media-body">
-              <h3 class="media-heading">Risk-Free Cutover</h3>
-              <p>Proven go-live strategies that guarantee minimal disruption, complete reconciliation, and zero data loss during the transition.</p>
-            </div>
-          </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="service-box">
+          <i class="fa fa-shield"></i>
+          <h4>Risk-Free Cutover</h4>
+          <p>Go-live strategies that ensure business continuity and prevent data loss.</p>
         </div>
       </div>
     </div>
   </section>
-  <!-- End Services -->
 
   <!-- Experience -->
-  <section id="experience">
-    <div class="container text-center">
-      <h2>Our Experience</h2>
-      <hr>
-      <h4>Enterprise projects we have contributed to</h4>
-      <div class="row" style="margin-top:40px;">
-        <div class="col-md-4 wow fadeIn" data-wow-delay="0.3s">
-          <img src="images/state-street-logo.png" alt="State Street Logo" style="max-height:80px; margin-bottom:15px;">
-          <ul class="experience-list">
-            <li>Large-scale Oracle EBS → Oracle Fusion migration</li>
-            <li>Data extraction, cleansing, transformation leadership</li>
-          </ul>
-        </div>
-
-        <div class="col-md-4 wow fadeIn" data-wow-delay="0.5s">
-          <img src="images/api-group-logo.png" alt="APi Group Logo" style="max-height:80px; margin-bottom:15px;">
-          <ul class="experience-list">
-            <li>Multi-entity Oracle Fusion migration</li>
-            <li>Financial data compliance & reconciliation</li>
-          </ul>
-        </div>
-
-        <div class="col-md-4 wow fadeIn" data-wow-delay="0.7s">
-          <img src="images/fortune500.png" alt="Fortune 500 Logo" style="max-height:80px; margin-bottom:15px;">
-          <ul class="experience-list">
-            <li>Fortune 500 HR, Finance, and CRM migrations</li>
-            <li>Proven track record across industries</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-12 text-center" style="margin-top:20px;">
-          <p style="font-size:12px; color:#777;">
-            *These projects were delivered by our team members during their roles at Datalynx, before founding Future Lights.*
-          </p>
-        </div>
-      </div>
+  <section id="experience" class="container text-center">
+    <h2>Our Experience</h2>
+    <p>We’ve contributed to some of the world’s largest enterprise migration projects.</p>
+    <div class="logo-grid d-flex justify-content-center flex-wrap mt-4">
+      <img src="images/state-street-logo.png" alt="State Street">
+      <img src="images/api-group-logo.png" alt="APi Group">
+      <img src="images/fortune500.png" alt="Fortune 500">
     </div>
+    <p class="mt-3" style="font-size: 12px; color: #777;">*Experience gained while working with Datalynx before founding Future Lights.</p>
   </section>
-  <!-- End Experience -->
 
   <!-- Contact -->
   <section id="contact">
-    <div class="container text-center">
+    <div class="container">
       <h2>Contact Us</h2>
-      <hr>
-      <p>Let's talk about your next data migration project.</p>
-      <p><a href="mailto:info@futurelights.tech" class="btn">info@futurelights.tech</a></p>
-      <ul class="social-icon" style="list-style:none; padding:0; margin-top:15px;">
-        <li style="display:inline-block; margin:0 10px;">
-          <a href="https://www.linkedin.com/company/future-lights-technologies" target="_blank" class="fa fa-linkedin" style="color:#0e76a8; font-size:24px;"></a>
-        </li>
-      </ul>
+      <p>Let’s discuss your next migration project.</p>
+      <a href="mailto:info@futurelights.tech"><i class="fa fa-envelope"></i> info@futurelights.tech</a>
+      <a href="https://www.linkedin.com/company/future-lights-technologies" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a>
     </div>
   </section>
-  <!-- End Contact -->
 
   <!-- Footer -->
   <footer>
-    <div class="container">
-      <p style="margin:0; font-size:14px;">Copyright &copy; 2025 Future Lights. All Rights Reserved.</p>
-    </div>
+    <p>© 2025 Future Lights. All Rights Reserved.</p>
   </footer>
 
   <!-- Scripts -->
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/custom.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -8,15 +8,19 @@
   <meta name="keywords" content="Future Lights, data migration, oracle apex, AI, cloud solutions, digital transformation">
   <meta name="description" content="Future Lights empowers businesses with data migration, Oracle APEX development, AI solutions, and digital transformation services.">
 
-  <!-- Workforce CSS Template (Customized for Future Lights) -->
+  <!-- Styles -->
   <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/templatemo-style.css">
 
+  <!-- Slick slider CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
   <style>
-    /* General service cards */
+    /* Service cards */
     .service-box {
       background:#fff;
       border-radius:12px;
@@ -27,54 +31,61 @@
       display:flex;
       flex-direction:column;
       justify-content:flex-start;
-      height:340px; /* fixed height for consistency */
+      height:340px;
       text-align:center;
     }
     .service-box:hover {
       transform: translateY(-5px);
       box-shadow:0 6px 18px rgba(0,0,0,0.12);
     }
-    .row.d-flex.flex-wrap.align-items-stretch > [class*='col-'] {
-      display:flex;
-    }
 
-    /* Carousel cards */
-    #experience .card.service-box {
+    /* Our Experience Slider */
+    #experience {
+      background:#fff;
+      padding:80px 0;
+    }
+    .experience-slider .card {
       background:#fff;
       border-radius:12px;
       padding:40px;
       box-shadow:0 4px 12px rgba(0,0,0,0.08);
-      transition:transform 0.3s;
       text-align:center;
+      transition: transform 0.5s, opacity 0.5s;
     }
-    #experience .card.service-box:hover {
-      transform: translateY(-5px);
-      box-shadow:0 6px 18px rgba(0,0,0,0.12);
-    }
-    #experienceCarousel .carousel-control {
-      background:none;
-      color:#000;
-      font-size:30px;
-      top:40%;
+    .experience-slider .card img {
+      max-height:100px;
+      max-width:220px;
+      width:auto;
+      height:auto;
+      object-fit:contain;
+      margin:0 auto 20px;
+      display:block;
     }
 
-    /* ✅ Fix all experience logos (no stretching) */
-    #experience .card.service-box img {
-      max-height: 100px;
-      max-width: 220px;
-      width: auto;
-      height: auto;
-      object-fit: contain;
-      margin: 0 auto 20px;
-      display: block;
+    /* Slick custom center scaling */
+    .experience-slider .slick-slide {
+      opacity:0.5;
+      transform:scale(0.8);
+      transition: all 0.5s ease;
+      padding:20px;
     }
+    .experience-slider .slick-center {
+      opacity:1;
+      transform:scale(1);
+    }
+
+    /* Slick arrows */
+    .slick-prev:before, .slick-next:before {
+      font-family: "FontAwesome";
+      font-size:30px;
+      color:#333;
+    }
+    .slick-prev:before { content: "\f104"; } /* fa-chevron-left */
+    .slick-next:before { content: "\f105"; } /* fa-chevron-right */
   </style>
 </head>
 
 <body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
-  <div class="preloader">
-    <div class="sk-spinner sk-spinner-rotating-plane"></div>
-  </div>
 
   <!-- Navbar -->
   <nav class="navbar navbar-fixed-top custom-navbar" role="navigation">
@@ -93,17 +104,15 @@
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#home" class="smoothScroll">Home</a></li>
           <li><a href="#service" class="smoothScroll">Services</a></li>
-          <li><a href="#contact" class="smoothScroll">Contact</a></li>
           <li><a href="#about" class="smoothScroll">About us</a></li>
-          <li><a href="#experience" class="smoothScroll">our works</a></li>
-          
-          
+          <li><a href="#experience" class="smoothScroll">Our Works</a></li>
+          <li><a href="#contact" class="smoothScroll">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section id="home">
     <div class="overlay">
       <div class="flexslider">
@@ -122,7 +131,6 @@
       </div>
     </div>
   </section>
-  <!-- End Hero -->
 
   <!-- Services -->
   <section id="service" style="padding:80px 0; background:#f9f9f9;">
@@ -136,8 +144,6 @@
       </div>
 
       <div class="row d-flex flex-wrap align-items-stretch">
-
-        <!-- Legacy to Cloud Migration -->
         <div class="col-md-4 col-sm-6 d-flex">
           <div class="card service-box wow fadeInUp" data-wow-delay="0.2s">
             <i class="fa fa-cloud-upload fa-3x" style="color:#007BFF;"></i>
@@ -145,8 +151,6 @@
             <p>Migrate from <strong>any system to any system</strong> — Oracle EBS, Dynamics AX/365, SAP, PeopleSoft, or custom apps to cloud platforms like Oracle Fusion, Creatio, and beyond.</p>
           </div>
         </div>
-
-        <!-- Data Validation & Cleansing -->
         <div class="col-md-4 col-sm-6 d-flex">
           <div class="card service-box wow fadeInUp" data-wow-delay="0.3s">
             <i class="fa fa-check-circle fa-3x" style="color:#28a745;"></i>
@@ -154,8 +158,6 @@
             <p>Comprehensive profiling, transformation, and validation to ensure only clean, accurate, and compliant data reaches your target environment.</p>
           </div>
         </div>
-
-        <!-- Data Mapping & Transformation -->
         <div class="col-md-4 col-sm-6 d-flex">
           <div class="card service-box wow fadeInUp" data-wow-delay="0.4s">
             <i class="fa fa-random fa-3x" style="color:#17a2b8;"></i>
@@ -163,8 +165,6 @@
             <p>Expert mapping of legacy fields to target structures, with business rules, derived fields, and conversions tailored to your needs.</p>
           </div>
         </div>
-
-        <!-- Risk-Free Cutover -->
         <div class="col-md-4 col-sm-6 d-flex">
           <div class="card service-box wow fadeInUp" data-wow-delay="0.5s">
             <i class="fa fa-shield fa-3x" style="color:#ffc107;"></i>
@@ -172,8 +172,6 @@
             <p>Proven go-live strategies that minimize downtime, prevent data loss, and ensure business continuity during system switchovers.</p>
           </div>
         </div>
-
-        <!-- Post-Migration Reconciliation -->
         <div class="col-md-4 col-sm-6 d-flex">
           <div class="card service-box wow fadeInUp" data-wow-delay="0.6s">
             <i class="fa fa-exchange fa-3x" style="color:#6f42c1;"></i>
@@ -181,8 +179,6 @@
             <p>Detailed reconciliation across finance, HR, and supply chain to ensure the migrated data matches your source system exactly.</p>
           </div>
         </div>
-
-        <!-- Compliance & Audit Support -->
         <div class="col-md-4 col-sm-6 d-flex">
           <div class="card service-box wow fadeInUp" data-wow-delay="0.7s">
             <i class="fa fa-legal fa-3x" style="color:#dc3545;"></i>
@@ -190,11 +186,9 @@
             <p>Full traceability, audit logs, and documentation to meet strict regulatory, security, and governance requirements worldwide.</p>
           </div>
         </div>
-
       </div>
     </div>
   </section>
-  <!-- End Services -->
 
   <!-- About Us -->
   <section id="about" style="padding:80px 0; background:#fff;">
@@ -206,7 +200,6 @@
           <h4>Experts in Large-Scale Data Migration</h4>
         </div>
       </div>
-
       <div class="row">
         <div class="col-md-10 col-md-offset-1 wow fadeInUp" data-wow-delay="0.3s">
           <div style="background:#f9f9f9; border-radius:12px; padding:40px; box-shadow:0 4px 12px rgba(0,0,0,0.08); text-align:center;">
@@ -226,77 +219,53 @@
       </div>
     </div>
   </section>
-  <!-- End About Us -->
 
- <!-- Our Experience Slider -->
-  <section id="experience" style="padding:80px 0; background:#ffffff;">
+  <!-- Our Experience Slider -->
+  <section id="experience">
     <div class="container text-center">
       <h2 class="wow bounceIn">Our Experience</h2>
       <hr>
       <h4>Our team has participated in the following projects</h4>
 
-      <div id="experienceCarousel" class="carousel slide" data-ride="carousel" data-interval="10000">
-        <div class="carousel-inner">
-
-          <!-- Slide 1 -->
-          <div class="item active">
-            <div class="card service-box" style="max-width:800px; margin:0 auto;">
-              <img src="images/ss.png" alt="StateStreet Logo">
-              <h3>StateStreet Australia Migration</h3>
-              <p>Participated in migration from Phoenix System to Hitrust System, covering large-scale financial data including profiles, agents, portfolios, transactions, and distributions.</p>
-            </div>
+      <div class="experience-slider">
+        <div>
+          <div class="card">
+            <img src="images/ss.png" alt="StateStreet Logo">
+            <h3>StateStreet Australia Migration</h3>
+            <p>Participated in migration from Phoenix System to Hitrust System, covering large-scale financial data including profiles, agents, portfolios, transactions, and distributions.</p>
           </div>
-
-          <!-- Slide 2 -->
-          <div class="item">
-            <div class="card service-box" style="max-width:800px; margin:0 auto;">
-              <img src="images/nova.png" alt="Nova Systems Logo">
-              <h3>Nova Systems Australia</h3>
-              <p>Contributed to data migration from OpenAir System to Oracle Fusion Projects and Contracts.</p>
-            </div>
-          </div>
-
-          <!-- Slide 3 -->
-          <div class="item">
-            <div class="card service-box" style="max-width:800px; margin:0 auto;">
-              <img src="images/api.png" alt="API Group Logo">
-              <h3>API Group USA (S&amp;P MidCap 400)</h3>
-              <p>Supported migration from Dynamics AX to Oracle Fusion, including financials, procurement, projects, HCM, and SCM modules.</p>
-            </div>
-          </div>
-
-          <!-- Slide 4 -->
-          <div class="item">
-            <div class="card service-box" style="max-width:800px; margin:0 auto;">
-              <i class="fa fa-archive fa-3x" style="color:#dc3545; margin-bottom:20px;"></i>
-              <h3>Oracle EBS Legacy Archiving</h3>
-              <p>Worked on migrating Oracle EBS into a modern Oracle APEX Archiving & Reporting App with dashboards, KPIs, and audit trails.</p>
-            </div>
-          </div>
-
-          <!-- Slide 5 -->
-          <div class="item">
-            <div class="card service-box" style="max-width:800px; margin:0 auto;">
-              <img src="images/NHC.png" alt="NHC Logo">
-              <h3>NHC Migration</h3>
-              <p>Participated in migrations from multiple systems including Dynamics 365 and custom applications into Creatio, covering accounts, contacts, contracts, cases, and more.</p>
-            </div>
-          </div>
-
         </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#experienceCarousel" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        </a>
-        <a class="right carousel-control" href="#experienceCarousel" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        </a>
+        <div>
+          <div class="card">
+            <img src="images/nova.png" alt="Nova Systems Logo">
+            <h3>Nova Systems Australia</h3>
+            <p>Contributed to data migration from OpenAir System to Oracle Fusion Projects and Contracts.</p>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <img src="images/api.png" alt="API Group Logo">
+            <h3>API Group USA (S&amp;P MidCap 400)</h3>
+            <p>Supported migration from Dynamics AX to Oracle Fusion, including financials, procurement, projects, HCM, and SCM modules.</p>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <i class="fa fa-archive fa-3x" style="color:#dc3545; margin-bottom:20px;"></i>
+            <h3>Oracle EBS Legacy Archiving</h3>
+            <p>Worked on migrating Oracle EBS into a modern Oracle APEX Archiving & Reporting App with dashboards, KPIs, and audit trails.</p>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <img src="images/NHC.png" alt="NHC Logo">
+            <h3>NHC Migration</h3>
+            <p>Participated in migrations from multiple systems including Dynamics 365 and custom applications into Creatio, covering accounts, contacts, contracts, cases, and more.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-
-
 
   <!-- Footer -->
   <footer style="background:#111; color:#ddd; padding:30px 0;">
@@ -311,7 +280,7 @@
               <a href="mailto:info@futurelights.tech" class="fa fa-envelope" style="color:#ddd; font-size:24px;"></a>
             </li>
           </ul>
-          <p class="wow bounceIn" style="margin:0; font-size:14px;">
+          <p style="margin:0; font-size:14px;">
             Contact us: <a href="mailto:info@futurelights.tech" style="color:#fff; text-decoration:none;">info@futurelights.tech</a>
           </p>
           <p style="margin-top:10px; font-size:14px;">Copyright &copy; 2025 <span>Future Lights</span>. All Rights Reserved.</p>
@@ -321,13 +290,29 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.flexslider.js"></script>
-  <script src="js/isotope.js"></script>
-  <script src="js/imagesloaded.min.js"></script>
-  <script src="js/smoothscroll.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/custom.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.experience-slider').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        autoplay: true,
+        autoplaySpeed: 10000,
+        prevArrow: '<button type="button" class="slick-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next"></button>',
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              centerPadding: '0'
+            }
+          }
+        ]
+      });
+    });
+  </script>
 </body>
 </html>

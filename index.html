@@ -310,6 +310,16 @@
   <script src="js/jquery.flexslider.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script>
+    // Smooth scrolling for anchor links
+  $(document).on('click', 'a.smoothScroll', function(event) {
+    event.preventDefault();
+    var target = $(this.hash);
+    if (target.length) {
+      $('html, body').animate({
+        scrollTop: target.offset().top - 70 // offset for fixed navbar
+      }, 800); // 800ms animation
+    }
+  });
     $(document).ready(function(){
       // Hero Flexslider
       $('.flexslider').flexslider({
@@ -345,5 +355,6 @@
   </script>
 </body>
 </html>
+
 
 

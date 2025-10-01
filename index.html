@@ -130,6 +130,18 @@
     }
     .slick-prev:before { content: "\f104"; }
     .slick-next:before { content: "\f105"; }
+    <!-- Add this CSS -->
+
+  .slogan {
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  .slogan .highlight {
+    font-size: 42px;      /* bigger letters */
+    color: #007BFF;       /* same color as your icon */
+    font-weight: 700;
+  }
   </style>
 </head>
 
@@ -163,24 +175,34 @@
   </nav>
 
   <!-- Hero Section -->
-  <section id="home">
-    <div class="overlay">
-      <div class="flexslider">
-        <ul class="slides">
-          <li>
-            <img src="images/1.png" alt="Data Migration Solutions">
-            <div class="slider-caption">
-              <div class="templatemo_homewrapper">
-                <h3 class="wow bounceIn">Empowering Businesses with</h3>
-                <h1 class="wow bounce">Data Migration &amp; Oracle APEX</h1>
-                <a href="#service" class="smoothScroll templatemo-slider-btn btn btn-default">Explore Our Services</a>
-              </div>
+<!-- Hero Section -->
+<section id="home">
+  <div class="overlay">
+    <div class="flexslider">
+      <ul class="slides">
+        <li>
+          <img src="images/1.png" alt="Data Migration Solutions">
+          <div class="slider-caption">
+            <div class="templatemo_homewrapper">
+              <h3 class="wow bounceIn slogan">
+                <span class="highlight">C</span>omplexity into 
+                <span class="highlight">S</span>implicity
+              </h3>
+              <h1 class="wow bounce">
+                Seamless migrations from legacy systems to modern platforms — accurate, secure, and risk-free.
+              </h1>
+              <a href="#service" class="smoothScroll templatemo-slider-btn btn btn-default">
+                Explore Our Services
+              </a>
             </div>
-          </li>
-        </ul>
-      </div>
+          </div>
+        </li>
+      </ul>
     </div>
-  </section>
+  </div>
+</section>
+
+
 
   <!-- Services -->
   <section id="service" style="padding:80px 0; background:#f9f9f9;">
@@ -377,6 +399,7 @@
   </script>
 </body>
 </html>
+
 
 
 

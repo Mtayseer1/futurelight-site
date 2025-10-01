@@ -18,23 +18,95 @@
   <link rel="stylesheet" href="css/templatemo-style.css">
 
   <style>
-    /* Hero overlay for readability */
-    #home .overlay {
-      background: rgba(0, 0, 0, 0.6);
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
+    /* General Fixes */
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: #333;
     }
-    .slider-caption h1 {
-      font-size: 42px;
-      font-weight: 700;
+
+    /* Navbar */
+    .navbar {
+      background: rgba(0,0,0,0.8);
+      border: none;
+    }
+    .navbar a {
+      color: #fff !important;
+      font-weight: 600;
+    }
+    .navbar a:hover {
+      color: #00c3ff !important;
+    }
+
+    /* Hero Section */
+    #home {
+      background: url("images/hero-data-migration.jpg") no-repeat center center/cover;
+      position: relative;
+      height: 100vh;
       color: #fff;
     }
-    .slider-caption h3 {
-      font-size: 20px;
-      color: #ddd;
+    #home .overlay {
+      background: rgba(0,0,0,0.5);
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
     }
-    /* Bullet points in Experience */
+    .slider-caption {
+      text-align: center;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+    }
+    .slider-caption h1 {
+      font-size: 52px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    .slider-caption h3 {
+      font-size: 22px;
+      color: #ddd;
+      margin-bottom: 30px;
+    }
+    .templatemo-slider-btn {
+      padding: 12px 28px;
+      font-size: 16px;
+      border-radius: 4px;
+      background: #00c3ff;
+      color: #fff !important;
+      border: none;
+    }
+    .templatemo-slider-btn:hover {
+      background: #009acb;
+    }
+
+    /* Services */
+    #services {
+      background: #fff;
+      color: #333;
+      padding: 80px 0;
+    }
+    #services h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+    #services h3 {
+      color: #222;
+      margin-top: 15px;
+    }
+    #services p {
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    /* Experience */
+    #experience {
+      background: #f9f9f9;
+      padding: 80px 0;
+    }
+    #experience h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
     .experience-list {
       text-align: left;
       display: inline-block;
@@ -42,6 +114,35 @@
     }
     .experience-list li {
       margin-bottom: 8px;
+      font-size: 15px;
+    }
+
+    /* Contact */
+    #contact {
+      padding: 80px 0;
+    }
+    #contact h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+    #contact a.btn {
+      padding: 12px 28px;
+      background: #00c3ff;
+      border: none;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+    #contact a.btn:hover {
+      background: #009acb;
+    }
+
+    /* Footer */
+    footer {
+      background: #111;
+      color: #ddd;
+      padding: 20px 0;
+      text-align: center;
     }
   </style>
 </head>
@@ -79,37 +180,25 @@
   <!-- Hero Section -->
   <section id="home">
     <div class="overlay"></div>
-    <div class="flexslider">
-      <ul class="slides">
-        <li>
-          <img src="images/hero-data-migration.jpg" alt="Data Migration Hero Image">
-          <div class="slider-caption">
-            <div class="templatemo_homewrapper">
-              <h3 class="wow bounceIn">From Legacy Systems to Modern Cloud Platforms</h3>
-              <h1 class="wow bounce">Enterprise Data Migration Experts</h1>
-              <a href="#services" class="smoothScroll templatemo-slider-btn btn btn-default">Explore Our Services</a>
-            </div>
-          </div>
-        </li>
-      </ul>
+    <div class="slider-caption">
+      <h3 class="wow bounceIn">From Legacy Systems to Modern Cloud Platforms</h3>
+      <h1 class="wow bounce">Enterprise Data Migration Experts</h1>
+      <a href="#services" class="smoothScroll templatemo-slider-btn btn btn-default">Explore Our Services</a>
     </div>
   </section>
   <!-- End Hero -->
 
   <!-- Services -->
-  <section id="services" style="padding:60px 0;">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center wow bounceIn">
-          <h2>Our Services</h2>
-          <hr>
-          <h4>End-to-end Data Migration Solutions</h4>
-        </div>
-
+  <section id="services">
+    <div class="container text-center">
+      <h2>Our Services</h2>
+      <hr>
+      <h4>End-to-end Data Migration Solutions</h4>
+      <div class="row" style="margin-top:40px;">
         <div class="col-md-6 col-sm-6">
           <div class="media">
             <div class="media-object media-left wow fadeIn" data-wow-delay="0.4s">
-              <i class="fa fa-database"></i>
+              <i class="fa fa-database fa-2x"></i>
             </div>
             <div class="media-body">
               <h3 class="media-heading">Legacy to Cloud Migration</h3>
@@ -121,7 +210,7 @@
         <div class="col-md-6 col-sm-6">
           <div class="media">
             <div class="media-object media-left wow fadeIn" data-wow-delay="0.6s">
-              <i class="fa fa-check-circle"></i>
+              <i class="fa fa-check-circle fa-2x"></i>
             </div>
             <div class="media-body">
               <h3 class="media-heading">Data Validation & Cleansing</h3>
@@ -130,10 +219,10 @@
           </div>
         </div>
 
-        <div class="col-md-6 col-sm-6">
+        <div class="col-md-6 col-sm-6" style="margin-top:30px;">
           <div class="media">
             <div class="media-object media-left wow fadeIn" data-wow-delay="0.8s">
-              <i class="fa fa-cogs"></i>
+              <i class="fa fa-cogs fa-2x"></i>
             </div>
             <div class="media-body">
               <h3 class="media-heading">Migration Automation</h3>
@@ -142,10 +231,10 @@
           </div>
         </div>
 
-        <div class="col-md-6 col-sm-6">
+        <div class="col-md-6 col-sm-6" style="margin-top:30px;">
           <div class="media">
             <div class="media-object media-left wow fadeIn" data-wow-delay="1s">
-              <i class="fa fa-shield"></i>
+              <i class="fa fa-shield fa-2x"></i>
             </div>
             <div class="media-body">
               <h3 class="media-heading">Risk-Free Cutover</h3>
@@ -153,24 +242,18 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
   <!-- End Services -->
 
   <!-- Experience -->
-  <section id="experience" style="background:#f9f9f9; padding:60px 0;">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center wow bounceIn">
-          <h2>Our Experience</h2>
-          <hr>
-          <h4>Enterprise projects we have contributed to</h4>
-        </div>
-      </div>
-
-      <div class="row text-center">
+  <section id="experience">
+    <div class="container text-center">
+      <h2>Our Experience</h2>
+      <hr>
+      <h4>Enterprise projects we have contributed to</h4>
+      <div class="row" style="margin-top:40px;">
         <div class="col-md-4 wow fadeIn" data-wow-delay="0.3s">
           <img src="images/state-street-logo.png" alt="State Street Logo" style="max-height:80px; margin-bottom:15px;">
           <ul class="experience-list">
@@ -208,12 +291,12 @@
   <!-- End Experience -->
 
   <!-- Contact -->
-  <section id="contact" style="padding:60px 0;">
+  <section id="contact">
     <div class="container text-center">
       <h2>Contact Us</h2>
       <hr>
       <p>Let's talk about your next data migration project.</p>
-      <p><a href="mailto:info@futurelights.tech" class="btn btn-primary">info@futurelights.tech</a></p>
+      <p><a href="mailto:info@futurelights.tech" class="btn">info@futurelights.tech</a></p>
       <ul class="social-icon" style="list-style:none; padding:0; margin-top:15px;">
         <li style="display:inline-block; margin:0 10px;">
           <a href="https://www.linkedin.com/company/future-lights-technologies" target="_blank" class="fa fa-linkedin" style="color:#0e76a8; font-size:24px;"></a>
@@ -224,8 +307,8 @@
   <!-- End Contact -->
 
   <!-- Footer -->
-  <footer style="background:#111; color:#ddd; padding:20px 0;">
-    <div class="container text-center">
+  <footer>
+    <div class="container">
       <p style="margin:0; font-size:14px;">Copyright &copy; 2025 Future Lights. All Rights Reserved.</p>
     </div>
   </footer>
@@ -233,10 +316,6 @@
   <!-- Scripts -->
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.flexslider.js"></script>
-  <script src="js/isotope.js"></script>
-  <script src="js/imagesloaded.min.js"></script>
-  <script src="js/smoothscroll.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/custom.js"></script>
 </body>

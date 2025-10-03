@@ -138,32 +138,50 @@
       box-shadow:0 6px 18px rgba(0,0,0,0.12);
     }
 
-    /* Experience Slick Slider */
-    .experience-slider .card {
-      background:#fff;
-      border-radius:12px;
-      padding:30px;
-      text-align:center;
-      margin:20px;
-      transition: transform 0.5s ease, opacity 0.5s ease;
-      box-shadow:0 4px 12px rgba(0,0,0,0.08);
-    }
-    .experience-slider .card img {
-      max-height: 100px;
-      max-width: 220px;
-      width: auto;
-      height: auto;
-      object-fit: contain;
-      margin: 0 auto 20px;
-      display: block;
-    }
-    .experience-slider .slick-center .card {
-      transform: scale(1.1);
-      opacity: 1;
-    }
-    .experience-slider .card {
-      opacity: 0.6;
-    }
+   /* Experience Slick Slider */
+.experience-slider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* keeps spacing neat */
+}
+
+.experience-slider > div {
+  flex: 1 1 280px; /* responsive width, same base for each */
+  display: flex;
+}
+
+.experience-slider .card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 380px; /* force equal height */
+  background:#fff;
+  border-radius:12px;
+  padding:30px;
+  text-align:center;
+  margin:20px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  box-shadow:0 4px 12px rgba(0,0,0,0.08);
+  opacity: 0.6;
+}
+
+.experience-slider .card img {
+  max-height: 100px;
+  max-width: 220px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+.experience-slider .slick-center .card {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
 
     /* Arrows */
     .slick-prev:before, .slick-next:before {
@@ -457,6 +475,7 @@
 </body>
 
 </html>
+
 
 
 

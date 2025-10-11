@@ -2,75 +2,129 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Future Lights Blog | Data Migration Insights & Best Practices</title>
+  <title>Future Lights Blog | Data Migration Insights</title>
 
   <!-- SEO Meta -->
-  <meta name="description" content="Future Lights Technologies shares expert insights on data migration, enterprise system modernization, and cloud transformation for Oracle, SAP, Dynamics, and Creatio users.">
+  <meta name="description" content="Weekly insights on enterprise data migration, Oracle Fusion, SAP, Dynamics AX/365, and Creatio from Future Lights Technologies. Learn best practices and expert techniques for successful data migrations.">
   <meta name="keywords" content="data migration, data migrations, Oracle Fusion, SAP migration, Dynamics 365, Creatio CRM, Oracle APEX, enterprise data migration, data cleansing, data transformation">
 
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="images/Favicon.png">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/Favicon.png">
+  <link rel="apple-touch-icon" href="images/Favicon.png">
+  <link rel="shortcut icon" href="images/Favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/templatemo-style.css">
+  <link rel="stylesheet" href="css/flexslider.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
 
   <style>
-    body { font-family: 'Montserrat', sans-serif; background:#fff; color:#333; }
-    .custom-navbar { background:rgba(255,255,255,0.97); box-shadow:0 2px 6px rgba(0,0,0,0.08); }
-    .navbar-nav>li>a { color:#333 !important; font-weight:600; }
-    .navbar-nav>li>a:hover { color:#007BFF !important; }
+    /* Same navbar styles */
+    .custom-navbar {
+      background: transparent;
+      border: none;
+      transition: background 0.3s, box-shadow 0.3s;
+    }
+    .custom-navbar.scrolled {
+      background: rgba(255,255,255,0.95);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .custom-navbar .navbar-nav > li > a {
+      color: #fff;
+      transition: color 0.3s;
+    }
+    .custom-navbar.scrolled .navbar-nav > li > a {
+      color: #333;
+    }
 
-    .blog-header { text-align:center; padding:120px 20px 60px; background:#f8f9fa; }
-    .blog-header h1 { font-weight:700; font-size:38px; margin-bottom:10px; color:#222; }
-    .blog-header p { font-size:18px; color:#555; }
+    /* Blog Section */
+    .blog-header {
+      background: url('images/1.png') center/cover no-repeat;
+      color: #fff;
+      padding: 160px 20px 100px;
+      text-align: center;
+      position: relative;
+    }
+    .blog-header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+    }
+    .blog-header h1, .blog-header p {
+      position: relative;
+      z-index: 2;
+    }
+    .blog-header h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .blog-header p {
+      font-size: 20px;
+    }
 
-    .blog-container { max-width:900px; margin:auto; padding:20px; }
-    .post { background:#fff; border-radius:12px; padding:35px; margin-bottom:50px; box-shadow:0 4px 12px rgba(0,0,0,0.08); }
-    .post h2 { font-size:28px; margin-bottom:12px; font-weight:700; color:#007BFF; }
-    .post-meta { color:#888; font-size:14px; margin-bottom:20px; }
-    .post p { line-height:1.8; font-size:16px; color:#333; }
-    .post ul, .post ol { margin-left:20px; margin-bottom:15px; }
-    .post li { margin-bottom:8px; }
-    .read-more { display:inline-block; margin-top:10px; color:#007BFF; text-decoration:none; font-weight:600; }
-    .read-more:hover { text-decoration:underline; }
-    footer { background:#111; color:#ddd; padding:30px 0; text-align:center; margin-top:80px; }
+    /* Blog Container */
+    .blog-section {
+      background: #f9f9f9;
+      padding: 80px 0;
+    }
+    .blog-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      padding: 40px;
+      margin-bottom: 40px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .blog-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+    }
+    .blog-card h2 {
+      font-size: 28px;
+      color: #007BFF;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+    .blog-card .post-meta {
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 20px;
+    }
+    .blog-card p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #333;
+    }
+
+    footer {
+      background:#111;
+      color:#ddd;
+      padding:30px 0;
+      text-align:center;
+    }
     footer a { color:#fff; text-decoration:none; }
     footer a:hover { text-decoration:underline; }
-
-    @media (max-width:768px) {
-      .blog-header h1 { font-size:30px; }
-      .post { padding:25px; }
-    }
   </style>
-
-  <!-- JSON-LD Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Blog",
-    "name": "Future Lights Technologies Blog",
-    "url": "https://futurelights.tech/blog",
-    "description": "Weekly insights on data migration, data quality, and enterprise modernization from Future Lights Technologies.",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Future Lights Technologies",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://futurelights.tech/images/Logo.png"
-      }
-    }
-  }
-  </script>
 </head>
 
-<body>
+<body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
 
   <!-- Navbar -->
-  <nav class="navbar navbar-default navbar-fixed-top custom-navbar" role="navigation">
+  <nav class="navbar navbar-fixed-top custom-navbar" role="navigation">
     <div class="container">
       <div class="navbar-header">
         <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -78,80 +132,98 @@
           <span class="icon icon-bar"></span>
           <span class="icon icon-bar"></span>
         </button>
-        <a href="index.html" class="navbar-brand">
-          <img src="images/Logo.png" alt="Future Lights Logo" style="height:60px;">
+        <a href="index.html#home" class="navbar-brand" style="display:flex; align-items:center; padding:10px 0;">
+          <img src="images/Logo.png" alt="Future Lights - Data Migration Experts" style="height:250px; margin-right:10px;">
         </a>
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="index.html#home">Home</a></li>
-          <li><a href="index.html#service">Services</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#experience">Our Work</a></li>
-          <li><a href="blog.html" class="active">Blog</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="index.html#home" class="smoothScroll">Home</a></li>
+          <li><a href="index.html#service" class="smoothScroll">Services</a></li>
+          <li><a href="index.html#about" class="smoothScroll">About Us</a></li>
+          <li><a href="index.html#experience" class="smoothScroll">Our Work</a></li>
+          <li><a href="blog.html" class="smoothScroll" style="color:#007BFF; font-weight:bold;">Blog</a></li>
+          <li><a href="index.html#contact" class="smoothScroll">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Header -->
-  <header class="blog-header">
+  <!-- Blog Header -->
+  <section class="blog-header">
     <h1>Future Lights Blog</h1>
-    <p>Weekly insights on data migration, system transformation, and enterprise modernization.</p>
-  </header>
+    <p>Expert insights and real-world lessons on enterprise data migrations.</p>
+  </section>
 
-  <!-- Blog Container -->
-  <section class="blog-container">
+  <!-- Blog Content -->
+  <section class="blog-section">
+    <div class="container">
 
-    <!-- ARTICLE 1 -->
-    <article class="post">
-      <h2>How to Ensure a Smooth Data Migration from Dynamics AX to Oracle Fusion</h2>
-      <div class="post-meta">Published on October 11, 2025 | By Future Lights Team</div>
-      <p>Many enterprises using Microsoft Dynamics AX are now transitioning to <strong>Oracle Fusion Cloud Applications</strong> to benefit from improved scalability, reporting, and integration. However, data migration is often the most complex and risk-prone part of this transformation.</p>
+      <!-- Article 1 -->
+      <div class="blog-card wow fadeInUp" data-wow-delay="0.2s">
+        <h2>How to Ensure a Smooth Data Migration from Dynamics AX to Oracle Fusion</h2>
+        <div class="post-meta">Published on October 11, 2025 | By Future Lights Team</div>
+        <p>Many organizations using Microsoft Dynamics AX are now transitioning to <strong>Oracle Fusion Cloud Applications</strong> to benefit from integrated modules, analytics, and scalability. However, <strong>data migration</strong> remains the most complex and critical phase of this transformation.</p>
+        <p>At <strong>Future Lights Technologies</strong>, we apply a proven five-step approach to ensure successful <em>data migrations</em>:</p>
+        <ol>
+          <li><strong>Assessment:</strong> Identify key entities (projects, vendors, customers, and transactions).</li>
+          <li><strong>Mapping:</strong> Align source data with Oracle Fusion’s FBDI templates and structures.</li>
+          <li><strong>Transformation:</strong> Apply cleansing, enrichment, and validation logic.</li>
+          <li><strong>Testing:</strong> Load iteratively in a staging environment to ensure accuracy.</li>
+          <li><strong>Reconciliation:</strong> Validate totals and record counts between systems for consistency.</li>
+        </ol>
+        <p>A well-planned <strong>data migration</strong> minimizes downtime, ensures data integrity, and delivers faster user adoption after go-live.</p>
+      </div>
 
-      <p>At <strong>Future Lights Technologies</strong>, we’ve executed numerous <strong>data migrations</strong> across financials, projects, and supply-chain modules. Here’s a proven five-step framework that ensures accuracy and confidence during your transition:</p>
+      <!-- Article 2 -->
+      <div class="blog-card wow fadeInUp" data-wow-delay="0.4s">
+        <h2>Data Cleansing & Validation: The Foundation of Every Successful Data Migration</h2>
+        <div class="post-meta">Published on October 11, 2025 | By Future Lights Team</div>
+        <p>Behind every successful <strong>data migration</strong> lies a thorough and disciplined <strong>data cleansing</strong> process. Enterprises often underestimate the impact of inconsistent or incomplete data until they face post-go-live discrepancies in reporting or integrations.</p>
+        <p>To avoid costly errors, organizations should:</p>
+        <ul>
+          <li>Remove duplicate and inactive master records.</li>
+          <li>Standardize date formats, naming conventions, and reference codes.</li>
+          <li>Profile data regularly to detect missing or invalid values.</li>
+          <li>Perform reconciliation scripts post-load to verify completeness.</li>
+        </ul>
+        <p>Clean, validated data accelerates migration testing, ensures compliance, and builds user trust. As we say at Future Lights — <em>“Complexity into Simplicity.”</em></p>
+      </div>
 
-      <ol>
-        <li><strong>Assessment:</strong> Identify all relevant entities — customers, suppliers, projects, and transactional data — within Dynamics AX.</li>
-        <li><strong>Mapping:</strong> Define field-to-field mappings from AX tables to Oracle Fusion’s FBDI templates.</li>
-        <li><strong>Transformation:</strong> Apply cleansing and standardization rules to harmonize data formats, currencies, and references.</li>
-        <li><strong>Testing:</strong> Execute iterative test loads and validations using a staging environment before final cutover.</li>
-        <li><strong>Reconciliation:</strong> Compare source totals with target data in Oracle Fusion to verify integrity and completeness.</li>
-      </ol>
-
-      <p>Following a structured <em>data migration</em> approach reduces risks, ensures compliance, and accelerates go-live readiness. It’s the difference between disruption and a seamless upgrade.</p>
-    </article>
-
-    <!-- ARTICLE 2 -->
-    <article class="post">
-      <h2>Data Cleansing & Validation: The Foundation of Successful Data Migrations</h2>
-      <div class="post-meta">Published on October 11, 2025 | By Future Lights Team</div>
-      <p>Even the most advanced tools and strategies can fail if poor-quality data is loaded into your new system. <strong>Data validation</strong> and <strong>data cleansing</strong> are the quiet forces that determine whether your <strong>data migration</strong> succeeds or causes long-term headaches.</p>
-
-      <p>Before starting any migration, enterprises should:</p>
-      <ul>
-        <li>Identify and remove duplicate or inactive master records.</li>
-        <li>Enforce consistent naming, date, and numeric formats across all datasets.</li>
-        <li>Use profiling tools to detect missing values, incorrect references, and orphaned transactions.</li>
-        <li>Run reconciliation scripts post-migration to confirm all data landed accurately in the target system.</li>
-      </ul>
-
-      <p>Clean, validated data ensures confidence in financial reports, KPIs, and compliance checks. As we like to say at Future Lights — <em>great migrations start with great data</em>.</p>
-    </article>
-
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <p>© 2025 Future Lights Technologies. All Rights Reserved.</p>
-    <p><a href="mailto:info@futurelights.tech">info@futurelights.tech</a> | 
-       <a href="https://www.linkedin.com/company/future-lights-technologies" target="_blank">LinkedIn</a></p>
+  <footer id="contact">
+    <div class="container text-center">
+      <ul class="social-icon wow fadeIn" data-wow-delay="0.3s" style="list-style:none; padding:0; margin:0 0 15px 0;">
+        <li style="display:inline-block; margin:0 10px;">
+          <a href="https://www.linkedin.com/company/future-lights-technologies" target="_blank" class="fa fa-linkedin" style="color:#0e76a8; font-size:24px;"></a>
+        </li>
+        <li style="display:inline-block; margin:0 10px;">
+          <a href="mailto:info@futurelights.tech" class="fa fa-envelope" style="color:#ddd; font-size:24px;"></a>
+        </li>
+      </ul>
+      <p style="margin:0; font-size:14px;">
+        Contact us: <a href="mailto:info@futurelights.tech" style="color:#fff; text-decoration:none;">info@futurelights.tech</a>
+      </p>
+      <p style="margin-top:10px; font-size:14px;">Copyright &copy; 2025 <span>Future Lights</span>. All Rights Reserved.</p>
+    </div>
   </footer>
 
   <!-- Scripts -->
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
-
+  <script src="js/jquery.flexslider.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 50) {
+        $('.custom-navbar').addClass('scrolled');
+      } else {
+        $('.custom-navbar').removeClass('scrolled');
+      }
+    });
+  </script>
 </body>
 </html>

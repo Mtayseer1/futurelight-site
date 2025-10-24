@@ -1,1 +1,291 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Services | Future Lights Technologies</title>
+  <meta name="description" content="Explore Future Lights Technologies services including system implementation, data migration, and integration & support for enterprise platforms like Oracle, Odoo, and Insan HRMS.">
+  <meta name="keywords" content="ERP implementation, data migration, Oracle Fusion, Odoo, Insan HRMS, Penny, ProBiz, system integration">
+
+  <link rel="icon" type="image/png" href="images/Favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      background: #0e0e12;
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+
+    /* Animated Gradient Hero */
+    #hero {
+      position: relative;
+      height: 50vh;
+      background: linear-gradient(270deg, #0a0a0a, #0f1e2e, #1a1f35);
+      background-size: 600% 600%;
+      animation: gradient 12s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+    }
+
+    @keyframes gradient {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    h1, h2, h3, h4, h5 {
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+    }
+
+    p {
+      color: #eaeaea;
+      line-height: 1.7;
+    }
+
+    section {
+      padding: 80px 0;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 1s ease;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .service-card {
+      background: #1c1c21;
+      border-radius: 12px;
+      padding: 40px 25px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 100%;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+    }
+
+    .service-icon {
+      font-size: 48px;
+      color: #1f80ff;
+      margin-bottom: 20px;
+    }
+
+    .btn-primary {
+      background-color: #1f80ff;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 25px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: #1665cc;
+    }
+
+    /* CTA Section */
+    #get-started {
+      background: #0a0a0d;
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    #get-started h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    #get-started p {
+      font-size: 18px;
+      margin-bottom: 40px;
+      color: #ccc;
+    }
+
+    #get-started a {
+      background: #1f80ff;
+      color: #fff;
+      padding: 14px 32px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    #get-started a:hover {
+      background: #1665cc;
+    }
+
+    footer {
+      background: #0a0a0d;
+      padding: 40px 0;
+      text-align: center;
+      color: #ccc;
+    }
+
+    footer a {
+      color: #1f80ff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="container">
+      <h1>Our Services</h1>
+      <p class="lead">Empowering businesses through implementation, integration, and data excellence.</p>
+    </div>
+  </section>
+
+  <!-- System Implementation -->
+  <section id="implementation" class="text-center">
+    <div class="container">
+      <div class="row align-items-stretch">
+        <div class="col-md-12 mb-5">
+          <h2>System Implementation</h2>
+          <p>We deliver complete end-to-end ERP and HR system implementations designed to empower enterprises with automation, visibility, and control.</p>
+        </div>
+        <div class="col-md-4 d-flex">
+          <div class="service-card w-100">
+            <i class="fa-solid fa-chart-line service-icon"></i>
+            <h4>Analysis & Planning</h4>
+            <p>We start with an in-depth assessment of your business processes to align system capabilities with your organizational goals.</p>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex">
+          <div class="service-card w-100">
+            <i class="fa-solid fa-sliders service-icon"></i>
+            <h4>Configuration & Customization</h4>
+            <p>Our team configures modules and integrates your workflows using best practices across Oracle, Odoo, Insan HRMS, and ProBiz platforms.</p>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex">
+          <div class="service-card w-100">
+            <i class="fa-solid fa-user-graduate service-icon"></i>
+            <h4>Training & Go-Live</h4>
+            <p>We deliver user training, testing, and final deployment to ensure a seamless transition and long-term adoption success.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Data Migration -->
+  <section id="migration" class="section-dark text-center">
+    <div class="container">
+      <h2>Data Migration</h2>
+      <p>Our expertise in enterprise data migration ensures complete, validated, and risk-free transitions across all major ERP platforms.</p>
+      <div class="row g-4 align-items-stretch mt-5">
+        <div class="col-md-4 d-flex">
+          <div class="service-card w-100">
+            <i class="fa-solid fa-database service-icon"></i>
+            <h4>Data Extraction</h4>
+            <p>We extract and prepare data from any legacy system while preserving structure and dependencies for a smooth migration.</p>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex">
+          <div class="service-card w-100">
+            <i class="fa-solid fa-broom service-icon"></i>
+            <h4>Validation & Cleansing</h4>
+            <p>Advanced validation and data quality rules ensure accuracy, consistency, and compliance with enterprise standards.</p>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex">
+          <div class="service-card w-100">
+            <i class="fa-solid fa-shield service-icon"></i>
+            <h4>Reconciliation</h4>
+            <p>We perform reconciliation reports and audits to confirm every record matches perfectly before and after migration.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Integration & Support -->
+  <section id="integration" class="text-center">
+    <div class="container">
+      <h2>Integration & Support</h2>
+      <p>We connect and optimize your digital ecosystem through automation, monitoring, and continuous improvement services.</p>
+      <div class="row g-4 align-items-stretch mt-5">
+        <div class="col-md-4 d-flex">
+          <div class="service-card w-100">
+            <i class="fa-solid fa-plug service-icon"></i>
+            <h4>System Integration</h4>
+            <p>We integrate ERP, HR, and financial systems with third-party applications to enhance collaboration and efficiency.</p>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex">
+          <div class="service-card w-100">
+            <i class="fa-solid fa-robot service-icon"></i>
+            <h4>Automation</h4>
+            <p>Our automation workflows reduce manual effort, accelerate performance, and improve operational visibility.</p>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex">
+          <div class="service-card w-100">
+            <i class="fa-solid fa-headset service-icon"></i>
+            <h4>Ongoing Support</h4>
+            <p>We provide technical support, monitoring, and optimization services to ensure continuous improvement and uptime.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="get-started">
+    <div class="container text-center">
+      <h2>Ready to transform your business with Future Lights Technologies?</h2>
+      <p>Let’s talk about your implementation, migration, or integration needs today.</p>
+      <div class="cta">
+        <a href="mailto:info@futurelights.tech?subject=Inquiry%20about%20Services&body=Hi%20Future%20Lights%20Team,%0A%0AWe%20are%20interested%20in%20your%20implementation,%20migration,%20or%20integration%20services.%0A%0AContact%20Details:%0AName:%20_____________________%0ACompany:%20_____________________%0APhone:%20_____________________%0AEmail:%20_____________________%0A%0AThank%20you,%0A"
+           onclick="event.stopPropagation(); event.preventDefault(); window.location.href=this.href;">
+          Contact Us Today
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 <strong>Future Lights Technologies</strong>. All Rights Reserved.</p>
+    <p>Follow us on <a href="https://www.linkedin.com/company/future-lights-technologies" target="_blank">LinkedIn</a></p>
+    <p><a href="index.html" style="color:#1f80ff;">← Back to Home</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Scroll animations
+    const sections = document.querySelectorAll('section');
+    const options = { threshold: 0.2 };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, options);
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>

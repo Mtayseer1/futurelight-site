@@ -2,488 +2,268 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Future Lights | Data Migration Experts</title>
-
-  <!-- SEO Meta -->
-  <meta name="description" content="Future Lights specializes in enterprise data migration from legacy systems to modern platforms. Experts in Oracle Fusion, Creatio, Dynamics AX, SAP, and Oracle APEX archiving. Complexity into Simplicity.">
-  <meta name="keywords" content="data migration, Oracle Fusion data migration, Dynamics AX migration, SAP migration, Creatio CRM migration, Oracle APEX archiving, enterprise system migration, legacy modernization">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Future Lights Technologies | System Implementation & Data Migration Experts</title>
+  <meta name="description" content="Future Lights Technologies provides end-to-end system implementation, ERP integration, and enterprise data migration services across Oracle, Odoo, Insan HRMS, ProBiz, and Penny platforms.">
+  <meta name="keywords" content="system implementation, ERP integration, Oracle Fusion, Odoo, ProBiz, Insan HRMS, Penny, data migration, Oracle Fusion migration, SAP migration, Creatio CRM migration">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="images/Favicon.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="images/Favicon.png">
-  <link rel="apple-touch-icon" href="images/Favicon.png">
-  <link rel="shortcut icon" href="images/Favicon.png">
+  <link rel="icon" type="image/png" href="images/Favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/animate.min.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/templatemo-style.css">
-  <link rel="stylesheet" href="css/flexslider.css"> <!-- Hero Flexslider -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
-
-    <!-- ✅ Add JSON-LD structured data here -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Future Lights Technologies",
-    "url": "https://futurelights.tech",
-    "logo": "https://futurelights.tech/images/Logo.png",
-    "description": "Future Lights specializes in enterprise data migration services — migrating from Oracle EBS, Dynamics AX/365, SAP, PeopleSoft, and custom systems to Oracle Fusion, Creatio, and Oracle APEX Archiving.",
-    "sameAs": [
-      "https://www.linkedin.com/company/future-lights-technologies"
-    ],
-    "contactPoint": [{
-      "@type": "ContactPoint",
-      "email": "info@futurelights.tech",
-      "contactType": "customer support",
-      "availableLanguage": ["English", "Arabic"]
-    }],
-    "foundingDate": "2025",
-    "founder": {
-      "@type": "Person",
-      "name": "Mahmoud Abdulrazeq"
-    },
-    "serviceType": "Data Migration Services",
-    "knowsAbout": [
-      "Oracle Fusion Data Migration",
-      "SAP to Oracle Data Migration",
-      "Dynamics AX/365 Migration",
-      "Oracle APEX Archiving",
-      "Creatio CRM Migration"
-    ]
-  }
-  </script>
-  <!-- ✅ End JSON-LD -->
-
-  <!-- Custom Styles -->
   <style>
-    /* Transparent navbar at top */
-    .custom-navbar {
-      background: transparent;
-      border: none;
-      transition: background 0.3s, box-shadow 0.3s;
-    }
-    .custom-navbar.scrolled {
-      background: rgba(255,255,255,0.95);
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    .custom-navbar .navbar-nav > li > a {
-      color: #fff; /* white when transparent */
-      transition: color 0.3s;
-    }
-    .custom-navbar.scrolled .navbar-nav > li > a {
-      color: #333; /* dark when scrolled */
+    body {
+      margin: 0;
+      background: #0e0e12;
+      color: #eaeaea;
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
     }
 
-    /* Navbar */
-    .navbar-brand img {
-      height: 60px;
-    }
-
-    /* Hero Section */
+    /* Animated Gradient */
     #home {
       position: relative;
       height: 100vh;
-      overflow: hidden;
-    }
-    .flexslider {
-      height: 100%;
-    }
-    .flexslider .slides img {
-      width: 100%;
-      height: 100vh;
-      object-fit: cover;
-    }
-    .slider-caption {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      background: linear-gradient(270deg, #1f80ff, #f39200, #111111);
+      background-size: 600% 600%;
+      animation: gradient 12s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       text-align: center;
       color: #fff;
     }
-    .slider-caption h1 {
-      font-size: 48px;
+
+    @keyframes gradient {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    h1, h2, h3, h4, h5 {
+      font-family: 'Montserrat', sans-serif;
       font-weight: 700;
-    }
-    .slider-caption h3 {
-      font-size: 24px;
-      margin-bottom: 20px;
+      color: #fff;
     }
 
-    /* Service cards */
-    .service-box {
-      background:#fff;
-      border-radius:12px;
-      padding:30px;
-      margin-bottom:30px;
-      box-shadow:0 4px 12px rgba(0,0,0,0.08);
-      transition:transform 0.3s;
-      display:flex;
-      flex-direction:column;
-      justify-content:flex-start;
-      height:340px;
-      text-align:center;
-    }
-    .service-box:hover {
-      transform: translateY(-5px);
-      box-shadow:0 6px 18px rgba(0,0,0,0.12);
+    nav.navbar {
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(8px);
     }
 
-   /* Experience Slick Slider */
-/* Experience Slick Slider */ .experience-slider .card { background:#fff; border-radius:12px; padding:30px; text-align:center; margin:20px; transition: transform 0.5s ease, opacity 0.5s ease; box-shadow:0 4px 12px rgba(0,0,0,0.08); } .experience-slider .card img { max-height: 100px; max-width: 220px; width: auto; height: auto; object-fit: contain; margin: 0 auto 20px; display: block; } .experience-slider .slick-center .card { transform: scale(1.1); opacity: 1; } .experience-slider .card { opacity: 0.6; }
-
-
-    /* Arrows */
-    .slick-prev:before, .slick-next:before {
-      font-family: "FontAwesome";
-      font-size: 30px;
-      color: #000;
-    }
-    .slick-prev:before { content: "\f104"; }
-    .slick-next:before { content: "\f105"; }
-
-    /* Slogan */
-    .slogan {
-      font-size: 32px;
+    nav a {
+      color: #eaeaea !important;
       font-weight: 600;
     }
-    .slogan .highlight {
-      font-size: 42px;      /* bigger letters */
-      color: #007BFF;       /* same color as your icon */
-      font-weight: 700;
+
+    nav a:hover {
+      color: #1f80ff !important;
+    }
+
+    .btn-primary {
+      background-color: #1f80ff;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 25px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: #f39200;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    .section-dark {
+      background: #111111;
+    }
+
+    .section-light {
+      background: #1a1a1a;
+    }
+
+    .service-box, .card {
+      background: #1c1c21;
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .service-box:hover, .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      background: #0a0a0d;
+      padding: 40px 0;
+      text-align: center;
+      color: #ccc;
+    }
+
+    footer a {
+      color: #1f80ff;
+      text-decoration: none;
     }
   </style>
 </head>
+<body>
 
-
-<body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
   <!-- Navbar -->
-  <nav class="navbar navbar-fixed-top custom-navbar" role="navigation">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-      <div class="navbar-header">
-        <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon icon-bar"></span>
-          <span class="icon icon-bar"></span>
-          <span class="icon icon-bar"></span>
-        </button>
-        <a href="#home" class="navbar-brand" style="display:flex; align-items:center; padding:10px 0;">
-          <img src="images/Logo.png" alt="Future Lights - Data Migration Experts" style="height:250px; margin-right:10px;">
-        </a>
-      </div>
-      <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#home" class="smoothScroll">Home</a></li>
-          <li><a href="#service" class="smoothScroll">Services</a></li>
-          <li><a href="#about" class="smoothScroll">About Us</a></li>
-          <li><a href="#experience" class="smoothScroll">Our Work</a></li>
-          <li><a href="#contact" class="smoothScroll">Contact</a></li>
-          <li><a href="https://futurelights.tech/blog" >Blog</a></li>
+      <a class="navbar-brand" href="#home">
+        <img src="images/Logo.png" alt="Future Lights Logo" height="50"> Future Lights Technologies
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#partners">Partners</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section id="home">
-    <div class="overlay">
-      <div class="flexslider">
-        <ul class="slides">
-          <li>
-            <img src="images/1.png" alt="Enterprise Data Migration Solutions">
-            <div class="slider-caption">
-              <div class="templatemo_homewrapper">
-                <h3 class="wow bounceIn slogan">
-                  <span class="highlight">C</span>omplexity into 
-                  <span class="highlight">S</span>implicity
-                </h3>
-                <h1 class="wow bounce">Enterprise Data Migrations</h1>
-                <a href="#service" class="smoothScroll templatemo-slider-btn btn btn-default">
-                  Explore Our Services
-                </a>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
+    <div class="container text-center">
+      <h1 class="display-4 mb-3">System Implementation & Data Migration Experts</h1>
+      <p class="lead mb-4">Empowering enterprises to implement, migrate, and optimize ERP & HR systems with precision and innovation.</p>
+      <a href="#services" class="btn btn-primary btn-lg">Explore Our Services</a>
     </div>
   </section>
 
   <!-- Services -->
-  <section id="service" style="padding:80px 0; background:#f9f9f9;">
+  <section id="services" class="section-dark text-center">
     <div class="container">
+      <h2>Our Services</h2>
+      <p class="mb-5">Delivering comprehensive digital transformation — from full system implementation to secure, validated data migration.</p>
       <div class="row">
-        <div class="col-md-12 text-center wow bounceIn">
-          <h2>Our Services</h2>
-          <hr>
-          <h4>End-to-End Data Migration Solutions for Any System</h4>
-        </div>
-      </div>
-      <div class="row d-flex flex-wrap align-items-stretch">
-        <!-- Legacy to Cloud Migration -->
-        <div class="col-md-4 col-sm-6 d-flex">
-          <div class="card service-box wow fadeInUp" data-wow-delay="0.2s">
-            <i class="fa fa-cloud-upload fa-3x" style="color:#007BFF;"></i>
-            <h3>Legacy to Cloud Migration</h3>
-            <p>Migrate from <strong>any system to any system</strong> — including Oracle EBS, Dynamics AX/365, SAP, PeopleSoft, and custom platforms — into modern cloud solutions such as Oracle Fusion, Creatio, and more.</p>
+        <div class="col-md-4">
+          <div class="service-box">
+            <i class="fa-solid fa-gears fa-3x mb-3" style="color:#1f80ff;"></i>
+            <h4>System Implementation</h4>
+            <p>End-to-end implementation for ERP, HR, and business management systems — including Oracle Fusion, Odoo, Penny, ProBiz, and Insan HRMS.</p>
+            <a href="services.html" class="btn btn-primary mt-3">Read More</a>
           </div>
         </div>
-        <!-- Data Validation & Cleansing -->
-        <div class="col-md-4 col-sm-6 d-flex">
-          <div class="card service-box wow fadeInUp" data-wow-delay="0.3s">
-            <i class="fa fa-check-circle fa-3x" style="color:#28a745;"></i>
-            <h3>Data Validation & Cleansing</h3>
-            <p>End-to-end profiling, transformation, and validation services to ensure migration accuracy, compliance, and integrity of enterprise data.</p>
+        <div class="col-md-4">
+          <div class="service-box">
+            <i class="fa-solid fa-database fa-3x mb-3" style="color:#f39200;"></i>
+            <h4>Data Migration</h4>
+            <p>Seamlessly migrate legacy systems to modern platforms. We handle data extraction, cleansing, validation, and reconciliation.</p>
+            <a href="services.html" class="btn btn-primary mt-3">Read More</a>
           </div>
         </div>
-        <!-- Data Mapping & Transformation -->
-        <div class="col-md-4 col-sm-6 d-flex">
-          <div class="card service-box wow fadeInUp" data-wow-delay="0.4s">
-            <i class="fa fa-random fa-3x" style="color:#17a2b8;"></i>
-            <h3>Data Mapping & Transformation</h3>
-            <p>Specialized in mapping legacy fields to modern structures, applying advanced transformation rules, and handling complex conversions seamlessly.</p>
-          </div>
-        </div>
-        <!-- Risk-Free Cutover -->
-        <div class="col-md-4 col-sm-6 d-flex">
-          <div class="card service-box wow fadeInUp" data-wow-delay="0.5s">
-            <i class="fa fa-shield fa-3x" style="color:#ffc107;"></i>
-            <h3>Risk-Free Cutover</h3>
-            <p>Tested go-live strategies that ensure business continuity, minimize downtime, and eliminate data loss during migration cutovers.</p>
-          </div>
-        </div>
-        <!-- Post-Migration Reconciliation -->
-        <div class="col-md-4 col-sm-6 d-flex">
-          <div class="card service-box wow fadeInUp" data-wow-delay="0.6s">
-            <i class="fa fa-exchange fa-3x" style="color:#6f42c1;"></i>
-            <h3>Post-Migration Reconciliation</h3>
-            <p>Detailed reconciliation of financial, HR, supply chain, and operational data to validate accuracy against the source system.</p>
-          </div>
-        </div>
-        <!-- Compliance & Audit Support -->
-        <div class="col-md-4 col-sm-6 d-flex">
-          <div class="card service-box wow fadeInUp" data-wow-delay="0.7s">
-            <i class="fa fa-legal fa-3x" style="color:#dc3545;"></i>
-            <h3>Compliance & Audit Support</h3>
-            <p>End-to-end documentation, audit logs, and compliance support to meet enterprise and regulatory data governance requirements.</p>
+        <div class="col-md-4">
+          <div class="service-box">
+            <i class="fa-solid fa-plug fa-3x mb-3" style="color:#1f80ff;"></i>
+            <h4>Integration & Support</h4>
+            <p>Unifying applications through robust integrations, automation, and post-implementation support.</p>
+            <a href="services.html" class="btn btn-primary mt-3">Read More</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- About Us -->
-  <section id="about" style="padding:80px 0; background:#fff;">
+  <!-- About -->
+  <section id="about" class="section-light text-center">
     <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center wow bounceIn">
-          <h2>About Us</h2>
-          <hr>
-          <h4>Experts in Enterprise Data Migration</h4>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-10 col-md-offset-1 wow fadeInUp" data-wow-delay="0.3s">
-          <div style="background:#f9f9f9; border-radius:12px; padding:40px; box-shadow:0 4px 12px rgba(0,0,0,0.08); text-align:center;">
-            <i class="fa fa-database fa-4x" style="color:#007BFF; margin-bottom:20px;"></i>
-            <p style="font-size:18px; line-height:1.7; color:#333;">
-              <strong>Future Lights</strong> is a specialized data migration partner with years of experience delivering complex enterprise migration projects. 
-              From Oracle EBS and Dynamics AX/365 to SAP, PeopleSoft, and custom-built systems, our expertise spans multiple industries. 
-              We ensure <strong>seamless migrations</strong> to modern platforms such as Oracle Fusion, Creatio, and Oracle APEX Archiving — with guaranteed accuracy, security, and compliance.
-            </p>
-          </div>
-        </div>
-      </div>
+      <h2>About Future Lights Technologies</h2>
+      <p class="lead mb-4">Future Lights Technologies is a technology partner specializing in enterprise system implementation and data migration. From Oracle Fusion to Odoo, Penny, and Insan HRMS, we deliver digital transformation with precision and trust.</p>
+      <a href="about.html" class="btn btn-primary">Read More</a>
     </div>
   </section>
 
-  <!-- Our Experience -->
-  <!-- Our Experience -->
-<section id="experience" style="padding:80px 0; background:#ffffff;">
-  <div class="container text-center">
-    <h2 class="wow bounceIn">Our Experience</h2>
-    <hr>
-    <h4>Key Data Migration Projects We Contributed To</h4>
-
-    <div class="experience-slider">
- <div>
-  <div class="card">
-    <i class="fas fa-database fa-3x" style="color:#4a90e2;"></i>
-    <h3>Financial Data Migration Project</h3>
-    <p>Supported the migration from a legacy financial system to a modern compliance platform, including profiles, agents, portfolios, transactions, and distributions.</p>
-  </div>
-</div>
-
-<div>
-  <div class="card">
-    <i class="fas fa-cloud fa-3x" style="color:#50c878;"></i>
-    <h3>ERP Transformation Project</h3>
-    <p>Participated in the migration from a project management system to a cloud ERP platform covering Projects and Contracts modules.</p>
-  </div>
-</div>
-
-<div>
-  <div class="card">
-    <i class="fas fa-network-wired fa-3x" style="color:#f39c12;"></i>
-    <h3>Enterprise ERP Migration Project</h3>
-    <p>Contributed to the migration from a legacy ERP to Oracle Fusion, covering Finance, Procurement, Projects, HCM, and SCM modules.</p>
-  </div>
-</div>
-      <div>
-        <div class="card"><i class="fa fa-archive fa-3x" style="color:#dc3545; margin-bottom:20px;"></i>
-          <h3>Oracle EBS Legacy Archiving</h3>
-          <p>Developed an Oracle APEX Archiving & Reporting solution for Oracle EBS with dashboards, KPIs, and compliance-ready audit trails.</p>
+  <!-- Experience -->
+  <section id="experience" class="section-dark text-center">
+    <div class="container">
+      <h2>Our Experience</h2>
+      <p class="mb-5">We have successfully contributed to high-profile system implementations and migrations for clients across the Middle East and beyond.</p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <i class="fa-solid fa-cloud-arrow-up fa-3x mb-3" style="color:#1f80ff;"></i>
+            <h4>ERP Transformation</h4>
+            <p>Led migrations and implementations for Oracle Fusion covering Finance, Projects, Procurement, and HCM.</p>
+          </div>
         </div>
-      </div>
-      <div>
-        <div class="card"><img src="images/NHC.png" alt="NHC Data Migration">
-          <h3>NHC Migration</h3>
-          <p>Worked on migrations from Dynamics 365 and custom systems to Creatio, including Accounts, Contacts, Contracts, Cases, and more.</p>
+        <div class="col-md-4">
+          <div class="card">
+            <i class="fa-solid fa-people-group fa-3x mb-3" style="color:#f39200;"></i>
+            <h4>HR System Deployment</h4>
+            <p>Implemented Insan HRMS for organizations modernizing HR operations with seamless integrations.</p>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Technology Partners -->
-<section id="partners" style="padding:80px 0; background:#f9f9f9;">
-  <div class="container text-center">
-    <h2 class="wow bounceIn">Technology Partners</h2>
-    <hr>
-    <h4>Our Trusted Technology Collaborations</h4>
-
-    <div class="row justify-content-center align-items-stretch" style="margin-top:40px; display:flex; flex-wrap:wrap; gap:30px;">
-
-      <!-- Odoo Partner -->
-      <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.3s" style="margin:auto; display:flex;">
-        <div style="flex:1; background:#fff; border-radius:12px; padding:30px; box-shadow:0 4px 12px rgba(0,0,0,0.08); transition:transform 0.3s; display:flex; flex-direction:column; align-items:center; justify-content:space-between;">
-          <img src="images/Odoo.png" alt="Odoo Partner" style="width:100%; max-width:200px; height:auto; margin-bottom:15px;">
-          <div>
-            <h4 style="color:#333; font-weight:600;">Odoo</h4>
-            <p style="font-size:15px; color:#555;">Official technology partner supporting ERP implementation and integration projects across industries.</p>
+        <div class="col-md-4">
+          <div class="card">
+            <i class="fa-solid fa-network-wired fa-3x mb-3" style="color:#1f80ff;"></i>
+            <h4>Odoo & ProBiz Integrations</h4>
+            <p>Executed tailored ERP and CRM solutions integrating Odoo and ProBiz to streamline operations.</p>
           </div>
         </div>
       </div>
-
-      <!-- Insan HRMS Partner -->
-<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.4s" style="margin:auto; display:flex;">
-  <div style="flex:1; background:#fff; border-radius:12px; padding:30px; box-shadow:0 4px 12px rgba(0,0,0,0.08); transition:transform 0.3s; display:flex; flex-direction:column; align-items:center; justify-content:space-between;">
-    <a href="insanhrms.html" style="text-decoration:none;">
-      <img src="images/Insan.png" alt="Insan HRMS Partner" style="width:100%; max-width:200px; height:auto; margin-bottom:15px; transition:transform 0.3s;">
-    </a>
-    <div>
-      <h4 style="color:#333; font-weight:600;">Insan HRMS</h4>
-      <p style="font-size:15px; color:#555;">
-        Strategic partner providing Human Resource Management solutions that integrate seamlessly with ERP and business platforms.
-      </p>
+      <a href="experience.html" class="btn btn-primary mt-4">Read More</a>
     </div>
-  </div>
-</div>
+  </section>
 
-
+  <!-- Partners -->
+  <section id="partners" class="section-light text-center">
+    <div class="container">
+      <h2>Our Technology Partners</h2>
+      <p class="mb-5">We collaborate with global technology leaders to deliver top-tier enterprise solutions.</p>
+      <div class="row justify-content-center">
+        <div class="col-md-3 col-sm-6 mb-4">
+          <img src="images/Odoo.png" alt="Odoo" class="img-fluid mb-3" style="max-height:100px;">
+          <h5>Odoo</h5>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <img src="images/Insan.png" alt="Insan HRMS" class="img-fluid mb-3" style="max-height:100px;">
+          <h5>Insan HRMS</h5>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <img src="images/Penny.png" alt="Penny" class="img-fluid mb-3" style="max-height:100px;">
+          <h5>Penny</h5>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <img src="images/ProBiz.png" alt="ProBiz" class="img-fluid mb-3" style="max-height:100px;">
+          <h5>ProBiz</h5>
+        </div>
+      </div>
+      <a href="partners.html" class="btn btn-primary mt-3">Read More</a>
     </div>
-  </div>
-</section>
+  </section>
 
-
-
+  <!-- Contact -->
+  <section id="contact" class="section-dark text-center">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p class="mb-4">Have a project in mind? Let’s build it together.</p>
+      <p><strong>Email:</strong> <a href="mailto:info@futurelights.tech">info@futurelights.tech</a></p>
+      <p><strong>Location:</strong> Amman, Jordan</p>
+    </div>
+  </section>
 
   <!-- Footer -->
-  <footer id="contact" style="background:#111; color:#ddd; padding:30px 0;">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <ul class="social-icon wow fadeIn" data-wow-delay="0.3s" style="list-style:none; padding:0; margin:0 0 15px 0;">
-            <li style="display:inline-block; margin:0 10px;">
-              <a href="https://www.linkedin.com/company/future-lights-technologies" target="_blank" class="fa fa-linkedin" style="color:#0e76a8; font-size:24px;"></a>
-            </li>
-            <li style="display:inline-block; margin:0 10px;">
-              <a href="mailto:info@futurelights.tech" class="fa fa-envelope" style="color:#ddd; font-size:24px;"></a>
-            </li>
-          </ul>
-          <p class="wow bounceIn" style="margin:0; font-size:14px;">
-            Contact us: <a href="mailto:info@futurelights.tech" style="color:#fff; text-decoration:none;">info@futurelights.tech</a>
-          </p>
-          <p style="margin-top:10px; font-size:14px;">Copyright &copy; 2025 <span>Future Lights</span>. All Rights Reserved.</p>
-        </div>
-      </div>
-    </div>
+  <footer>
+    <p>© 2025 <strong>Future Lights Technologies</strong>. All Rights Reserved.</p>
+    <p>Follow us on <a href="https://www.linkedin.com/company/future-lights-technologies" target="_blank">LinkedIn</a></p>
   </footer>
 
-  <!-- Scripts -->
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.flexslider.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script>
-    $(window).scroll(function() {
-      if ($(this).scrollTop() > 50) {
-        $('.custom-navbar').addClass('scrolled');
-      } else {
-        $('.custom-navbar').removeClass('scrolled');
-      }
-    });
-
-    // Smooth scrolling for anchor links
-    $(document).on('click', 'a.smoothScroll', function(event) {
-      event.preventDefault();
-      var target = $(this.hash);
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top - 70
-        }, 800);
-      }
-    });
-
-    $(document).ready(function(){
-      // Hero Flexslider
-      $('.flexslider').flexslider({
-        animation: "fade",
-        slideshowSpeed: 5000,
-        animationSpeed: 1000,
-        controlNav: false,
-        directionNav: false,
-        pauseOnHover: false,
-        smoothHeight: true
-      });
-
-      // Experience Slick Slider
-      $('.experience-slider').slick({
-        centerMode: true,
-        centerPadding: '60px',
-        slidesToShow: 3,
-        autoplay: true,
-        autoplaySpeed: 10000,
-        prevArrow: '<button type="button" class="slick-prev"></button>',
-        nextArrow: '<button type="button" class="slick-next"></button>',
-        responsive: [
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 1,
-              centerPadding: '0'
-            }
-          }
-        ]
-      });
-    });
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
-
-
-
-
-
-

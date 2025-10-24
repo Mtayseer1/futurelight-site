@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us | Future Lights Technologies</title>
+  <meta name="description" content="Learn more about Future Lights Technologies — a leader in system implementation and data migration across Oracle, Odoo, Insan HRMS, and ProBiz platforms.">
+  <meta name="keywords" content="About Future Lights, system implementation, data migration, ERP integration, Oracle Fusion, Odoo, Insan HRMS, ProBiz">
+
+  <link rel="icon" type="image/png" href="images/Favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      background: #0e0e12;
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+
+    /* Navbar */
+    nav.navbar {
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(8px);
+      height: 75px;
+    }
+
+    .navbar-brand img {
+      height: 70px;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .navbar-brand img:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
+    nav a {
+      color: #ffffff !important;
+      font-weight: 600;
+    }
+
+    nav a.active, nav a:hover {
+      color: #1f80ff !important;
+    }
+
+    /* Animated Gradient Hero */
+    #hero {
+      position: relative;
+      height: 50vh;
+      background: linear-gradient(270deg, #0a0a0a, #0f1e2e, #1a1f35);
+      background-size: 600% 600%;
+      animation: gradient 12s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+    }
+
+    @keyframes gradient {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    h1, h2, h3, h4, h5 {
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+    }
+
+    p {
+      color: #eaeaea;
+      line-height: 1.7;
+    }
+
+    section {
+      padding: 80px 0;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 1s ease;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .info-box {
+      background: #1c1c21;
+      border-radius: 12px;
+      padding: 40px 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .info-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+    }
+
+    .info-box i {
+      font-size: 48px;
+      color: #1f80ff;
+      margin-bottom: 20px;
+    }
+
+    /* Timeline */
+    .timeline {
+      position: relative;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: #1f80ff;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -2px;
+    }
+
+    .timeline-item {
+      padding: 20px 30px;
+      position: relative;
+      background: #1c1c21;
+      border-radius: 12px;
+      width: 45%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .timeline-item.left { left: 0; }
+    .timeline-item.right { left: 55%; }
+
+    .timeline-item::after {
+      content: '';
+      position: absolute;
+      top: 20px;
+      width: 20px;
+      height: 20px;
+      background: #1f80ff;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .timeline-item.left::after { right: -10px; }
+    .timeline-item.right::after { left: -10px; }
+
+    @media screen and (max-width: 768px) {
+      .timeline::after { left: 31px; }
+      .timeline-item { width: 100%; left: 0 !important; margin-left: 60px; margin-bottom: 30px; }
+      .timeline-item::after { left: -39px; }
+    }
+
+    /* CTA */
+    #get-started {
+      background: #0a0a0d;
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    #get-started h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    #get-started p {
+      font-size: 18px;
+      margin-bottom: 40px;
+      color: #ccc;
+    }
+
+    #get-started a {
+      background: #1f80ff;
+      color: #fff;
+      padding: 14px 32px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    #get-started a:hover {
+      background: #1665cc;
+    }
+
+    footer {
+      background: #0a0a0d;
+      padding: 40px 0;
+      text-align: center;
+      color: #ccc;
+    }
+
+    footer a {
+      color: #1f80ff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html#home">
+        <img src="images/Logo.png" alt="Future Lights Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#partners">Partners</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="container">
+      <h1>About Future Lights Technologies</h1>
+      <p class="lead">Delivering enterprise transformation through innovation, precision, and trust.</p>
+    </div>
+  </section>
+
+  <!-- Vision & Mission -->
+  <section id="vision" class="text-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-5">
+          <div class="info-box">
+            <i class="fa-solid fa-lightbulb"></i>
+            <h3>Our Vision</h3>
+            <p>To be the leading technology partner in digital transformation, empowering businesses across the Middle East and beyond through intelligent system implementation and data innovation.</p>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="info-box">
+            <i class="fa-solid fa-bullseye"></i>
+            <h3>Our Mission</h3>
+            <p>We strive to simplify complex enterprise systems by delivering end-to-end implementation, integration, and migration solutions — turning complexity into simplicity.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Values -->
+  <section id="values" class="section-dark text-center">
+    <div class="container">
+      <h2>Our Core Values</h2>
+      <div class="row g-4 mt-4">
+        <div class="col-md-3 d-flex">
+          <div class="info-box w-100">
+            <i class="fa-solid fa-handshake"></i>
+            <h5>Integrity</h5>
+            <p>We build trust through honesty, accountability, and transparent collaboration with every client.</p>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex">
+          <div class="info-box w-100">
+            <i class="fa-solid fa-gear"></i>
+            <h5>Innovation</h5>
+            <p>We embrace technology and creativity to craft tailored, cutting-edge enterprise solutions.</p>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex">
+          <div class="info-box w-100">
+            <i class="fa-solid fa-users"></i>
+            <h5>Teamwork</h5>
+            <p>Collaboration drives our success — within our team and in every partnership we form.</p>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex">
+          <div class="info-box w-100">
+            <i class="fa-solid fa-chart-line"></i>
+            <h5>Excellence</h5>
+            <p>We pursue excellence in every phase — from planning and execution to long-term client success.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Journey -->
+  <section id="journey" class="text-center">
+    <div class="container">
+      <h2>Our Journey</h2>
+      <p class="mb-5">From a data migration start-up to a regional leader in system implementation and digital transformation.</p>
+      <div class="timeline">
+        <div class="timeline-item left">
+          <h5>2021 — The Beginning</h5>
+          <p>Founded with a mission to redefine enterprise data migration with accuracy and reliability.</p>
+        </div>
+        <div class="timeline-item right">
+          <h5>2022 — Expansion into ERP</h5>
+          <p>Started implementing Oracle Fusion and HRMS systems for major enterprises across the region.</p>
+        </div>
+        <div class="timeline-item left">
+          <h5>2023 — Strategic Partnerships</h5>
+          <p>Partnered with industry leaders including Odoo, Insan HRMS, ProBiz, and Penny to extend capabilities.</p>
+        </div>
+        <div class="timeline-item right">
+          <h5>2024 — Regional Recognition</h5>
+          <p>Recognized as a trusted implementation and data migration partner in the Middle East and North Africa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="get-started">
+    <div class="container text-center">
+      <h2>Building the Future, One Implementation at a Time</h2>
+      <p>Join the growing list of organizations that trust Future Lights Technologies to simplify their digital transformation journey.</p>
+      <a href="mailto:info@futurelights.tech?subject=Inquiry%20About%20Future%20Lights%20Technologies">Contact Us Today</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 <strong>Future Lights Technologies</strong>. All Rights Reserved.</p>
+    <p>Follow us on <a href="https://www.linkedin.com/company/future-lights-technologies" target="_blank">LinkedIn</a></p>
+    <p><a href="index.html" style="color:#1f80ff;">← Back to Home</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Scroll animations
+    const sections = document.querySelectorAll('section');
+    const options = { threshold: 0.2 };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, options);
+
+    sections.forEach(section => observer.observe(section));
+  </script>
+</body>
+</html>

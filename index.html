@@ -185,6 +185,25 @@ color: #fff;
       color: #1f80ff;
       text-decoration: none;
     }
+    .partner-card {
+background: #1c1c21;
+border-radius: 12px;
+padding: 30px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+width: 100%;
+max-width: 280px;
+}
+.partner-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+}
+#partners .row {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 30px;
+}
   </style>
 </head>
 <body>
@@ -301,32 +320,44 @@ color: #fff;
     </div>
   </section>
 
-  <!-- Partners -->
-  <section id="partners" class="section-light text-center">
-    <div class="container">
-      <h2>Our Technology Partners</h2>
-      <p class="mb-5">We collaborate with global technology leaders to deliver top-tier enterprise solutions.</p>
-      <div class="row justify-content-center">
-        <div class="col-md-3 col-sm-6 mb-4">
+<!-- Partners -->
+<section id="partners" class="section-light text-center">
+  <div class="container">
+    <h2>Our Technology Partners</h2>
+    <p class="mb-5">We collaborate with leading technology providers to deliver innovative ERP and HR solutions.</p>
+    <div class="row justify-content-center flex-wrap">
+      <div class="col-md-4 col-sm-6 mb-4 d-flex justify-content-center">
+        <div class="partner-card text-center">
           <img src="images/Odoo.png" alt="Odoo" class="img-fluid mb-3" style="max-height:100px;">
           <h5>Odoo</h5>
         </div>
-        <div class="col-md-3 col-sm-6 mb-4">
+      </div>
+      <div class="col-md-4 col-sm-6 mb-4 d-flex justify-content-center">
+        <div class="partner-card text-center">
           <img src="images/Insan.png" alt="Insan HRMS" class="img-fluid mb-3" style="max-height:100px;">
           <h5>Insan HRMS</h5>
         </div>
-        <div class="col-md-3 col-sm-6 mb-4">
+      </div>
+      <!--
+      <div class="col-md-4 col-sm-6 mb-4 d-flex justify-content-center">
+        <div class="partner-card text-center">
           <img src="images/Penny.png" alt="Penny" class="img-fluid mb-3" style="max-height:100px;">
           <h5>Penny</h5>
         </div>
-        <div class="col-md-3 col-sm-6 mb-4">
+      </div>
+      <div class="col-md-4 col-sm-6 mb-4 d-flex justify-content-center">
+        <div class="partner-card text-center">
           <img src="images/ProBiz.png" alt="ProBiz" class="img-fluid mb-3" style="max-height:100px;">
           <h5>ProBiz</h5>
         </div>
       </div>
-      <a href="partners.html" class="btn btn-primary mt-3">Read More</a>
+      -->
     </div>
-  </section>
+  </div>
+</section>
+
+
+
 
   <!-- Footer -->
   <footer id="contact">
@@ -367,3 +398,4 @@ color: #fff;
   </script>
 </body>
 </html>
+

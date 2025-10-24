@@ -5,168 +5,207 @@
   <title>Insan HRMS Partnership | Future Lights Technologies</title>
 
   <!-- SEO Meta -->
-  <meta name="description" content="Future Lights Technologies is a proud technology partner of Insan HRMS, providing implementation, integration, and data migration services for modern HR transformation.">
-  <meta name="keywords" content="Insan HRMS, HR software, HRMS integration, payroll system, Future Lights, HR digital transformation, ERP integration">
+  <meta name="description" content="Future Lights Technologies (also known as Future Light) is an official technology partner of Insan HRMS, providing HR implementation, integration, and data migration solutions for modern enterprises.">
+  <meta name="keywords" content="Insan HRMS, Future Light, HR software, HRMS implementation, payroll system, HR integration, ERP partner, Oracle HR integration, Future Lights Technologies">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="images/Favicon.png">
-  <link rel="stylesheet" href="css/animate.min.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/templatemo-style.css">
-  <link rel="stylesheet" href="css/flexslider.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Future Lights Technologies",
+    "alternateName": "Future Light",
+    "url": "https://futurelights.tech",
+    "logo": "https://futurelights.tech/images/Logo.png",
+    "sameAs": [
+      "https://www.linkedin.com/company/future-lights-technologies",
+      "https://futurelights.tech"
+    ],
+    "description": "Future Lights Technologies (also known as Future Light) provides enterprise system implementation, ERP integration, and data migration services across Oracle, Odoo, Insan HRMS, and ProBiz platforms.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Amman",
+      "addressCountry": "Jordan"
+    }
+  }
+  </script>
 
   <style>
-    body { font-family: 'Montserrat', sans-serif; }
+    body {
+      margin: 0;
+      background: #0e0e12;
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
 
     /* Navbar */
-    .custom-navbar {
-      background: transparent;
-      border: none;
-      transition: background 0.3s, box-shadow 0.3s;
+    nav.navbar {
+      background: rgba(0,0,0,0.85);
+      backdrop-filter: blur(8px);
+      height: 75px;
     }
-    .custom-navbar.scrolled {
-      background: rgba(255,255,255,0.95);
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    .custom-navbar .navbar-nav>li>a { color:#fff; transition:color .3s }
-    .custom-navbar.scrolled .navbar-nav>li>a { color:#333 }
-    .navbar-brand img { height:60px; }
+    nav a { color: #ffffff !important; font-weight: 600; }
+    nav a:hover { color: #1f80ff !important; }
+    .navbar-brand img { height: 70px; transition: transform 0.3s ease; }
+    .navbar-brand img:hover { transform: scale(1.05); }
 
-    /* Hero Section (Image Only) */
+    /* Hero */
     #hero {
       position: relative;
       width: 100%;
-      height: 100vh;
+      height: 60vh;
       background: url('images/insanhero.jpeg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+    #hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+    }
+    #hero h1 {
+      position: relative;
+      z-index: 2;
+      font-size: 48px;
+      font-weight: 700;
     }
 
     /* Section Base */
-    section { padding:80px 0; }
-
-    /* Card Style */
-    .info-card {
-      background:#fff;
-      border-radius:12px;
-      padding:40px;
-      box-shadow:0 4px 12px rgba(0,0,0,0.08);
-      margin-bottom:40px;
-      transition:transform 0.3s;
+    section {
+      padding: 80px 0;
     }
-    .info-card:hover { transform:translateY(-5px); }
+    .section-dark { background: #111; }
+    .section-light { background: #1a1a1a; }
+
+    .info-card {
+      background: #1c1c21;
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      margin-bottom: 40px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .info-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+    }
 
     h2.section-title {
-      text-align:center;
-      font-weight:700;
-      margin-bottom:20px;
-      color:#007BFF;
+      text-align: center;
+      font-weight: 700;
+      color: #1f80ff;
+      margin-bottom: 20px;
     }
     hr {
-      width:80px;
-      height:3px;
-      background:#007BFF;
-      border:none;
-      margin:0 auto 40px auto;
+      width: 80px;
+      height: 3px;
+      background: #1f80ff;
+      border: none;
+      margin: 0 auto 40px auto;
     }
 
     .partner-logo {
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      margin:40px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 40px 0;
     }
     .partner-logo img {
-      max-width:260px;
-      height:auto;
+      max-width: 280px;
+      height: auto;
+      filter: brightness(0.9);
     }
 
-    /* CTA */
-    .cta {
-      text-align:center;
-      margin-top:40px;
-    }
     .cta a {
-      background:#007BFF;
-      color:#fff;
-      padding:14px 32px;
-      border-radius:8px;
-      text-decoration:none;
-      font-weight:600;
+      background: #1f80ff;
+      color: #fff;
+      padding: 14px 32px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
       transition: background 0.3s;
     }
     .cta a:hover {
-      background:#0056b3;
+      background: #1665cc;
     }
 
     footer {
-      background:#111;
-      color:#ddd;
-      text-align:center;
-      padding:30px 0;
+      background: #0a0a0d;
+      color: #ddd;
+      text-align: center;
+      padding: 60px 0;
     }
-    footer a { color:#fff; text-decoration:none; }
-    footer a:hover { text-decoration:underline; }
+    footer a {
+      color: #1f80ff;
+      text-decoration: none;
+    }
   </style>
 </head>
 
-<body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
+<body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-fixed-top custom-navbar" role="navigation">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-      <div class="navbar-header">
-        <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon icon-bar"></span>
-          <span class="icon icon-bar"></span>
-          <span class="icon icon-bar"></span>
-        </button>
-        <a href="index.html" class="navbar-brand" style="display:flex;align-items:center;padding:10px 0;">
-          <img src="images/Logo.png" alt="Future Lights - Data Migration Experts" style="height:250px;margin-right:10px;">
-        </a>
-      </div>
-      <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="index.html#home" class="smoothScroll">Home</a></li>
-          <li><a href="index.html#service" class="smoothScroll">Services</a></li>
-          <li><a href="index.html#about" class="smoothScroll">About Us</a></li>
-          <li><a href="index.html#experience" class="smoothScroll">Our Work</a></li>
-          <li><a href="index.html#partners" class="smoothScroll">Partners</a></li>
-          <li><a href="index.html#contact" class="smoothScroll">Contact</a></li>
+      <a class="navbar-brand" href="https://futurelights.tech/">
+        <img src="images/Logo.png" alt="Future Lights Technologies Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="https://futurelights.tech/#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://futurelights.tech/services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://futurelights.tech/about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://futurelights.tech/experience.html">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://futurelights.tech/#partners">Partners</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://futurelights.tech/blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://futurelights.tech/#contact">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section (Image Only) -->
-  <section id="hero"></section>
+  <!-- Hero -->
+  <section id="hero">
+    <h1>Future Lights × Insan HRMS Partnership</h1>
+  </section>
 
   <!-- About Partnership -->
-  <section id="about-partnership" style="background:#f9f9f9;">
+  <section id="about-partnership" class="section-dark">
     <div class="container">
-      <h2 class="section-title wow bounceIn">About the Partnership</h2>
+      <h2 class="section-title">About the Partnership</h2>
       <hr>
-
-      <div class="partner-logo wow fadeInUp">
+      <div class="partner-logo">
         <img src="images/Insan.png" alt="Insan HRMS Logo">
       </div>
-
-      <div class="info-card wow fadeInUp" data-wow-delay="0.3s">
+      <div class="info-card">
         <p><strong>Future Lights Technologies</strong> is an official technology partner of <strong>Insan HRMS</strong>, a leading cloud-based Human Resource Management System designed to simplify and automate HR processes. Together, we deliver digital transformation for HR departments across the Middle East — ensuring seamless integration, regional compliance, and scalability for modern enterprises.</p>
       </div>
     </div>
   </section>
 
   <!-- Insan HRMS Overview -->
-  <section id="insan-overview" style="background:#fff;">
+  <section id="insan-overview" class="section-light">
     <div class="container">
-      <h2 class="section-title wow bounceIn">About Insan HRMS</h2>
+      <h2 class="section-title">About Insan HRMS</h2>
       <hr>
-
-      <div class="info-card wow fadeInUp" data-wow-delay="0.3s">
+      <div class="info-card">
         <p><strong>Insan HRMS</strong> provides a full suite of HR solutions — from payroll and attendance to performance and task management. It’s built for flexibility, offering secure cloud hosting, multilingual support, and integration-ready APIs.</p>
-
         <ul style="margin-left:20px; line-height:1.8;">
-          <li>Employee Self-Service (ESS) & Manager Self-Service (MSS)</li>
+          <li>Employee & Manager Self-Service</li>
           <li>Payroll, Compensation & Benefits Management</li>
           <li>Personnel & Time Attendance Tracking</li>
           <li>Performance & Task Management</li>
@@ -178,38 +217,37 @@
   </section>
 
   <!-- Partnership Scope -->
-  <section id="partnership-scope" style="background:#f9f9f9;">
+  <section id="partnership-scope" class="section-dark">
     <div class="container">
-      <h2 class="section-title wow bounceIn">What Our Partnership Delivers</h2>
+      <h2 class="section-title">What Our Partnership Delivers</h2>
       <hr>
-
       <div class="row">
-        <div class="col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="col-md-6">
           <div class="info-card">
-            <i class="fa fa-cogs fa-3x" style="color:#007BFF;margin-bottom:15px;"></i>
+            <i class="fa fa-cogs fa-3x mb-3" style="color:#1f80ff;"></i>
             <h4>Implementation & Configuration</h4>
             <p>Complete setup and customization of Insan HRMS modules based on your organization’s structure and policies.</p>
           </div>
         </div>
-        <div class="col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+        <div class="col-md-6">
           <div class="info-card">
-            <i class="fa fa-database fa-3x" style="color:#28a745;margin-bottom:15px;"></i>
+            <i class="fa fa-database fa-3x mb-3" style="color:#28a745;"></i>
             <h4>Data Migration & Integration</h4>
-            <p>Seamless migration from legacy HR systems and real-time integration with ERP and analytics platforms like Oracle Fusion and Dynamics 365.</p>
+            <p>Seamless migration from legacy HR systems and real-time integration with ERP platforms like Oracle Fusion and Dynamics 365.</p>
           </div>
         </div>
-        <div class="col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="col-md-6">
           <div class="info-card">
-            <i class="fa fa-chalkboard-teacher fa-3x" style="color:#f39c12;margin-bottom:15px;"></i>
+            <i class="fa fa-chalkboard-teacher fa-3x mb-3" style="color:#f39c12;"></i>
             <h4>Training & Support</h4>
             <p>Comprehensive user training, post-implementation support, and continuous optimization services.</p>
           </div>
         </div>
-        <div class="col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+        <div class="col-md-6">
           <div class="info-card">
-            <i class="fa fa-shield-alt fa-3x" style="color:#6f42c1;margin-bottom:15px;"></i>
+            <i class="fa fa-shield-alt fa-3x mb-3" style="color:#6f42c1;"></i>
             <h4>Compliance & Security</h4>
-            <p>Ensuring your HR data remains compliant, secure, and aligned with regional data protection standards.</p>
+            <p>Ensuring your HR data remains secure, compliant, and aligned with local and regional data protection standards.</p>
           </div>
         </div>
       </div>
@@ -217,17 +255,13 @@
   </section>
 
   <!-- CTA -->
-  <section id="get-started" style="background:#fff;">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.3s">
+  <section id="get-started" class="section-light text-center">
+    <div class="container">
       <h2 class="section-title">Get Started</h2>
       <hr>
-      <p>Ready to transform your HR operations with Insan HRMS and Future Lights?</p>
-      <div class="cta">
-        <a href="mailto:info@futurelights.tech?subject=Inquiry%20about%20Insan%20HRMS%20Partnership&body=Hi%20Future%20Lights%20Team,%0A%0AWe%20are%20reaching%20out%20from%20[Company%20Name].%0A%0AWe%20are%20interested%20in%20the%20Insan%20HRMS%20solution%20and%20would%20like%20to%20inquire%20if%20we%20can%20schedule%20a%20demo%20session%20or%20learn%20more%20about%20your%20implementation%20services.%0A%0AContact%20Details:%0AName:%20_____________________%0APosition:%20_____________________%0APhone:%20_____________________%0AEmail:%20_____________________%0A%0AThank%20you,%0A"
-           onclick="event.stopPropagation(); event.preventDefault(); window.location.href=this.href;"
-           style="background:#007BFF; color:#fff; padding:14px 32px; border-radius:8px; text-decoration:none; font-weight:600; transition:background 0.3s;">
-          Contact Us Today
-        </a>
+      <p>Ready to transform your HR operations with Insan HRMS and Future Lights Technologies?</p>
+      <div class="cta mt-4">
+        <a href="mailto:info@futurelights.tech?subject=Inquiry%20about%20Insan%20HRMS%20Partnership">Contact Us Today</a>
       </div>
     </div>
   </section>
@@ -235,19 +269,10 @@
   <!-- Footer -->
   <footer>
     <p>© 2025 Future Lights Technologies. All Rights Reserved.</p>
-    <p><a href="mailto:info@futurelights.tech">info@futurelights.tech</a> |
-       <a href="https://www.linkedin.com/company/future-lights-technologies" target="_blank">LinkedIn</a></p>
+    <p><a href="mailto:info@futurelights.tech">info@futurelights.tech</a> | 
+    <a href="https://www.linkedin.com/company/future-lights-technologies" target="_blank">LinkedIn</a></p>
   </footer>
 
-  <!-- Scripts -->
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.flexslider.js"></script>
-  <script>
-    $(window).scroll(function(){
-      if ($(this).scrollTop()>50) $('.custom-navbar').addClass('scrolled');
-      else $('.custom-navbar').removeClass('scrolled');
-    });
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -63,7 +63,13 @@
     }
 
     .navbar-brand img {
-      height: 80px; /* Restored logo size similar to old layout */
+      height: 110px; /* Increased logo size to match old navbar */
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .navbar-brand img:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
     }
 
     .btn-primary {

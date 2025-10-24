@@ -33,36 +33,41 @@
       background: #0e0e12;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
+      padding-top: 120px;
       z-index: 9999;
       animation: fadeOut 1s ease 3s forwards;
+      text-align: center;
     }
 
     #loader img {
-      height: 120px;
-      animation: pulse 2s infinite;
+      height: 90px;
+      margin-bottom: 40px;
+      animation: fadeInDown 1s ease;
     }
 
     #loader h3 {
-      margin-top: 20px;
       font-family: 'Montserrat', sans-serif;
-      font-size: 28px;
-      color: #1f80ff;
+      font-size: 40px;
+      font-weight: 700;
+      color: #ffffff;
       letter-spacing: 1px;
-      animation: bounceIn 2s ease;
+      animation: fadeInUp 1.5s ease;
     }
 
-    @keyframes pulse {
-      0% { transform: scale(1); opacity: 1; }
-      50% { transform: scale(1.1); opacity: 0.8; }
-      100% { transform: scale(1); opacity: 1; }
+    #loader h3 span.blue {
+      color: #1f80ff;
     }
 
-    @keyframes bounceIn {
-      0% { opacity: 0; transform: translateY(50px); }
-      50% { opacity: 1; transform: translateY(-20px); }
-      100% { transform: translateY(0); }
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-40px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(40px); }
+      100% { opacity: 1; transform: translateY(0); }
     }
 
     @keyframes fadeOut {
@@ -70,18 +75,18 @@
     }
 
     /* Animated Gradient */
-    #home {
-      position: relative;
-      height: 100vh;
-      background: linear-gradient(270deg, #0a0a0a, #0f1e2e, #1a1f35);
-      background-size: 600% 600%;
-      animation: gradient 12s ease infinite;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: #fff;
-    }
+   #home {
+position: relative;
+height: 50vh; /* reduced from 100vh to 50% */
+background: linear-gradient(270deg, #0a0a0a, #0f1e2e, #1a1f35);
+background-size: 600% 600%;
+animation: gradient 12s ease infinite;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+color: #fff;
+}
 
     @keyframes gradient {
       0% {background-position: 0% 50%;}
@@ -109,7 +114,7 @@
     }
 
     .navbar-brand img {
-      height: 100px;
+      height: 70px;
       transition: transform 0.3s ease, opacity 0.3s ease;
     }
 
@@ -187,7 +192,7 @@
   <!-- Loader -->
   <div id="loader">
     <img src="images/Logo.png" alt="Future Lights Logo">
-    <h3><span class="highlight">C</span>omplexity into <span class="highlight">S</span>implicity</h3>
+    <h3><span class="blue">C</span>omplexity into <span class="blue">S</span>implicity</h3>
   </div>
 
   <!-- Navbar -->
@@ -362,4 +367,3 @@
   </script>
 </body>
 </html>
-

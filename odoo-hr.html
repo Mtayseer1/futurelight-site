@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Odoo Human Resources System Implementation | Future Lights Technologies</title>
+  <meta name="description" content="Implement Odoo Human Resources (HR) system with Future Lights Technologies — automate payroll, attendance, recruitment, and employee management. Odoo HR experts in Jordan and GCC.">
+  <meta name="keywords" content="Odoo HR, Odoo human resources, HR system Jordan, Odoo payroll GCC, Odoo attendance, employee management software, HR implementation Jordan, HR automation, Future Lights Technologies">
+
+  <link rel="icon" type="image/png" href="images/Favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    body {
+      margin:0;
+      font-family:'Inter',sans-serif;
+      color:#fff;
+      background:#0e0e12;
+      overflow-x:hidden;
+      scroll-behavior:smooth;
+    }
+
+    nav.navbar {
+      background:rgba(0,0,0,0.85);
+      backdrop-filter:blur(8px);
+      height:75px;
+    }
+    nav a {color:#fff!important;font-weight:600;}
+    nav a:hover {color:#a685b2!important;}
+    .navbar-brand img {height:70px;}
+
+    #hero {
+      background:linear-gradient(270deg,#0a0a0a,#2a1638,#714b67);
+      background-size:600% 600%;
+      animation:gradient 12s ease infinite;
+      min-height:70vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      color:#fff;
+      padding:0 20px;
+    }
+    @keyframes gradient {
+      0%{background-position:0% 50%;}
+      50%{background-position:100% 50%;}
+      100%{background-position:0% 50%;}
+    }
+    #hero h1{font-size:2.5rem;font-weight:700;}
+    #hero p{font-size:1.2rem;margin:20px auto;max-width:750px;}
+    .btn-purple{
+      background-color:#714b67;
+      border:none;
+      color:#fff;
+      padding:12px 32px;
+      border-radius:8px;
+      font-weight:600;
+      transition:all 0.3s;
+    }
+    .btn-purple:hover{background-color:#a685b2;}
+
+    section{padding:80px 0;}
+    h2.section-title{text-align:center;font-weight:700;margin-bottom:15px;color:#a685b2;}
+    hr{width:80px;height:3px;background:#714b67;border:none;margin:0 auto 40px auto;}
+
+    .info-card{
+      background:#1c1c21;
+      border-radius:12px;
+      padding:40px 30px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.3);
+      height:100%;
+      transition:transform .3s;
+    }
+    .info-card:hover{transform:translateY(-5px);}
+    footer{background:#0a0a0d;text-align:center;padding:50px 0;color:#aaa;}
+    footer a{color:#a685b2;text-decoration:none;}
+  </style>
+
+  <!-- SEO Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Odoo Human Resources System Implementation",
+    "provider": {
+      "@type": "Organization",
+      "name": "Future Lights Technologies",
+      "alternateName": "Future Lights",
+      "url": "https://futurelights.tech",
+      "logo": "https://futurelights.tech/images/Logo.png",
+      "areaServed": ["Jordan","Saudi Arabia","UAE","Qatar","Oman","Kuwait","Bahrain"]
+    },
+    "description": "Future Lights Technologies implements Odoo Human Resources (HR) systems for businesses across Jordan and the GCC — automating payroll, attendance, and employee management."
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://futurelights.tech/">
+        <img src="images/Logo.png" alt="Future Lights Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="odoo.html">Odoo</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="container">
+      <h1>Odoo Human Resources System Implementation in Jordan & GCC</h1>
+      <p>Modernize your HR operations with Odoo’s smart Human Resources Management System — covering attendance, payroll, recruitment, and employee lifecycle management.</p>
+      <a href="mailto:info@futurelights.tech?subject=Odoo%20HR%20Inquiry" class="btn-purple">Request a Demo</a>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section id="intro">
+    <div class="container">
+      <h2 class="section-title">About Odoo Human Resources</h2>
+      <hr>
+      <p class="lead text-center" style="max-width:900px;margin:auto;">
+        <strong>Odoo HR</strong> is a comprehensive Human Resources suite designed to simplify every stage of the employee journey — from recruitment and onboarding to payroll and performance evaluation.
+        With <strong>Future Lights Technologies</strong> as your Odoo partner, you can automate HR processes, improve efficiency, and ensure compliance across your organization in <strong>Jordan</strong> and the <strong>GCC</strong>.
+      </p>
+      <p class="text-center mt-4" style="max-width:900px;margin:auto;">
+        Whether you manage a small business or a large enterprise, Odoo HR gives you the tools to centralize employee data, monitor attendance, handle leaves, and streamline payroll processing in one integrated system.
+      </p>
+    </div>
+  </section>
+
+  <!-- Core Features -->
+  <section id="features" class="section-dark">
+    <div class="container">
+      <h2 class="section-title">Core Features of Odoo HR</h2>
+      <hr>
+      <div class="row g-4 text-center">
+        <div class="col-md-4"><div class="info-card"><i class="fa-solid fa-users fa-2x mb-3" style="color:#a685b2;"></i><h5>Employee Management</h5><p>Centralized database for employee information, contracts, and documents with secure access control.</p></div></div>
+        <div class="col-md-4"><div class="info-card"><i class="fa-solid fa-calendar-check fa-2x mb-3" style="color:#a685b2;"></i><h5>Attendance & Leaves</h5><p>Track employee attendance and leave requests with approval workflows and automated balances.</p></div></div>
+        <div class="col-md-4"><div class="info-card"><i class="fa-solid fa-money-bill-wave fa-2x mb-3" style="color:#a685b2;"></i><h5>Payroll Management</h5><p>Generate payslips, manage salary structures, and calculate benefits while complying with local labor laws.</p></div></div>
+        <div class="col-md-4"><div class="info-card"><i class="fa-solid fa-user-plus fa-2x mb-3" style="color:#a685b2;"></i><h5>Recruitment</h5><p>Manage job postings, applications, interviews, and candidate evaluations in a streamlined workflow.</p></div></div>
+        <div class="col-md-4"><div class="info-card"><i class="fa-solid fa-chart-line fa-2x mb-3" style="color:#a685b2;"></i><h5>Performance & Appraisals</h5><p>Conduct performance reviews and link results directly to employee development plans and goals.</p></div></div>
+        <div class="col-md-4"><div class="info-card"><i class="fa-solid fa-briefcase-clock fa-2x mb-3" style="color:#a685b2;"></i><h5>Timesheets & Projects</h5><p>Record work hours, link timesheets to projects, and generate productivity analytics for each department.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Integration -->
+  <section id="integration" class="section-light text-center">
+    <div class="container">
+      <h2 class="section-title">Integrated HR Ecosystem</h2>
+      <hr>
+      <p style="max-width:900px;margin:auto;">
+        Odoo HR seamlessly integrates with <strong>Payroll</strong>, <strong>Accounting</strong>, and <strong>Projects</strong> modules to unify your workforce and financial operations.
+        <strong>Future Lights Technologies</strong> ensures full automation from employee time tracking to salary payments and expense accounting.
+      </p>
+      <p style="max-width:900px;margin:auto;margin-top:20px;">
+        Our localized implementation aligns with <strong>Jordanian labor regulations</strong> and <strong>GCC HR compliance standards</strong>, offering bilingual interfaces and country-specific payroll configurations.
+      </p>
+    </div>
+  </section>
+
+  <!-- Implementation Process -->
+  <section id="process" class="section-dark text-center">
+    <div class="container">
+      <h2 class="section-title">Our HR Implementation Process</h2>
+      <hr>
+      <div class="row justify-content-center g-4">
+        <div class="col-md-2 col-sm-6"><div class="info-card"><i class="fa-solid fa-clipboard-list fa-2x mb-3" style="color:#a685b2;"></i><h6>1. Requirements Gathering</h6></div></div>
+        <div class="col-md-2 col-sm-6"><div class="info-card"><i class="fa-solid fa-user-cog fa-2x mb-3" style="color:#a685b2;"></i><h6>2. HR Module Setup</h6></div></div>
+        <div class="col-md-2 col-sm-6"><div class="info-card"><i class="fa-solid fa-database fa-2x mb-3" style="color:#a685b2;"></i><h6>3. Employee Data Migration</h6></div></div>
+        <div class="col-md-2 col-sm-6"><div class="info-card"><i class="fa-solid fa-vials fa-2x mb-3" style="color:#a685b2;"></i><h6>4. Testing & Validation</h6></div></div>
+        <div class="col-md-2 col-sm-6"><div class="info-card"><i class="fa-solid fa-headset fa-2x mb-3" style="color:#a685b2;"></i><h6>5. Training & Support</h6></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose -->
+  <section id="why-fl" class="section-light text-center">
+    <div class="container">
+      <h2 class="section-title">Why Choose Future Lights</h2>
+      <hr>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-3"><div class="info-card"><i class="fa-solid fa-user-tie fa-2x mb-3" style="color:#a685b2;"></i><h6>HR-Focused Experts</h6></div></div>
+        <div class="col-md-3"><div class="info-card"><i class="fa-solid fa-certificate fa-2x mb-3" style="color:#a685b2;"></i><h6>Official Odoo Partner</h6></div></div>
+        <div class="col-md-3"><div class="info-card"><i class="fa-solid fa-language fa-2x mb-3" style="color:#a685b2;"></i><h6>Bilingual (EN/AR) Interfaces</h6></div></div>
+        <div class="col-md-3"><div class="info-card"><i class="fa-solid fa-map-location-dot fa-2x mb-3" style="color:#a685b2;"></i><h6>Local HR Compliance (Jordan & GCC)</h6></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta" style="background:linear-gradient(270deg,#714b67,#2a1638);text-align:center;padding:80px 20px;">
+    <div class="container">
+      <h2 class="mb-4">Transform Your HR Operations with Odoo</h2>
+      <p class="mb-4">Contact <strong>Future Lights Technologies</strong> to discuss your Odoo HR implementation and streamline your workforce management.</p>
+      <a href="mailto:info@futurelights.tech?subject=Odoo%20HR%20Implementation" class="btn-purple">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Future Lights Technologies. All Rights Reserved.</p>
+    <p><a href="mailto:info@futurelights.tech">info@futurelights.tech</a> | <a href="https://www.linkedin.com/company/future-lights-technologies" target="_blank">LinkedIn</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

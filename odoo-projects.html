@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Odoo Projects & Timesheets Implementation | Future Lights Technologies</title>
+  <meta name="description" content="Future Lights Technologies implements Odoo Projects & Timesheets for companies in Jordan and GCC. Manage tasks, teams, timesheets, and billing seamlessly with Odoo ERP.">
+  <meta name="keywords" content="Odoo Projects, Odoo Timesheets, Odoo Project Management, Odoo Task Tracking, Odoo Implementation Jordan, Project ERP GCC, Odoo Partner Jordan, Odoo Team Collaboration, Future Lights Odoo Partner, Odoo Project Billing, Odoo Task Automation">
+  <meta name="robots" content="index, follow">
+
+  <link rel="icon" type="image/png" href="images/Favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    body {
+      margin:0;
+      font-family:'Inter',sans-serif;
+      color:#fff;
+      background:#0e0e12;
+      overflow-x:hidden;
+      scroll-behavior:smooth;
+    }
+
+    /* Navbar */
+    nav.navbar {
+      background:rgba(0,0,0,0.85);
+      backdrop-filter:blur(8px);
+      height:75px;
+    }
+    nav a {color:#fff!important;font-weight:600;text-decoration:none;}
+    nav a:hover {color:#a685b2!important;}
+    .navbar-brand img {height:70px;}
+
+    /* Hero */
+    #hero {
+      background:linear-gradient(270deg,#0a0a0a,#2a1638,#714b67);
+      background-size:600% 600%;
+      animation:gradient 12s ease infinite;
+      min-height:70vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      color:#fff;
+      padding:0 20px;
+    }
+    @keyframes gradient {
+      0%{background-position:0% 50%;}
+      50%{background-position:100% 50%;}
+      100%{background-position:0% 50%;}
+    }
+    #hero h1{font-size:2.5rem;font-weight:700;}
+    #hero p{font-size:1.2rem;margin:20px auto;max-width:750px;}
+    .btn-purple{
+      background-color:#714b67;
+      border:none;
+      color:#fff;
+      padding:12px 32px;
+      border-radius:8px;
+      font-weight:600;
+      transition:all 0.3s;
+      text-decoration:none;
+    }
+    .btn-purple:hover{background-color:#a685b2;}
+
+    section{padding:80px 0;}
+    h2.section-title{text-align:center;font-weight:700;margin-bottom:15px;color:#a685b2;}
+    hr{width:80px;height:3px;background:#714b67;border:none;margin:0 auto 40px auto;}
+
+    .info-card{
+      background:#1c1c21;
+      border-radius:12px;
+      padding:40px 30px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.3);
+      height:100%;
+      transition:transform .3s;
+      text-align:center;
+    }
+    .info-card:hover{transform:translateY(-5px);}
+
+    #cta{
+      background:linear-gradient(270deg,#714b67,#2a1638);
+      text-align:center;
+      padding:80px 20px;
+      color:#fff;
+    }
+
+    footer{
+      background:#0a0a0d;
+      text-align:center;
+      padding:50px 0;
+      color:#aaa;
+    }
+    footer a{color:#a685b2;text-decoration:none;}
+  </style>
+
+  <!-- SEO Schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Service",
+    "serviceType":"Odoo Projects & Timesheets Implementation",
+    "provider":{
+      "@type":"Organization",
+      "name":"Future Lights Technologies",
+      "alternateName":"Future Lights",
+      "url":"https://futurelights.tech",
+      "logo":"https://futurelights.tech/images/Logo.png",
+      "areaServed":["Jordan","Saudi Arabia","UAE","Qatar","Oman","Kuwait","Bahrain"]
+    },
+    "description":"Future Lights Technologies provides Odoo Project Management and Timesheets implementation, helping businesses track progress, resources, and billing across Jordan and GCC."
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://futurelights.tech/">
+        <img src="images/Logo.png" alt="Future Lights Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#partners">Partners</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="container">
+      <h1>Odoo Project Management & Timesheets</h1>
+      <p>Organize tasks, assign resources, and monitor project progress in real time. Future Lights Technologies delivers end-to-end Odoo Projects & Timesheets implementations across Jordan and the GCC.</p>
+      <a href="#features" class="btn-purple">Explore Features</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Odoo Projects & Timesheets</h2>
+      <hr>
+      <p class="text-center mx-auto" style="max-width:850px;">
+        The <strong>Odoo Projects</strong> module allows teams to manage multiple projects efficiently, from planning to delivery. Combined with <strong>Odoo Timesheets</strong>, it offers precise tracking of employee hours, billable work, and task performance — all within one platform.
+        <br><br>
+        At <strong>Future Lights Technologies</strong>, we implement and tailor Odoo Project Management systems for consultancies, agencies, and service-based businesses across <strong>Jordan</strong> and the <strong>GCC</strong>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features">
+    <div class="container">
+      <h2 class="section-title">Key Features</h2>
+      <hr>
+      <div class="row g-4">
+        <div class="col-md-4"><div class="info-card"><i class="fa-solid fa-list-check fa-2x mb-3" style="color:#a685b2;"></i><h5>Task & Milestone Management</h5><p>Create tasks, subtasks, and milestones with Gantt, Kanban, or Calendar views for full visibility.</p></div></div>
+        <div class="col-md-4"><div class="info-card"><i class="fa-solid fa-clock fa-2x mb-3" style="color:#a685b2;"></i><h5>Timesheets & Billing</h5><p>Track employee hours, approve timesheets, and convert billable work into customer invoices automatically.</p></div></div>
+        <div class="col-md-4"><div class="info-card"><i class="fa-solid fa-diagram-project fa-2x mb-3" style="color:#a685b2;"></i><h5>Project Profitability</h5><p>Analyze project costs, revenue, and profitability with integrated accounting reports and dashboards.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Integration -->
+  <section id="integration" class="section-dark">
+    <div class="container">
+      <h2 class="section-title">Seamless Integration with Other Modules</h2>
+      <hr>
+      <div class="row g-4">
+        <div class="col-md-3"><div class="info-card"><i class="fa-solid fa-handshake fa-2x mb-3" style="color:#a685b2;"></i><h6>CRM</h6><p>Convert closed deals into projects and assign responsible teams automatically.</p></div></div>
+        <div class="col-md-3"><div class="info-card"><i class="fa-solid fa-file-invoice fa-2x mb-3" style="color:#a685b2;"></i><h6>Accounting</h6><p>Generate invoices directly from project hours and manage cost centers for profitability analysis.</p></div></div>
+        <div class="col-md-3"><div class="info-card"><i class="fa-solid fa-people-group fa-2x mb-3" style="color:#a685b2;"></i><h6>HR</h6><p>Integrate with employee timesheets, leaves, and resource availability for planning accuracy.</p></div></div>
+        <div class="col-md-3"><div class="info-card"><i class="fa-solid fa-bell fa-2x mb-3" style="color:#a685b2;"></i><h6>Discuss</h6><p>Enable internal team communication and project collaboration directly within tasks.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section id="process" class="text-center">
+    <div class="container">
+      <h2 class="section-title">Our Implementation Process</h2>
+      <hr>
+      <div class="row justify-content-center g-4">
+        <div class="col-md-2 col-sm-6"><div class="info-card"><i class="fa-solid fa-magnifying-glass fa-2x mb-3" style="color:#a685b2;"></i><h6>1. Analysis</h6></div></div>
+        <div class="col-md-2 col-sm-6"><div class="info-card"><i class="fa-solid fa-code fa-2x mb-3" style="color:#a685b2;"></i><h6>2. Customization</h6></div></div>
+        <div class="col-md-2 col-sm-6"><div class="info-card"><i class="fa-solid fa-database fa-2x mb-3" style="color:#a685b2;"></i><h6>3. Data Migration</h6></div></div>
+        <div class="col-md-2 col-sm-6"><div class="info-card"><i class="fa-solid fa-chalkboard-user fa-2x mb-3" style="color:#a685b2;"></i><h6>4. Training & Go-Live</h6></div></div>
+        <div class="col-md-2 col-sm-6"><div class="info-card"><i class="fa-solid fa-headset fa-2x mb-3" style="color:#a685b2;"></i><h6>5. Support</h6></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta">
+    <div class="container">
+      <h2 class="mb-4">Empower Your Projects with Odoo ERP</h2>
+      <p class="mb-4">Future Lights Technologies helps organizations in Jordan and GCC implement Odoo Projects & Timesheets for seamless collaboration, accountability, and profitability.</p>
+      <a href="mailto:info@futurelights.tech?subject=Odoo%20Projects%20Implementation%20Inquiry" class="btn-purple">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Future Lights Technologies. All Rights Reserved.</p>
+    <p><a href="mailto:info@futurelights.tech">info@futurelights.tech</a> | <a href="https://www.linkedin.com/company/future-lights-technologies" target="_blank">LinkedIn</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

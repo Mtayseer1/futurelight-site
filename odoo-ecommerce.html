@@ -1,133 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Odoo Website & eCommerce Implementation | Future Lights Technologies</title>
-  <meta name="description" content="Future Lights Technologies implements Odoo Website & eCommerce modules for businesses in Jordan and GCC. Build professional online stores integrated with inventory, sales, and accounting.">
-  <meta name="keywords" content="Odoo eCommerce, Odoo Website Builder, Online Store Jordan, Odoo ERP GCC, eCommerce Integration, Future Lights Odoo Partner, Odoo Payment Gateway, Odoo Web Design Jordan, Digital Transformation Jordan, Online Sales Automation, Odoo Website Implementation">
-  <meta name="robots" content="index, follow">
+
+  <meta name="description"
+    content="Future Lights Technologies provides Odoo Website & eCommerce implementation for businesses in Jordan & GCC. We build modern online stores integrated with sales, inventory, payments, and accounting." />
+
+  <meta name="keywords"
+    content="Odoo ecommerce Jordan, Odoo website GCC, Odoo online store, Odoo ERP Jordan, Odoo partner Jordan, Odoo web design, Odoo payment gateway, ecommerce implementation GCC" />
+
+  <meta name="robots" content="index, follow" />
+
+  <!-- Canonical -->
   <link rel="canonical" href="https://futurelights.tech/odoo-ecommerce.html" />
 
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Odoo Website & eCommerce Implementation | Future Lights" />
+  <meta property="og:description"
+    content="Launch a fully integrated Odoo online store connected with sales, inventory, CRM, and accounting." />
+  <meta property="og:image" content="https://futurelights.tech/images/Logo.png" />
+  <meta property="og:url" content="https://futurelights.tech/odoo-ecommerce.html" />
+  <meta property="og:type" content="website" />
 
-  <link rel="icon" type="image/png" href="images/Favicon.png">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/Favicon.png" />
+
+  <!-- Fonts & CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@400;600&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
   <style>
     body {
-      margin:0;
-      font-family:'Inter',sans-serif;
-      color:#fff;
-      background:#0e0e12;
-      overflow-x:hidden;
-      scroll-behavior:smooth;
+      margin: 0;
+      font-family: "Inter", sans-serif;
+      color: #fff;
+      background: #0e0e12;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
     }
 
     /* Navbar */
     nav.navbar {
-      background:rgba(0,0,0,0.85);
-      backdrop-filter:blur(8px);
-      height:75px;
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(8px);
+      height: 75px;
     }
-    nav a {color:#fff!important;font-weight:600;text-decoration:none;}
-    nav a:hover {color:#a685b2!important;}
-    .navbar-brand img {height:70px;}
+
+    nav a {
+      color: #fff !important;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: #a685b2 !important;
+    }
+
+    .navbar-brand img {
+      height: 70px;
+    }
 
     /* Hero */
     #hero {
-      background:linear-gradient(270deg,#0a0a0a,#2a1638,#714b67);
-      background-size:600% 600%;
-      animation:gradient 12s ease infinite;
-      min-height:70vh;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      text-align:center;
-      color:#fff;
-      padding:0 20px;
+      background: linear-gradient(270deg, #0a0a0a, #2a1638, #714b67);
+      background-size: 600% 600%;
+      animation: gradient 12s ease infinite;
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      padding: 0 20px;
     }
+
     @keyframes gradient {
-      0%{background-position:0% 50%;}
-      50%{background-position:100% 50%;}
-      100%{background-position:0% 50%;}
-    }
-    #hero h1{font-size:2.5rem;font-weight:700;}
-    #hero p{font-size:1.2rem;margin:20px auto;max-width:750px;}
-    .btn-purple{
-      background-color:#714b67;
-      border:none;
-      color:#fff;
-      padding:12px 32px;
-      border-radius:8px;
-      font-weight:600;
-      transition:all 0.3s;
-      text-decoration:none;
-    }
-    .btn-purple:hover{background-color:#a685b2;}
+      0% {
+        background-position: 0% 50%;
+      }
 
-    section{padding:80px 0;}
-    h2.section-title{text-align:center;font-weight:700;margin-bottom:15px;color:#a685b2;}
-    hr{width:80px;height:3px;background:#714b67;border:none;margin:0 auto 40px auto;}
+      50% {
+        background-position: 100% 50%;
+      }
 
-    .info-card{
-      background:#1c1c21;
-      border-radius:12px;
-      padding:40px 30px;
-      box-shadow:0 4px 12px rgba(0,0,0,0.3);
-      height:100%;
-      transition:transform .3s;
-      text-align:center;
-    }
-    .info-card:hover{transform:translateY(-5px);}
-
-    #cta{
-      background:linear-gradient(270deg,#714b67,#2a1638);
-      text-align:center;
-      padding:80px 20px;
-      color:#fff;
+      100% {
+        background-position: 0% 50%;
+      }
     }
 
-    footer{
-      background:#0a0a0d;
-      text-align:center;
-      padding:50px 0;
-      color:#aaa;
+    #hero h1 {
+      font-size: 2.6rem;
+      font-weight: 700;
     }
-    footer a{color:#a685b2;text-decoration:none;}
+
+    #hero p {
+      font-size: 1.2rem;
+      margin: 20px auto;
+      max-width: 750px;
+    }
+
+    .btn-purple {
+      background-color: #714b67;
+      border: none;
+      color: #fff;
+      padding: 12px 32px;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: all 0.3s;
+      text-decoration: none;
+    }
+
+    .btn-purple:hover {
+      background-color: #a685b2;
+    }
+
+    /* Sections */
+    section {
+      padding: 80px 0;
+    }
+
+    h2.section-title {
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: #a685b2;
+    }
+
+    hr {
+      width: 80px;
+      height: 3px;
+      background: #714b67;
+      border: none;
+      margin: 0 auto 40px auto;
+    }
+
+    /* Info Cards */
+    .info-card {
+      background: #1c1c21;
+      border-radius: 12px;
+      padding: 40px 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s;
+      text-align: center;
+      height: 100%;
+    }
+
+    .info-card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* CTA */
+    #cta {
+      background: linear-gradient(270deg, #714b67, #2a1638);
+      text-align: center;
+      padding: 80px 20px;
+      color: #fff;
+    }
+
+    /* Footer */
+    footer {
+      background: #0a0a0d;
+      text-align: center;
+      padding: 50px 0;
+      color: #aaa;
+    }
+
+    footer a {
+      color: #a685b2;
+      text-decoration: none;
+    }
   </style>
 
   <!-- SEO Schema -->
   <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Service",
-    "serviceType":"Odoo Website & eCommerce Implementation",
-    "provider":{
-      "@type":"Organization",
-      "name":"Future Lights Technologies",
-      "alternateName":"Future Lights",
-      "url":"https://futurelights.tech",
-      "logo":"https://futurelights.tech/images/Logo.png",
-      "areaServed":["Jordan","Saudi Arabia","UAE","Qatar","Oman","Kuwait","Bahrain"]
-    },
-    "description":"Future Lights Technologies provides Odoo Website & eCommerce implementation and integration services, connecting your online store to sales, inventory, and accounting."
-  }
-  </script>
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Odoo Website & eCommerce Implementation",
+  "provider": {
+    "@type": "Organization",
+    "name": "Future Lights Technologies",
+    "url": "https://futurelights.tech",
+    "logo": "https://futurelights.tech/images/Logo.png",
+    "areaServed": ["Jordan","Saudi Arabia","UAE","Qatar","Oman","Kuwait","Bahrain"]
+  },
+  "description": "Future Lights Technologies provides full Odoo Website & eCommerce implementation and integration."
+}
+</script>
+
 </head>
 
 <body>
 
-  <!-- Navbar -->
+  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="https://futurelights.tech/">
-        <img src="images/Logo.png" alt="Future Lights Logo">
+        <img src="images/Logo.png" loading="lazy" alt="Future Lights Logo" />
       </a>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
@@ -142,196 +228,340 @@
     </div>
   </nav>
 
-  <!-- Hero -->
+  <!-- HERO -->
   <section id="hero">
     <div class="container">
       <h1>Odoo Website & eCommerce Implementation</h1>
-      <p>Launch a modern, fully integrated online store with Odoo. Future Lights Technologies builds eCommerce websites that connect products, sales, inventory, and payments seamlessly for clients in Jordan and the GCC.</p>
+      <p>Launch a fully integrated online store with Odoo. We build modern, optimized eCommerce platforms connected with
+        sales,
+        inventory, payments, and accounting.</p>
+
       <a href="#features" class="btn-purple">Explore Features</a>
     </div>
   </section>
 
-  <!-- About -->
+  <!-- ABOUT -->
   <section id="about">
     <div class="container">
       <h2 class="section-title">About Odoo eCommerce</h2>
-      <hr>
-      <p class="text-center mx-auto" style="max-width:850px;">
-        The <strong>Odoo eCommerce module</strong> enables businesses to create responsive, dynamic, and fully integrated online stores. It combines website design, product management, and order processing within a single Odoo ERP environment.
-        <br><br>
-        <strong>Future Lights Technologies</strong> delivers full Odoo eCommerce solutions — from setup and theme design to integration with accounting, CRM, and inventory — empowering Jordanian and GCC companies to sell smarter and faster.
+      <hr />
+
+      <p class="text-center mx-auto" style="max-width: 850px">
+        The <strong>Odoo eCommerce module</strong> allows businesses to build fast, responsive, and fully integrated
+        online stores.
+        It connects website pages with inventory, sales, CRM, marketing, and financial automation.
       </p>
     </div>
   </section>
 
-  <!-- Features -->
+  <!-- FEATURES -->
   <section id="features">
     <div class="container">
       <h2 class="section-title">Key Features</h2>
-      <hr>
+      <hr />
+
       <div class="row g-4">
-        <div class="col-md-4"><div class="info-card"><i class="fa-solid fa-cart-shopping fa-2x mb-3" style="color:#a685b2;"></i><h5>Online Store Builder</h5><p>Design and launch your online store using Odoo’s drag-and-drop builder with ready themes and modules.</p></div></div>
-        <div class="col-md-4"><div class="info-card"><i class="fa-solid fa-credit-card fa-2x mb-3" style="color:#a685b2;"></i><h5>Payment & Shipping</h5><p>Integrate global and local payment gateways with automated shipping workflows and live tracking.</p></div></div>
-        <div class="col-md-4"><div class="info-card"><i class="fa-solid fa-warehouse fa-2x mb-3" style="color:#a685b2;"></i><h5>Inventory & Orders</h5><p>Automate product availability and order fulfillment through direct integration with Odoo Inventory.</p></div></div>
+        <div class="col-md-4">
+          <div class="info-card">
+            <i class="fa-solid fa-cart-shopping fa-2x mb-3" style="color: #a685b2"></i>
+            <h5>Online Store Builder</h5>
+            <p>Create beautiful, responsive online stores using Odoo's drag-and-drop builder.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="info-card">
+            <i class="fa-solid fa-credit-card fa-2x mb-3" style="color: #a685b2"></i>
+            <h5>Payment & Shipping</h5>
+            <p>Integrate global and local payment gateways with advanced shipping workflows.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="info-card">
+            <i class="fa-solid fa-warehouse fa-2x mb-3" style="color: #a685b2"></i>
+            <h5>Inventory & Orders</h5>
+            <p>Automated stock levels and order routing through the Odoo Inventory module.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Integrations -->
+  <!-- INTEGRATION -->
   <section id="integration" class="section-dark">
     <div class="container">
       <h2 class="section-title">Integrated with Core Odoo Apps</h2>
-      <hr>
+      <hr />
+
       <div class="row g-4">
-        <div class="col-md-3"><div class="info-card"><i class="fa-solid fa-box fa-2x mb-3" style="color:#a685b2;"></i><h6>Inventory</h6><p>Real-time stock updates ensure accurate product availability on your online store.</p></div></div>
-        <div class="col-md-3"><div class="info-card"><i class="fa-solid fa-chart-line fa-2x mb-3" style="color:#a685b2;"></i><h6>Sales</h6><p>Seamlessly convert online orders into invoices and track sales performance with dashboards.</p></div></div>
-        <div class="col-md-3"><div class="info-card"><i class="fa-solid fa-user-tie fa-2x mb-3" style="color:#a685b2;"></i><h6>CRM</h6><p>Capture leads, follow up with customers, and nurture loyalty directly from eCommerce interactions.</p></div></div>
-        <div class="col-md-3"><div class="info-card"><i class="fa-solid fa-file-invoice-dollar fa-2x mb-3" style="color:#a685b2;"></i><h6>Accounting</h6><p>Automate financial reconciliation between online payments and your accounting books.</p></div></div>
+        <div class="col-md-3">
+          <div class="info-card">
+            <i class="fa-solid fa-box fa-2x mb-3" style="color: #a685b2"></i>
+            <h6>Inventory</h6>
+            <p>Real-time stock control integrated directly with product pages.</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="info-card">
+            <i class="fa-solid fa-chart-line fa-2x mb-3" style="color: #a685b2"></i>
+            <h6>Sales</h6>
+            <p>Convert online orders into invoices and track customer activity.</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="info-card">
+            <i class="fa-solid fa-user-tie fa-2x mb-3" style="color: #a685b2"></i>
+            <h6>CRM</h6>
+            <p>Capture leads and nurture customers directly from your store.</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="info-card">
+            <i class="fa-solid fa-file-invoice-dollar fa-2x mb-3" style="color: #a685b2"></i>
+            <h6>Accounting</h6>
+            <p>Automatic reconciliation of online transactions and payment reports.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Implementation Process -->
+  <!-- PROCESS -->
   <section id="process" class="text-center">
     <div class="container">
       <h2 class="section-title">Our Implementation Process</h2>
-      <hr>
+      <hr />
+
       <div class="row justify-content-center g-4">
-        <div class="col-md-2 col-sm-6"><div class="info-card"><i class="fa-solid fa-magnifying-glass fa-2x mb-3" style="color:#a685b2;"></i><h6>1. Analysis</h6></div></div>
-        <div class="col-md-2 col-sm-6"><div class="info-card"><i class="fa-solid fa-code fa-2x mb-3" style="color:#a685b2;"></i><h6>2. Customization</h6></div></div>
-        <div class="col-md-2 col-sm-6"><div class="info-card"><i class="fa-solid fa-database fa-2x mb-3" style="color:#a685b2;"></i><h6>3. Integration</h6></div></div>
-        <div class="col-md-2 col-sm-6"><div class="info-card"><i class="fa-solid fa-chalkboard-user fa-2x mb-3" style="color:#a685b2;"></i><h6>4. Training & Go-Live</h6></div></div>
-        <div class="col-md-2 col-sm-6"><div class="info-card"><i class="fa-solid fa-headset fa-2x mb-3" style="color:#a685b2;"></i><h6>5. Ongoing Support</h6></div></div>
+        <div class="col-md-2 col-sm-6">
+          <div class="info-card">
+            <i class="fa-solid fa-magnifying-glass fa-2x mb-3" style="color: #a685b2"></i>
+            <h6>1. Analysis</h6>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-6">
+          <div class="info-card">
+            <i class="fa-solid fa-code fa-2x mb-3" style="color: #a685b2"></i>
+            <h6>2. Customization</h6>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-6">
+          <div class="info-card">
+            <i class="fa-solid fa-database fa-2x mb-3" style="color: #a685b2"></i>
+            <h6>3. Integration</h6>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-6">
+          <div class="info-card">
+            <i class="fa-solid fa-chalkboard-user fa-2x mb-3" style="color: #a685b2"></i>
+            <h6>4. Training & Go-Live</h6>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-6">
+          <div class="info-card">
+            <i class="fa-solid fa-headset fa-2x mb-3" style="color: #a685b2"></i>
+            <h6>5. Support</h6>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Why Choose Future Lights -->
+  <!-- WHY CHOOSE -->
   <section id="why-fl" class="section-dark">
     <div class="container text-center">
       <h2 class="section-title">Why Choose Future Lights Technologies</h2>
-      <hr>
-      <div class="row g-4">
-        <div class="col-md-3"><div class="info-card"><i class="fa-solid fa-certificate fa-2x mb-3" style="color:#a685b2;"></i><h6>Official Odoo Partner</h6><p>Certified expertise in implementing Odoo Website & eCommerce for enterprises in Jordan and GCC.</p></div></div>
-        <div class="col-md-3"><div class="info-card"><i class="fa-solid fa-globe fa-2x mb-3" style="color:#a685b2;"></i><h6>Regional Knowledge</h6><p>Localization for regional payment gateways, shipping rules, and Arabic/English storefronts.</p></div></div>
-        <div class="col-md-3"><div class="info-card"><i class="fa-solid fa-database fa-2x mb-3" style="color:#a685b2;"></i><h6>Integrated Ecosystem</h6><p>We integrate your eCommerce with CRM, Accounting, and Inventory for full automation.</p></div></div>
-        <div class="col-md-3"><div class="info-card"><i class="fa-solid fa-language fa-2x mb-3" style="color:#a685b2;"></i><h6>Bilingual Support</h6><p>Our consultants provide English and Arabic documentation, training, and after-sales service.</p></div></div>
+      <hr />
+
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-3">
+          <div class="info-card">
+            <i class="fa-solid fa-certificate fa-2x mb-3" style="color: #a685b2"></i>
+            <h6>Official Odoo Partner</h6>
+            <p>Certified Odoo experts delivering high-quality implementation and support.</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="info-card">
+            <i class="fa-solid fa-globe fa-2x mb-3" style="color: #a685b2"></i>
+            <h6>Jordan & GCC Coverage</h6>
+            <p>Serving businesses across Jordan, KSA, UAE, Qatar, Kuwait, Oman & Bahrain.</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="info-card">
+            <i class="fa-solid fa-database fa-2x mb-3" style="color: #a685b2"></i>
+            <h6>CRM & ERP Integration</h6>
+            <p>End-to-end integration with accounting, sales, inventory, and CRM.</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="info-card">
+            <i class="fa-solid fa-language fa-2x mb-3" style="color: #a685b2"></i>
+            <h6>Bilingual Support</h6>
+            <p>Full English & Arabic documentation, training, and ongoing support.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- CHECK OTHER MODULES -->
-<section id="other-modules" class="section-dark">
-  <div class="container text-center">
-    <h2 class="section-title">Check Other Odoo Modules</h2>
-    <hr>
+  <section id="other-modules" class="section-dark">
+    <div class="container text-center">
+      <h2 class="section-title">Check Other Odoo Modules</h2>
+      <hr />
 
-    <div class="row g-4 justify-content-center">
+      <div class="row g-4 justify-content-center">
 
-      <div class="col-md-3 col-sm-6">
-        <a href="odoo-accounting.html#hero" class="module-card d-block">
-          <i class="fa-solid fa-calculator fa-2x mb-3" style="color:#a685b2;"></i>
-          <h5>Accounting</h5>
-        </a>
+        <!-- Module Template -->
+        <!-- All items share same design for consistency -->
+        <div class="col-md-3 col-sm-6">
+          <a href="odoo-accounting.html#hero" class="text-decoration-none">
+            <div class="info-card">
+              <i class="fa-solid fa-calculator fa-2x mb-3" style="color:#a685b2"></i>
+              <h5 class="text-white">Accounting</h5>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <a href="odoo-hr.html#hero" class="text-decoration-none">
+            <div class="info-card">
+              <i class="fa-solid fa-user-group fa-2x mb-3" style="color:#a685b2"></i>
+              <h5 class="text-white">Human Resources</h5>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <a href="odoo-crm.html#hero" class="text-decoration-none">
+            <div class="info-card">
+              <i class="fa-solid fa-handshake fa-2x mb-3" style="color:#a685b2"></i>
+              <h5 class="text-white">CRM</h5>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <a href="odoo-sales.html#hero" class="text-decoration-none">
+            <div class="info-card">
+              <i class="fa-solid fa-chart-line fa-2x mb-3" style="color:#a685b2"></i>
+              <h5 class="text-white">Sales</h5>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <a href="odoo-inventory.html#hero" class="text-decoration-none">
+            <div class="info-card">
+              <i class="fa-solid fa-boxes-stacked fa-2x mb-3" style="color:#a685b2"></i>
+              <h5 class="text-white">Inventory</h5>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <a href="odoo-manufacturing.html#hero" class="text-decoration-none">
+            <div class="info-card">
+              <i class="fa-solid fa-industry fa-2x mb-3" style="color:#a685b2"></i>
+              <h5 class="text-white">Manufacturing</h5>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <a href="odoo-projects.html#hero" class="text-decoration-none">
+            <div class="info-card">
+              <i class="fa-solid fa-diagram-project fa-2x mb-3" style="color:#a685b2"></i>
+              <h5 class="text-white">Projects</h5>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <a href="odoo-fleet.html#hero" class="text-decoration-none">
+            <div class="info-card">
+              <i class="fa-solid fa-car fa-2x mb-3" style="color:#a685b2"></i>
+              <h5 class="text-white">Fleet</h5>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <a href="odoo-purchase.html#hero" class="text-decoration-none">
+            <div class="info-card">
+              <i class="fa-solid fa-cart-shopping fa-2x mb-3" style="color:#a685b2"></i>
+              <h5 class="text-white">Purchase</h5>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <a href="odoo-pos.html#hero" class="text-decoration-none">
+            <div class="info-card">
+              <i class="fa-solid fa-store fa-2x mb-3" style="color:#a685b2"></i>
+              <h5 class="text-white">Point of Sale</h5>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <a href="odoo-ecommerce.html#hero" class="text-decoration-none">
+            <div class="info-card">
+              <i class="fa-solid fa-globe fa-2x mb-3" style="color:#a685b2"></i>
+              <h5 class="text-white">Website & eCommerce</h5>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <a href="odoo-marketing.html#hero" class="text-decoration-none">
+            <div class="info-card">
+              <i class="fa-solid fa-bullhorn fa-2x mb-3" style="color:#a685b2"></i>
+              <h5 class="text-white">Marketing Automation</h5>
+            </div>
+          </a>
+        </div>
+
       </div>
-
-      <div class="col-md-3 col-sm-6">
-        <a href="odoo-hr.html#hero" class="module-card d-block">
-          <i class="fa-solid fa-user-group fa-2x mb-3" style="color:#a685b2;"></i>
-          <h5>Human Resources</h5>
-        </a>
-      </div>
-
-      <div class="col-md-3 col-sm-6">
-        <a href="odoo-crm.html#hero" class="module-card d-block">
-          <i class="fa-solid fa-handshake fa-2x mb-3" style="color:#a685b2;"></i>
-          <h5>CRM</h5>
-        </a>
-      </div>
-
-      <div class="col-md-3 col-sm-6">
-        <a href="odoo-sales.html#hero" class="module-card d-block">
-          <i class="fa-solid fa-chart-line fa-2x mb-3" style="color:#a685b2;"></i>
-          <h5>Sales</h5>
-        </a>
-      </div>
-
-      <div class="col-md-3 col-sm-6">
-        <a href="odoo-inventory.html#hero" class="module-card d-block">
-          <i class="fa-solid fa-boxes-stacked fa-2x mb-3" style="color:#a685b2;"></i>
-          <h5>Inventory</h5>
-        </a>
-      </div>
-
-      <div class="col-md-3 col-sm-6">
-        <a href="odoo-manufacturing.html#hero" class="module-card d-block">
-          <i class="fa-solid fa-industry fa-2x mb-3" style="color:#a685b2;"></i>
-          <h5>Manufacturing</h5>
-        </a>
-      </div>
-
-      <div class="col-md-3 col-sm-6">
-        <a href="odoo-projects.html#hero" class="module-card d-block">
-          <i class="fa-solid fa-diagram-project fa-2x mb-3" style="color:#a685b2;"></i>
-          <h5>Projects</h5>
-        </a>
-      </div>
-
-      <div class="col-md-3 col-sm-6">
-        <a href="odoo-fleet.html#hero" class="module-card d-block">
-          <i class="fa-solid fa-car fa-2x mb-3" style="color:#a685b2;"></i>
-          <h5>Fleet</h5>
-        </a>
-      </div>
-
-      <div class="col-md-3 col-sm-6">
-        <a href="odoo-purchase.html#hero" class="module-card d-block">
-          <i class="fa-solid fa-cart-shopping fa-2x mb-3" style="color:#a685b2;"></i>
-          <h5>Purchase</h5>
-        </a>
-      </div>
-
-      <div class="col-md-3 col-sm-6">
-        <a href="odoo-pos.html#hero" class="module-card d-block">
-          <i class="fa-solid fa-store fa-2x mb-3" style="color:#a685b2;"></i>
-          <h5>Point of Sale</h5>
-        </a>
-      </div>
-
-      <div class="col-md-3 col-sm-6">
-        <a href="odoo-ecommerce.html#hero" class="module-card d-block">
-          <i class="fa-solid fa-globe fa-2x mb-3" style="color:#a685b2;"></i>
-          <h5>Website & eCommerce</h5>
-        </a>
-      </div>
-
-      <div class="col-md-3 col-sm-6">
-        <a href="odoo-marketing.html#hero" class="module-card d-block">
-          <i class="fa-solid fa-bullhorn fa-2x mb-3" style="color:#a685b2;"></i>
-          <h5>Marketing Automation</h5>
-        </a>
-      </div>
-
     </div>
-  </div>
-</section>
-
+  </section>
 
   <!-- CTA -->
   <section id="cta">
     <div class="container">
       <h2 class="mb-4">Launch Your Online Store with Odoo ERP</h2>
-      <p class="mb-4">Future Lights Technologies delivers Odoo Website & eCommerce solutions that help businesses across Jordan and the GCC sell online effortlessly and manage everything in one platform.</p>
-      <a href="mailto:info@futurelights.tech?subject=Odoo%20eCommerce%20Implementation%20Inquiry" class="btn-purple">Get Started</a>
+      <p class="mb-4">
+        Future Lights Technologies delivers powerful Odoo Website & eCommerce solutions for businesses across Jordan and
+        the GCC.
+      </p>
+      <a href="mailto:info@futurelights.tech" class="btn-purple">Get Started</a>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer>
     <p>© 2025 Future Lights Technologies. All Rights Reserved.</p>
-    <p><a href="mailto:info@futurelights.tech">info@futurelights.tech</a> | <a href="https://www.linkedin.com/company/future-lights-technologies" target="_blank">LinkedIn</a></p>
+    <p>
+      <a href="mailto:info@futurelights.tech">info@futurelights.tech</a> |
+      <a href="https://www.linkedin.com/company/future-lights-technologies" target="_blank">LinkedIn</a>
+    </p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>
